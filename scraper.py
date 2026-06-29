@@ -1,6 +1,6 @@
 """
 Holly Springs NC Police Monitor
-Scrapes news and public social media for Holly Springs NC police mentions.
+Threat monitoring & accountability edition.
 """
 
 import json
@@ -29,7 +29,6 @@ KEYWORDS = [
     "hspd nc",
 ]
 
-# Negative filters: skip results that look like other states
 EXCLUDE_PATTERNS = [
     r"holly springs,?\s*(ms|mississippi)",
     r"holly springs,?\s*(tx|texas)",
@@ -39,19 +38,45 @@ EXCLUDE_PATTERNS = [
     r"holly springs,?\s*(ca|california)",
 ]
 
-# Must contain at least one NC signal to be kept
 NC_SIGNALS = [
     "nc", "north carolina", "wake county", "raleigh", "holly springs, nc",
     "hollyspringsnc", "holly springs nc", "27540",
 ]
 
+# ── HIGH PRIORITY / THREAT KEYWORDS ──────────────────────────────────────────
+# Any result containing these gets flagged as critical (red banner)
+
+HIGH_PRIORITY_KEYWORDS = [
+    # Use of force
+    "officer involved shooting", "officer-involved shooting", "ois",
+    "use of force", "excessive force", "police shooting",
+    "shot by police", "killed by police", "tased", "choked",
+    "in custody death", "death in custody", "died in custody",
+    # Legal / accountability
+    "civil rights lawsuit", "1983", "§1983", "section 1983",
+    "wrongful death", "police misconduct", "brutality",
+    "internal affairs", "under investigation", "indicted",
+    "criminal charges", "officer charged", "officer arrested",
+    "decertified", "post commission", "sustained complaint",
+    # Threats / serious incidents
+    "active shooter", "hostage", "barricade", "swat",
+    "pursuit ended", "high speed chase", "officer struck",
+    "officer injured", "officer killed", "ambush",
+]
+
+# ── HSPD OFFICER TRACKING ─────────────────────────────────────────────────────
+# Populated dynamically from NC POST lookup; seed list here as fallback
+
+KNOWN_OFFICERS: list[str] = []   # filled by fetch_hspd_officers() at runtime
+
 # ── File Paths ────────────────────────────────────────────────────────────────
 
-BASE_DIR   = Path(__file__).parent
-DATA_DIR   = BASE_DIR / "data"
-LOG_DIR    = BASE_DIR / "logs"
-SEEN_FILE  = DATA_DIR / "seen_hashes.json"
+BASE_DIR    = Path(__file__).parent
+DATA_DIR    = BASE_DIR / "data"
+LOG_DIR     = BASE_DIR / "logs"
+SEEN_FILE   = DATA_DIR / "seen_hashes.json"
 REPORT_FILE = DATA_DIR / "latest_report.html"
+OFFICERS_FILE = DATA_DIR / "known_officers.json"
 
 DATA_DIR.mkdir(exist_ok=True)
 LOG_DIR.mkdir(exist_ok=True)
@@ -74,40 +99,113 @@ def load_seen() -> set:
         return set(json.loads(SEEN_FILE.read_text()))
     return set()
 
-
 def save_seen(seen: set):
     SEEN_FILE.write_text(json.dumps(list(seen), indent=2))
-
 
 def make_hash(url: str, title: str) -> str:
     return hashlib.md5(f"{url}{title}".encode()).hexdigest()
 
-
 def is_nc_relevant(text: str) -> bool:
-    """Return True only if text is about Holly Springs NC, not another state."""
     text_lower = text.lower()
-
-    # Reject if it matches another state
     for pat in EXCLUDE_PATTERNS:
         if re.search(pat, text_lower):
             return False
-
-    # Accept if it has an NC signal
     for signal in NC_SIGNALS:
         if signal in text_lower:
             return True
-
-    # Accept if a broad Holly Springs police keyword is there (assume NC by default
-    # since we're already searching NC-focused sources)
     for kw in ["holly springs police", "holly springs pd"]:
         if kw in text_lower:
             return True
-
     return False
 
+def is_high_priority(text: str) -> bool:
+    text_lower = text.lower()
+    for kw in HIGH_PRIORITY_KEYWORDS:
+        if kw in text_lower:
+            return True
+    # Also flag if a known officer name appears in a concerning context
+    for officer in KNOWN_OFFICERS:
+        if officer.lower() in text_lower:
+            concerning = ["charged", "arrested", "fired", "suspended", "lawsuit",
+                          "complaint", "misconduct", "shooting", "force", "investigation"]
+            if any(c in text_lower for c in concerning):
+                return True
+    return False
 
 def clean_text(text: str) -> str:
     return re.sub(r"\s+", " ", text or "").strip()
+
+
+# ── NC POST Commission — Officer Roster ───────────────────────────────────────
+
+def fetch_hspd_officers() -> list[str]:
+    """
+    Query the NC POST Commission public officer search for Holly Springs PD.
+    Returns list of officer full names. Results cached to disk.
+    """
+    global KNOWN_OFFICERS
+
+    # Use cached list if fresh (< 7 days old)
+    if OFFICERS_FILE.exists():
+        data = json.loads(OFFICERS_FILE.read_text())
+        age_days = (time.time() - data.get("fetched", 0)) / 86400
+        if age_days < 7 and data.get("officers"):
+            KNOWN_OFFICERS = data["officers"]
+            log.info(f"[POST] Using cached officer list ({len(KNOWN_OFFICERS)} officers)")
+            return KNOWN_OFFICERS
+
+    officers = []
+    try:
+        # NC POST public search API
+        url = "https://post.nc.gov/Officers/Search"
+        params = {"agency": "Holly Springs Police Department", "status": "Active"}
+        headers = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
+        r = requests.get(url, params=params, headers=headers, timeout=15)
+
+        if r.status_code == 200:
+            try:
+                data = r.json()
+                for officer in data:
+                    name = f"{officer.get('FirstName','')} {officer.get('LastName','')}".strip()
+                    if name:
+                        officers.append(name)
+            except Exception:
+                # Fallback: scrape the HTML page
+                soup = BeautifulSoup(r.text, "html.parser")
+                for row in soup.select("table tr"):
+                    cells = row.find_all("td")
+                    if len(cells) >= 2:
+                        name = clean_text(cells[0].get_text())
+                        if name and name != "Name":
+                            officers.append(name)
+
+        if officers:
+            OFFICERS_FILE.write_text(json.dumps({
+                "fetched": time.time(),
+                "officers": officers
+            }, indent=2))
+            log.info(f"[POST] Found {len(officers)} active HSPD officers")
+        else:
+            log.warning("[POST] No officers found — POST search may have changed format")
+
+    except Exception as e:
+        log.warning(f"[POST] Officer fetch failed: {e}")
+
+    # Also search Google News for NC POST + Holly Springs mentions
+    try:
+        query = requests.utils.quote('"holly springs" "post commission" OR "decertified" NC')
+        feed = feedparser.parse(
+            f"https://news.google.com/rss/search?q={query}&hl=en-US&gl=US&ceid=US:en"
+        )
+        for entry in feed.entries:
+            title = clean_text(entry.get("title", ""))
+            if is_nc_relevant(title):
+                log.info(f"[POST] NC POST news hit: {title}")
+    except Exception:
+        pass
+
+    KNOWN_OFFICERS = officers
+    return officers
 
 
 # ── News RSS Feeds ────────────────────────────────────────────────────────────
@@ -119,26 +217,42 @@ RSS_FEEDS = {
     "News & Observer":  "https://www.newsobserver.com/news/?widgetName=rssfeed&widgetContentId=712015&getXmlFeed=true",
     "Holly Springs Sun":"https://hollyspringssun.com/feed/",
     "NCNewsLine":       "https://ncnewsline.com/feed/",
+    "NC DOJ":           "https://ncdoj.gov/feed/",
+    "ACLU NC":          "https://www.acluofnc.org/en/rss.xml",
 }
 
 GOOGLE_NEWS_QUERIES = [
-    # Core PD queries
+    # Core
     "Holly Springs NC police",
     "Holly Springs North Carolina police department",
     '"Holly Springs" "NC" police',
-    # Incident & crime
+    # Incidents
     "Holly Springs NC crime",
     "Holly Springs NC arrest",
     "Holly Springs NC shooting",
     "Holly Springs NC incident",
     "Holly Springs NC officer",
-    # Broader law enforcement
-    "Holly Springs NC sheriff Wake County",
-    '"Holly Springs" "27540" police',
-    # Community & accountability
+    # Accountability
     "Holly Springs NC police misconduct",
     "Holly Springs NC police investigation",
+    "Holly Springs NC use of force",
+    "Holly Springs NC officer involved shooting",
+    "Holly Springs NC civil rights lawsuit",
+    "Holly Springs NC police lawsuit",
+    "Holly Springs NC internal affairs",
+    # Court / legal
+    "Holly Springs NC police charged",
+    "Holly Springs NC officer indicted",
+    '"Holly Springs" "27540" police',
+    # Broader
+    "Holly Springs NC sheriff Wake County",
     "Holly Springs North Carolina crime report",
+    # NC POST
+    '"Holly Springs" officer decertified NC',
+    '"Holly Springs Police" POST commission',
+    # Town governance
+    "Holly Springs NC town council police",
+    "Holly Springs NC police budget",
 ]
 
 
@@ -162,14 +276,14 @@ def scrape_rss(seen: set) -> list:
                 if h in seen:
                     continue
 
-                published = entry.get("published", "Unknown date")
                 results.append({
                     "source":    source,
                     "title":     title,
                     "summary":   summary[:300],
                     "url":       link,
-                    "published": published,
+                    "published": entry.get("published", "Unknown date"),
                     "category":  "News",
+                    "priority":  is_high_priority(combined),
                     "hash":      h,
                 })
                 seen.add(h)
@@ -181,8 +295,6 @@ def scrape_rss(seen: set) -> list:
 
 def scrape_google_news(seen: set) -> list:
     results = []
-    headers = {"User-Agent": "Mozilla/5.0 (compatible; NewsBot/1.0)"}
-
     for query in GOOGLE_NEWS_QUERIES:
         try:
             encoded = requests.utils.quote(query)
@@ -210,6 +322,7 @@ def scrape_google_news(seen: set) -> list:
                     "url":       link,
                     "published": entry.get("published", "Unknown"),
                     "category":  "News",
+                    "priority":  is_high_priority(combined),
                     "hash":      h,
                 })
                 seen.add(h)
@@ -219,27 +332,72 @@ def scrape_google_news(seen: set) -> list:
     return results
 
 
-# ── Google Search – Facebook public posts ─────────────────────────────────────
+# ── Court Records ─────────────────────────────────────────────────────────────
 
-# Google indexes many public Facebook posts; searching site:facebook.com lets us
-# find community mentions without needing FB login or API access.
-GOOGLE_FACEBOOK_QUERIES = [
-    'site:facebook.com "holly springs" "police" "nc"',
-    'site:facebook.com "holly springs police" "north carolina"',
-    'site:facebook.com "holly springs nc" "police department"',
-    'site:facebook.com "holly springs nc" "arrest" OR "crime" OR "incident"',
-    'site:facebook.com "holly springs nc" "officer" OR "shooting"',
+COURT_QUERIES = [
+    # Federal civil rights
+    '"holly springs" "north carolina" "1983"',
+    '"holly springs police" "civil rights"',
+    '"holly springs" officer "use of force" lawsuit',
+    '"holly springs" police "wrongful death"',
+    # Criminal charges against officers
+    '"holly springs" officer charged "north carolina"',
+    '"holly springs" officer indicted',
+    # PACER / court filings via Google
+    'site:courtlistener.com "holly springs" "north carolina" police',
+    'site:pacermonitor.com "holly springs" police "north carolina"',
 ]
 
 
-def scrape_google_for_facebook(seen: set) -> list:
+def scrape_court_records(seen: set) -> list:
     """
-    Use Google News RSS to surface public Facebook posts about Holly Springs NC police.
-    This catches community group posts, local shares, and public pages Google has indexed.
+    Search Google News + CourtListener RSS for court cases involving HSPD.
+    Covers §1983 civil rights, use of force, and officer criminal charges.
     """
     results = []
 
-    for query in GOOGLE_FACEBOOK_QUERIES:
+    # CourtListener RSS (public federal court filings)
+    court_feeds = [
+        ("CourtListener — HSPD Civil Rights",
+         "https://www.courtlistener.com/feed/search/?q=%22holly+springs%22+%22north+carolina%22+police&type=o"),
+        ("CourtListener — Officer Force NC",
+         "https://www.courtlistener.com/feed/search/?q=%22holly+springs%22+%22use+of+force%22+%22north+carolina%22&type=o"),
+    ]
+
+    for source, url in court_feeds:
+        try:
+            feed = feedparser.parse(url)
+            for entry in feed.entries:
+                title   = clean_text(entry.get("title", ""))
+                summary = clean_text(entry.get("summary", ""))
+                link    = entry.get("link", "")
+                combined = f"{title} {summary}"
+
+                if not is_nc_relevant(combined):
+                    continue
+
+                h = make_hash(link, title)
+                if h in seen:
+                    continue
+
+                results.append({
+                    "source":    source,
+                    "title":     title,
+                    "summary":   summary[:300],
+                    "url":       link,
+                    "published": entry.get("published", "Unknown"),
+                    "category":  "Court Records",
+                    "priority":  True,   # all court hits are high priority
+                    "hash":      h,
+                })
+                seen.add(h)
+                log.info(f"[Court] New filing: {title}")
+            time.sleep(1)
+        except Exception as e:
+            log.warning(f"[Court] Feed failed {source}: {e}")
+
+    # Google News search for court coverage
+    for query in COURT_QUERIES:
         try:
             encoded = requests.utils.quote(query)
             url = f"https://news.google.com/rss/search?q={encoded}&hl=en-US&gl=US&ceid=US:en"
@@ -250,10 +408,182 @@ def scrape_google_for_facebook(seen: set) -> list:
                 title   = clean_text(entry.get("title", ""))
                 summary = clean_text(entry.get("summary", ""))
                 link    = entry.get("link", "")
-                combined = f"{title} {summary} {link}"
+                combined = f"{title} {summary}"
 
-                # Only keep results that are actually Facebook links
-                if "facebook.com" not in link.lower():
+                if not is_nc_relevant(combined):
+                    continue
+
+                h = make_hash(link, title)
+                if h in seen:
+                    continue
+
+                results.append({
+                    "source":    "Court / Legal (Google)",
+                    "title":     title,
+                    "summary":   summary[:300],
+                    "url":       link,
+                    "published": entry.get("published", "Unknown"),
+                    "category":  "Court Records",
+                    "priority":  True,
+                    "hash":      h,
+                })
+                seen.add(h)
+                log.info(f"[Court/Google] New: {title}")
+        except Exception as e:
+            log.warning(f"[Court] Google query failed: {e}")
+
+    return results
+
+
+# ── NC DOJ & Town Council ─────────────────────────────────────────────────────
+
+def scrape_accountability_sources(seen: set) -> list:
+    """
+    Scrape NC DOJ press releases, town council minutes, and NC POST news
+    for accountability-specific content.
+    """
+    results = []
+
+    sources = [
+        {
+            "name": "NC DOJ Press Releases",
+            "url":  "https://ncdoj.gov/press-releases/",
+            "keywords": ["holly springs", "wake county police", "hspd"],
+        },
+        {
+            "name": "Town of Holly Springs — Agendas",
+            "url":  "https://www.hollyspringsnc.us/AgendaCenter",
+            "keywords": ["police", "officer", "public safety", "crime"],
+        },
+        {
+            "name": "Wake County Sheriff Press Releases",
+            "url":  "https://www.wakegov.com/departments-government/sheriff/news",
+            "keywords": ["holly springs"],
+        },
+    ]
+
+    headers = {"User-Agent": "Mozilla/5.0"}
+
+    for source in sources:
+        try:
+            r = requests.get(source["url"], headers=headers, timeout=15)
+            soup = BeautifulSoup(r.text, "html.parser")
+
+            # Grab all links with text matching keywords
+            for a in soup.find_all("a", href=True):
+                text = clean_text(a.get_text())
+                if len(text) < 10:
+                    continue
+                text_lower = text.lower()
+                if not any(kw in text_lower for kw in source["keywords"]):
+                    continue
+
+                href = a["href"]
+                if not href.startswith("http"):
+                    base = "/".join(source["url"].split("/")[:3])
+                    href = base + "/" + href.lstrip("/")
+
+                h = make_hash(href, text)
+                if h in seen:
+                    continue
+
+                results.append({
+                    "source":    source["name"],
+                    "title":     text[:200],
+                    "summary":   f"Found on {source['name']}",
+                    "url":       href,
+                    "published": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+                    "category":  "Accountability",
+                    "priority":  is_high_priority(text),
+                    "hash":      h,
+                })
+                seen.add(h)
+                log.info(f"[Accountability] New: {text[:80]} ({source['name']})")
+
+            time.sleep(1)
+        except Exception as e:
+            log.warning(f"[Accountability] Failed {source['name']}: {e}")
+
+    # Also search Google News for town council + police
+    council_queries = [
+        "Holly Springs NC town council police 2024",
+        "Holly Springs NC town council police 2025",
+        "Holly Springs NC police budget town meeting",
+        "Holly Springs NC public safety committee",
+    ]
+    for query in council_queries:
+        try:
+            encoded = requests.utils.quote(query)
+            url = f"https://news.google.com/rss/search?q={encoded}&hl=en-US&gl=US&ceid=US:en"
+            feed = feedparser.parse(url)
+            time.sleep(1)
+            for entry in feed.entries:
+                title   = clean_text(entry.get("title", ""))
+                summary = clean_text(entry.get("summary", ""))
+                link    = entry.get("link", "")
+                combined = f"{title} {summary}"
+                if not is_nc_relevant(combined):
+                    continue
+                h = make_hash(link, title)
+                if h in seen:
+                    continue
+                results.append({
+                    "source":    "Town Council / Governance",
+                    "title":     title,
+                    "summary":   summary[:300],
+                    "url":       link,
+                    "published": entry.get("published", "Unknown"),
+                    "category":  "Accountability",
+                    "priority":  is_high_priority(combined),
+                    "hash":      h,
+                })
+                seen.add(h)
+                log.info(f"[Council] New: {title}")
+        except Exception as e:
+            log.warning(f"[Council] Query failed: {e}")
+
+    return results
+
+
+# ── Citizen App — Filtered High-Priority Only ─────────────────────────────────
+
+CITIZEN_HIGH_PRIORITY = [
+    "officer involved", "shooting", "shot fired", "shots fired",
+    "pursuit", "chase", "swat", "hostage", "barricade",
+    "officer down", "officer injured", "officer struck",
+    "use of force", "in custody", "death investigation",
+    "homicide", "critical incident",
+]
+
+def scrape_citizen_app(seen: set) -> list:
+    """
+    Search Google for high-priority Citizen App incidents in Holly Springs NC.
+    Filters to serious incidents only — not routine calls for service.
+    """
+    results = []
+    queries = [
+        'site:citizen.com "holly springs" "north carolina" shooting',
+        'site:citizen.com "holly springs" NC "officer involved"',
+        'site:citizen.com "holly springs" NC pursuit OR "shots fired"',
+        'site:citizen.com "holly springs" NC "use of force" OR "officer down"',
+    ]
+
+    for query in queries:
+        try:
+            encoded = requests.utils.quote(query)
+            url = f"https://news.google.com/rss/search?q={encoded}&hl=en-US&gl=US&ceid=US:en"
+            feed = feedparser.parse(url)
+            time.sleep(1)
+
+            for entry in feed.entries:
+                title   = clean_text(entry.get("title", ""))
+                summary = clean_text(entry.get("summary", ""))
+                link    = entry.get("link", "")
+                combined = f"{title} {summary}"
+
+                # Strict filter — only serious incidents
+                text_lower = combined.lower()
+                if not any(kw in text_lower for kw in CITIZEN_HIGH_PRIORITY):
                     continue
                 if not is_nc_relevant(combined):
                     continue
@@ -263,18 +593,19 @@ def scrape_google_for_facebook(seen: set) -> list:
                     continue
 
                 results.append({
-                    "source":    "Facebook (via Google Search)",
+                    "source":    "Citizen App",
                     "title":     title,
                     "summary":   summary[:300],
                     "url":       link,
                     "published": entry.get("published", "Unknown"),
-                    "category":  "Social Media",
+                    "category":  "Critical Incident",
+                    "priority":  True,
                     "hash":      h,
                 })
                 seen.add(h)
-                log.info(f"[Google→FB] New: {title}")
+                log.info(f"[Citizen] Critical incident: {title}")
         except Exception as e:
-            log.warning(f"[Google→FB] Query failed '{query}': {e}")
+            log.warning(f"[Citizen] Query failed: {e}")
 
     return results
 
@@ -287,28 +618,19 @@ REDDIT_QUERIES = [
     '"holly springs" police "north carolina"',
     '"holly springs" pd nc',
 ]
-
 REDDIT_SUBREDDITS = ["raleigh", "NorthCarolina", "triangle"]
 
 
 def scrape_reddit(seen: set) -> list:
     results = []
 
-    # Method 1: Reddit RSS feeds (no auth needed, very reliable)
     for subreddit in REDDIT_SUBREDDITS:
         for query in REDDIT_QUERIES[:2]:
             try:
                 encoded = requests.utils.quote(query)
-                url = (
-                    f"https://www.reddit.com/r/{subreddit}/search.rss"
-                    f"?q={encoded}&sort=new&restrict_sr=1"
-                )
-                headers = {
-                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                                  "AppleWebKit/537.36 (KHTML, like Gecko) "
-                                  "Chrome/122.0.0.0 Safari/537.36",
-                    "Accept": "application/rss+xml, application/xml, text/xml"
-                }
+                url = (f"https://www.reddit.com/r/{subreddit}/search.rss"
+                       f"?q={encoded}&sort=new&restrict_sr=1")
+                headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
                 feed = feedparser.parse(url)
                 time.sleep(2)
 
@@ -326,28 +648,26 @@ def scrape_reddit(seen: set) -> list:
                     if h in seen:
                         continue
 
-                    published = entry.get("published", datetime.now().strftime("%Y-%m-%d"))
                     results.append({
                         "source":    f"Reddit r/{subreddit}",
                         "title":     title,
                         "summary":   BeautifulSoup(summary, "html.parser").get_text()[:300],
                         "url":       link,
-                        "published": published,
+                        "published": entry.get("published", ""),
                         "category":  "Reddit",
+                        "priority":  is_high_priority(combined),
                         "hash":      h,
                     })
                     seen.add(h)
-                    log.info(f"[Reddit RSS] New: {title}")
-
+                    log.info(f"[Reddit] New: {title}")
             except Exception as e:
-                log.warning(f"[Reddit RSS] r/{subreddit} '{query}': {e}")
+                log.warning(f"[Reddit] r/{subreddit} '{query}': {e}")
 
-    # Method 2: Reddit global search via RSS
+    # Global Reddit search
     for query in REDDIT_QUERIES:
         try:
             encoded = requests.utils.quote(query)
             url = f"https://www.reddit.com/search.rss?q={encoded}&sort=new&t=week"
-            headers = {"User-Agent": "Mozilla/5.0"}
             feed = feedparser.parse(url)
             time.sleep(2)
 
@@ -364,76 +684,56 @@ def scrape_reddit(seen: set) -> list:
                 if h in seen:
                     continue
 
-                published = entry.get("published", "")
                 results.append({
                     "source":    "Reddit (all)",
                     "title":     title,
                     "summary":   BeautifulSoup(summary, "html.parser").get_text()[:300],
                     "url":       link,
-                    "published": published,
+                    "published": entry.get("published", ""),
                     "category":  "Reddit",
+                    "priority":  is_high_priority(combined),
                     "hash":      h,
                 })
                 seen.add(h)
-                log.info(f"[Reddit global] New: {title}")
-
         except Exception as e:
             log.warning(f"[Reddit global] '{query}': {e}")
 
     return results
 
 
-# ── Public Social Media (Facebook public pages via scraping) ──────────────────
+# ── Facebook Public Pages ─────────────────────────────────────────────────────
 
 FB_PAGES = [
-    # Official PD page — always included regardless of keywords
-    {
-        "name": "Holly Springs Police Dept (Facebook)",
-        "url":  "https://www.facebook.com/HollySpringsPoliceDepartmentNC",
-        "keyword_filter": False,
-    },
-    # Town of Holly Springs — posts police-related notices
-    {
-        "name": "Town of Holly Springs NC (Facebook)",
-        "url":  "https://www.facebook.com/TownofHollySpringsNC",
-        "keyword_filter": True,
-    },
-    # Local TV news pages — filter for HS police mentions
-    {
-        "name": "WRAL News (Facebook)",
-        "url":  "https://www.facebook.com/wral",
-        "keyword_filter": True,
-    },
-    {
-        "name": "ABC11 WTVD (Facebook)",
-        "url":  "https://www.facebook.com/ABC11",
-        "keyword_filter": True,
-    },
-    {
-        "name": "CBS17 (Facebook)",
-        "url":  "https://www.facebook.com/CBS17",
-        "keyword_filter": True,
-    },
-    # Public community groups
-    {
-        "name": "Holly Springs NC Community Group (Facebook)",
-        "url":  "https://www.facebook.com/groups/HollySpringsNC",
-        "keyword_filter": True,
-    },
-    {
-        "name": "Holly Springs Happenings (Facebook)",
-        "url":  "https://www.facebook.com/groups/hollyspringshappenings",
-        "keyword_filter": True,
-    },
+    {"name": "Holly Springs Police Dept (Facebook)",
+     "url":  "https://www.facebook.com/HollySpringsPoliceDepartmentNC",
+     "keyword_filter": False},
+    {"name": "Town of Holly Springs NC (Facebook)",
+     "url":  "https://www.facebook.com/TownofHollySpringsNC",
+     "keyword_filter": True},
+    {"name": "WRAL News (Facebook)",
+     "url":  "https://www.facebook.com/wral",
+     "keyword_filter": True},
+    {"name": "ABC11 WTVD (Facebook)",
+     "url":  "https://www.facebook.com/ABC11",
+     "keyword_filter": True},
+    {"name": "CBS17 (Facebook)",
+     "url":  "https://www.facebook.com/CBS17",
+     "keyword_filter": True},
+    {"name": "Holly Springs NC Community Group (Facebook)",
+     "url":  "https://www.facebook.com/groups/HollySpringsNC",
+     "keyword_filter": True},
+    {"name": "Holly Springs Happenings (Facebook)",
+     "url":  "https://www.facebook.com/groups/hollyspringshappenings",
+     "keyword_filter": True},
 ]
 
-# Keywords required to keep a post from keyword_filter=True pages
 FB_KEYWORDS = [
     "holly springs police", "holly springs pd", "hspd",
     "holly springs nc police", "holly springs crime",
     "holly springs arrest", "holly springs officer",
     "holly springs incident", "holly springs shooting",
-    "holly springs investigation",
+    "holly springs investigation", "holly springs use of force",
+    "holly springs lawsuit", "holly springs misconduct",
 ]
 
 TWITTER_ACCOUNTS = [
@@ -450,29 +750,19 @@ NITTER_INSTANCES = [
 
 
 def scrape_facebook_public(seen: set) -> list:
-    """
-    Scrape public Facebook pages via the public mbasic view.
-    No login required for public pages.
-    """
     results = []
-    headers = {
-        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
-                      "(KHTML, like Gecko) Chrome/122.0 Safari/537.36"
-    }
+    headers = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                             "(KHTML, like Gecko) Chrome/122.0 Safari/537.36"}
 
     for page in FB_PAGES:
         try:
-            # mbasic.facebook.com is the lightweight mobile version - no JS required
             handle = page["url"].rstrip("/").split("/")[-1]
             url = f"https://mbasic.facebook.com/{handle}"
             r = requests.get(url, headers=headers, timeout=15)
             soup = BeautifulSoup(r.text, "html.parser")
 
-            # Each post is in a <div> with an id starting with "u_" or story articles
             posts = soup.find_all("div", attrs={"data-ft": True})
-
             if not posts:
-                # Fallback: grab any article-style blocks
                 posts = soup.find_all("article")
 
             for post in posts[:15]:
@@ -480,7 +770,6 @@ def scrape_facebook_public(seen: set) -> list:
                 if len(text) < 20:
                     continue
 
-                # For pages that aggregate content, filter by keyword
                 if page.get("keyword_filter", False):
                     text_lower = text.lower()
                     if not any(kw in text_lower for kw in FB_KEYWORDS):
@@ -488,7 +777,6 @@ def scrape_facebook_public(seen: set) -> list:
                     if not is_nc_relevant(text):
                         continue
 
-                # Build a stable URL from the post link if available
                 link_tag = post.find("a", href=re.compile(r"/story\.php|/permalink/"))
                 post_url = page["url"]
                 if link_tag:
@@ -506,22 +794,68 @@ def scrape_facebook_public(seen: set) -> list:
                     "url":       page["url"],
                     "published": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
                     "category":  "Social Media",
+                    "priority":  is_high_priority(text),
                     "hash":      h,
                 })
                 seen.add(h)
                 log.info(f"[Facebook] New post from {page['name']}: {text[:80]}")
-
         except Exception as e:
             log.warning(f"[Facebook] Failed {page['name']}: {e}")
 
     return results
 
 
+def scrape_google_for_facebook(seen: set) -> list:
+    results = []
+    queries = [
+        'site:facebook.com "holly springs" "police" "nc"',
+        'site:facebook.com "holly springs police" "north carolina"',
+        'site:facebook.com "holly springs nc" "police department"',
+        'site:facebook.com "holly springs nc" "arrest" OR "crime" OR "incident"',
+        'site:facebook.com "holly springs nc" "officer" OR "shooting"',
+        'site:facebook.com "holly springs nc" "misconduct" OR "lawsuit" OR "force"',
+    ]
+
+    for query in queries:
+        try:
+            encoded = requests.utils.quote(query)
+            url = f"https://news.google.com/rss/search?q={encoded}&hl=en-US&gl=US&ceid=US:en"
+            feed = feedparser.parse(url)
+            time.sleep(1.5)
+
+            for entry in feed.entries:
+                title   = clean_text(entry.get("title", ""))
+                summary = clean_text(entry.get("summary", ""))
+                link    = entry.get("link", "")
+                combined = f"{title} {summary} {link}"
+
+                if "facebook.com" not in link.lower():
+                    continue
+                if not is_nc_relevant(combined):
+                    continue
+
+                h = make_hash(link, title)
+                if h in seen:
+                    continue
+
+                results.append({
+                    "source":    "Facebook (via Google Search)",
+                    "title":     title,
+                    "summary":   summary[:300],
+                    "url":       link,
+                    "published": entry.get("published", "Unknown"),
+                    "category":  "Social Media",
+                    "priority":  is_high_priority(combined),
+                    "hash":      h,
+                })
+                seen.add(h)
+        except Exception as e:
+            log.warning(f"[Google→FB] Query failed: {e}")
+
+    return results
+
+
 def scrape_twitter_nitter(seen: set) -> list:
-    """
-    Fetch public tweets via Nitter (open-source Twitter front-end).
-    No API key needed.
-    """
     results = []
     headers = {"User-Agent": "Mozilla/5.0"}
 
@@ -555,13 +889,13 @@ def scrape_twitter_nitter(seen: set) -> list:
                         "url":       tweet_url,
                         "published": published,
                         "category":  "Social Media",
+                        "priority":  is_high_priority(text),
                         "hash":      h,
                     })
                     seen.add(h)
-                    log.info(f"[Twitter] New tweet: {text[:80]}")
 
                 fetched = True
-                break   # stop trying other instances if this worked
+                break
             except Exception as e:
                 log.warning(f"[Nitter] {instance} failed for @{account['handle']}: {e}")
 
@@ -574,23 +908,30 @@ def scrape_twitter_nitter(seen: set) -> list:
 # ── HTML Report ───────────────────────────────────────────────────────────────
 
 CATEGORY_COLORS = {
-    "News":         "#1a56db",
-    "Reddit":       "#ff4500",
-    "Social Media": "#1877f2",
+    "News":             "#1a56db",
+    "Reddit":           "#ff4500",
+    "Social Media":     "#1877f2",
+    "Court Records":    "#7c3aed",
+    "Accountability":   "#b45309",
+    "Critical Incident":"#dc2626",
 }
 
 
 def build_html_report(items: list, is_full: bool = False) -> str:
-    now = datetime.now().strftime("%B %d, %Y at %I:%M %p")
-    label = "Full History" if is_full else "New Results"
+    now   = datetime.now().strftime("%B %d, %Y at %I:%M %p")
+    label = "Latest Results"
 
-    rows = ""
-    for item in items:
+    high_priority = [i for i in items if i.get("priority")]
+    normal        = [i for i in items if not i.get("priority")]
+
+    def render_card(item):
         color = CATEGORY_COLORS.get(item["category"], "#555")
-        rows += f"""
-        <div class="card">
+        pri   = ' data-pri="1"' if item.get("priority") else ""
+        return f"""
+        <div class="card" data-cat="{item['category']}"{pri}>
           <div class="meta">
             <span class="badge" style="background:{color}">{item['category']}</span>
+            {'<span class="priority-tag">⚠ HIGH PRIORITY</span>' if item.get('priority') else ''}
             <span class="source">{item['source']}</span>
             <span class="date">{item['published']}</span>
           </div>
@@ -598,60 +939,145 @@ def build_html_report(items: list, is_full: bool = False) -> str:
           <p class="summary">{item['summary']}</p>
         </div>"""
 
-    if not rows:
-        rows = '<p style="color:#888;text-align:center;padding:2rem">No new results found.</p>'
+    # Red banner block for high priority items
+    alert_banner = ""
+    if high_priority:
+        alert_cards = "".join(render_card(i) for i in high_priority)
+        alert_banner = f"""
+        <div class="alert-banner">
+          <div class="alert-header">🚨 {len(high_priority)} HIGH PRIORITY ALERT(S) — Requires Immediate Review</div>
+          <div class="alert-cards">{alert_cards}</div>
+        </div>"""
+
+    normal_cards = "".join(render_card(i) for i in normal)
+    if not normal_cards:
+        normal_cards = '''<div class="empty">
+          <p>✅ No new routine results this run.</p>
+          <p>The monitor is working — nothing new matched your keywords since the last check.</p>
+        </div>'''
+
+    cat_counts = {}
+    for i in items:
+        cat_counts[i["category"]] = cat_counts.get(i["category"], 0) + 1
+
+    stat_html = "".join(
+        f'<div class="stat"><strong>{v}</strong>{k}</div>'
+        for k, v in cat_counts.items()
+    )
+    stat_html += f'<div class="stat" style="border-color:#dc2626"><strong>{len(high_priority)}</strong>⚠ High Priority</div>'
+
+    filter_cats = list(CATEGORY_COLORS.keys())
+    filter_btns = "".join(
+        f'<button class="filter-btn" onclick="filterCards(\'{c}\', this)">{c}</button>'
+        for c in filter_cats
+    )
 
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Holly Springs NC Police Monitor – {label}</title>
+<title>Holly Springs NC Police Monitor</title>
 <style>
   * {{ box-sizing: border-box; margin: 0; padding: 0; }}
   body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-         background: #f0f4f8; color: #1a202c; padding: 1.5rem; }}
+         background: #f0f4f8; color: #1a202c; padding: 1.5rem; max-width: 960px; margin: 0 auto; }}
   header {{ background: #1a365d; color: #fff; padding: 1.2rem 1.5rem;
-            border-radius: 10px; margin-bottom: 1.5rem; }}
+            border-radius: 10px; margin-bottom: 1.5rem;
+            display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .5rem; }}
   header h1 {{ font-size: 1.4rem; font-weight: 700; }}
-  header p  {{ font-size: 0.85rem; opacity: 0.75; margin-top: 0.3rem; }}
+  header p  {{ font-size: 0.8rem; opacity: 0.7; }}
+  .refresh  {{ font-size: .75rem; background: rgba(255,255,255,.15); color: #fff;
+               padding: .3rem .8rem; border-radius: 99px; text-decoration: none; }}
+  .refresh:hover {{ background: rgba(255,255,255,.25); }}
+
+  /* ── Alert Banner ── */
+  .alert-banner {{ background: #dc2626; border-radius: 10px; margin-bottom: 1.5rem;
+                   overflow: hidden; box-shadow: 0 4px 12px rgba(220,38,38,.35); }}
+  .alert-header  {{ color: #fff; font-weight: 700; font-size: 1rem;
+                    padding: .9rem 1.2rem; letter-spacing: .02em; }}
+  .alert-cards   {{ background: #fff1f1; padding: .5rem; }}
+  .alert-cards .card {{ border-left-color: #dc2626 !important; }}
+
   .stats    {{ display:flex; gap:1rem; flex-wrap:wrap; margin-bottom:1.5rem; }}
   .stat     {{ background:#fff; border-radius:8px; padding:0.8rem 1.2rem;
-               font-size:0.85rem; color:#555; border-left:4px solid #1a56db; }}
-  .stat strong {{ display:block; font-size:1.4rem; color:#1a202c; }}
+               font-size:0.8rem; color:#555; border-left:4px solid #1a56db; flex:1; min-width:110px; }}
+  .stat strong {{ display:block; font-size:1.3rem; color:#1a202c; }}
+  .filters  {{ display:flex; gap:.5rem; flex-wrap:wrap; margin-bottom:1rem; }}
+  .filter-btn {{ background:#fff; border:1.5px solid #d1d5db; border-radius:99px;
+                 padding:.3rem .9rem; font-size:.8rem; cursor:pointer; color:#374151; }}
+  .filter-btn.active {{ background:#1a365d; color:#fff; border-color:#1a365d; }}
+
   .card     {{ background:#fff; border-radius:10px; padding:1rem 1.2rem;
-               margin-bottom:1rem; box-shadow:0 1px 4px rgba(0,0,0,.08); }}
-  .meta     {{ display:flex; align-items:center; gap:.6rem; flex-wrap:wrap;
-               margin-bottom:.5rem; }}
+               margin-bottom:.8rem; box-shadow:0 1px 4px rgba(0,0,0,.08);
+               border-left: 3px solid transparent; }}
+  .meta     {{ display:flex; align-items:center; gap:.5rem; flex-wrap:wrap; margin-bottom:.5rem; }}
   .badge    {{ color:#fff; font-size:.7rem; font-weight:600; padding:.2rem .6rem;
                border-radius:99px; text-transform:uppercase; letter-spacing:.04em; }}
-  .source   {{ font-size:.8rem; color:#555; }}
-  .date     {{ font-size:.75rem; color:#888; margin-left:auto; }}
-  .title    {{ font-size:1rem; font-weight:600; color:#1a56db; text-decoration:none;
-               display:block; margin-bottom:.4rem; }}
+  .priority-tag {{ background:#dc2626; color:#fff; font-size:.65rem; font-weight:700;
+                   padding:.15rem .5rem; border-radius:4px; }}
+  .source   {{ font-size:.78rem; color:#555; }}
+  .date     {{ font-size:.72rem; color:#888; margin-left:auto; }}
+  .title    {{ font-size:.95rem; font-weight:600; color:#1a56db; text-decoration:none;
+               display:block; margin-bottom:.4rem; line-height:1.4; }}
   .title:hover {{ text-decoration:underline; }}
-  .summary  {{ font-size:.85rem; color:#4a5568; line-height:1.5; }}
+  .summary  {{ font-size:.83rem; color:#4a5568; line-height:1.5; }}
+  .empty    {{ background:#fff; border-radius:10px; padding:2.5rem; text-align:center;
+               color:#6b7280; line-height:2; }}
+  footer    {{ text-align:center; font-size:.72rem; color:#9ca3af; margin-top:2rem;
+               padding-top:1rem; border-top:1px solid #e5e7eb; }}
+
+  .section-label {{ font-size:.8rem; font-weight:600; color:#6b7280; text-transform:uppercase;
+                    letter-spacing:.08em; margin: 1.2rem 0 .6rem; }}
 </style>
 </head>
 <body>
 <header>
-  <h1>🚔 Holly Springs NC Police Monitor</h1>
-  <p>Generated {now} · {label} · {len(items)} result(s)</p>
+  <div>
+    <h1>🚔 Holly Springs NC Police Monitor</h1>
+    <p>Threat & Accountability Edition · Auto-updated every 6 hours · {label} · {len(items)} result(s)</p>
+  </div>
+  <a class="refresh" href="javascript:location.reload()">↻ Refresh</a>
 </header>
+
 <div class="stats">
-  <div class="stat"><strong>{sum(1 for i in items if i['category']=='News')}</strong>News Articles</div>
-  <div class="stat"><strong>{sum(1 for i in items if i['category']=='Reddit')}</strong>Reddit Posts</div>
-  <div class="stat"><strong>{sum(1 for i in items if i['category']=='Social Media')}</strong>Social Posts</div>
+  {stat_html}
 </div>
-{rows}
+
+{alert_banner}
+
+<div class="filters">
+  <button class="filter-btn active" onclick="filterCards('all', this)">All</button>
+  {filter_btns}
+  <button class="filter-btn" onclick="filterCards('priority', this)">⚠ Priority Only</button>
+</div>
+
+<div class="section-label">All Results</div>
+<div id="results">
+{normal_cards}
+</div>
+
+<footer>Generated {now} · Holly Springs NC Police Monitor · Threat & Accountability Edition<br>
+Monitors: News · Reddit · Facebook · Twitter · Court Records · NC DOJ · Town Council · Citizen App (critical only)</footer>
+
+<script>
+function filterCards(cat, btn) {{
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('#results .card').forEach(card => {{
+    if (cat === 'all') {{ card.style.display = ''; }}
+    else if (cat === 'priority') {{ card.style.display = card.dataset.pri === '1' ? '' : 'none'; }}
+    else {{ card.style.display = card.dataset.cat === cat ? '' : 'none'; }}
+  }});
+}}
+</script>
 </body>
 </html>"""
 
 
-# ── Email Notification ────────────────────────────────────────────────────────
+# ── Email — Immediate Alert for High Priority ─────────────────────────────────
 
-def send_email(items: list, config: dict):
-    """Send an HTML email digest. Config from environment variables."""
+def send_email(items: list, config: dict, subject_override: str = ""):
     if not items:
         log.info("No new items — skipping email.")
         return
@@ -663,23 +1089,22 @@ def send_email(items: list, config: dict):
     to_addr   = config.get("NOTIFY_EMAIL", smtp_user)
 
     if not smtp_user or not smtp_pass:
-        log.warning("Email credentials not set — skipping email notification.")
+        log.warning("Email credentials not set — skipping.")
         return
 
+    subject = subject_override or f"[HS Monitor] {len(items)} new result(s)"
     msg = MIMEMultipart("alternative")
-    msg["Subject"] = f"[Holly Springs PD Monitor] {len(items)} new result(s)"
+    msg["Subject"] = subject
     msg["From"]    = smtp_user
     msg["To"]      = to_addr
-
-    html_body = build_html_report(items)
-    msg.attach(MIMEText(html_body, "html"))
+    msg.attach(MIMEText(build_html_report(items), "html"))
 
     try:
         with smtplib.SMTP(smtp_host, smtp_port) as server:
             server.starttls()
             server.login(smtp_user, smtp_pass)
             server.sendmail(smtp_user, to_addr, msg.as_string())
-        log.info(f"Email sent to {to_addr}")
+        log.info(f"Email sent to {to_addr}: {subject}")
     except Exception as e:
         log.error(f"Email failed: {e}")
 
@@ -688,17 +1113,29 @@ def send_email(items: list, config: dict):
 
 def run():
     log.info("=" * 60)
-    log.info("Holly Springs NC Police Monitor starting...")
+    log.info("Holly Springs NC Police Monitor — Threat & Accountability")
     log.info("=" * 60)
 
-    seen = load_seen()
+    seen    = load_seen()
     all_new = []
+
+    log.info("Fetching HSPD officer roster from NC POST...")
+    fetch_hspd_officers()
 
     log.info("Scraping RSS feeds...")
     all_new += scrape_rss(seen)
 
     log.info("Scraping Google News...")
     all_new += scrape_google_news(seen)
+
+    log.info("Scraping court records...")
+    all_new += scrape_court_records(seen)
+
+    log.info("Scraping accountability sources...")
+    all_new += scrape_accountability_sources(seen)
+
+    log.info("Scraping Citizen App (critical incidents only)...")
+    all_new += scrape_citizen_app(seen)
 
     log.info("Scraping Reddit...")
     all_new += scrape_reddit(seen)
@@ -714,17 +1151,29 @@ def run():
 
     save_seen(seen)
 
-    log.info(f"Found {len(all_new)} new result(s).")
+    high_priority = [i for i in all_new if i.get("priority")]
+    log.info(f"Found {len(all_new)} new result(s), {len(high_priority)} HIGH PRIORITY.")
 
     # Save HTML report
     html = build_html_report(all_new)
     REPORT_FILE.write_text(html, encoding="utf-8")
     log.info(f"Report saved: {REPORT_FILE}")
 
-    # Email if configured
     email_config = {k: os.environ.get(k, "") for k in
                     ["SMTP_HOST", "SMTP_PORT", "SMTP_USER", "SMTP_PASS", "NOTIFY_EMAIL"]}
-    send_email(all_new, email_config)
+
+    # Send immediate alert for high priority items
+    if high_priority:
+        send_email(
+            high_priority,
+            email_config,
+            subject_override=f"🚨 [HS Monitor] HIGH PRIORITY — {len(high_priority)} critical item(s)"
+        )
+
+    # Send regular digest for everything else
+    normal = [i for i in all_new if not i.get("priority")]
+    if normal:
+        send_email(normal, email_config)
 
     log.info("Done.")
     return all_new
