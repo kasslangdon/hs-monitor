@@ -1,5 +1,5 @@
 """
-Holly Springs NC Police Monitor
+HS NC News & Media Monitor
 Threat monitoring & accountability edition.
 """
 
