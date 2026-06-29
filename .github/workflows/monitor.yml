@@ -1,0 +1,91 @@
+name: Holly Springs PD Monitor
+
+on:
+  schedule:
+    - cron: "0 0,6,12,18 * * *"   # every 6 hours
+  workflow_dispatch:                # manual trigger from GitHub UI
+
+# Required for GitHub Pages deployment
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Restore seen hashes cache
+        uses: actions/cache@v4
+        with:
+          path: data/seen_hashes.json
+          key: seen-hashes-${{ github.run_id }}
+          restore-keys: seen-hashes-
+
+      - name: Run scraper
+        env:
+          SMTP_HOST:    ${{ secrets.SMTP_HOST }}
+          SMTP_PORT:    ${{ secrets.SMTP_PORT }}
+          SMTP_USER:    ${{ secrets.SMTP_USER }}
+          SMTP_PASS:    ${{ secrets.SMTP_PASS }}
+          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
+        run: python scraper.py
+
+      - name: Prepare Pages folder
+        run: |
+          mkdir -p docs
+          cp data/latest_report.html docs/index.html
+          TIMESTAMP=$(date -u +"%Y-%m-%d_%H-%M")
+          cp data/latest_report.html "docs/report_${TIMESTAMP}.html"
+
+      - name: Commit report to repo
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/
+          git diff --staged --quiet || git commit -m "Monitor report $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
+
+  deploy-pages:
+    needs: monitor
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
