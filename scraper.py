@@ -64,11 +64,6 @@ HIGH_PRIORITY_KEYWORDS = [
     "officer injured", "officer killed", "ambush",
 ]
 
-# ── HSPD OFFICER TRACKING ─────────────────────────────────────────────────────
-# Populated dynamically from NC POST lookup; seed list here as fallback
-
-KNOWN_OFFICERS: list[str] = []   # filled by fetch_hspd_officers() at runtime
-
 # ── File Paths ────────────────────────────────────────────────────────────────
 
 BASE_DIR    = Path(__file__).parent
@@ -76,7 +71,6 @@ DATA_DIR    = BASE_DIR / "data"
 LOG_DIR     = BASE_DIR / "logs"
 SEEN_FILE   = DATA_DIR / "seen_hashes.json"
 REPORT_FILE = DATA_DIR / "latest_report.html"
-OFFICERS_FILE = DATA_DIR / "known_officers.json"
 
 DATA_DIR.mkdir(exist_ok=True)
 LOG_DIR.mkdir(exist_ok=True)
@@ -123,89 +117,11 @@ def is_high_priority(text: str) -> bool:
     for kw in HIGH_PRIORITY_KEYWORDS:
         if kw in text_lower:
             return True
-    # Also flag if a known officer name appears in a concerning context
-    for officer in KNOWN_OFFICERS:
-        if officer.lower() in text_lower:
-            concerning = ["charged", "arrested", "fired", "suspended", "lawsuit",
-                          "complaint", "misconduct", "shooting", "force", "investigation"]
-            if any(c in text_lower for c in concerning):
-                return True
     return False
 
 def clean_text(text: str) -> str:
     return re.sub(r"\s+", " ", text or "").strip()
 
-
-# ── NC POST Commission — Officer Roster ───────────────────────────────────────
-
-def fetch_hspd_officers() -> list[str]:
-    """
-    Query the NC POST Commission public officer search for Holly Springs PD.
-    Returns list of officer full names. Results cached to disk.
-    """
-    global KNOWN_OFFICERS
-
-    # Use cached list if fresh (< 7 days old)
-    if OFFICERS_FILE.exists():
-        data = json.loads(OFFICERS_FILE.read_text())
-        age_days = (time.time() - data.get("fetched", 0)) / 86400
-        if age_days < 7 and data.get("officers"):
-            KNOWN_OFFICERS = data["officers"]
-            log.info(f"[POST] Using cached officer list ({len(KNOWN_OFFICERS)} officers)")
-            return KNOWN_OFFICERS
-
-    officers = []
-    try:
-        # NC POST public search API
-        url = "https://post.nc.gov/Officers/Search"
-        params = {"agency": "Holly Springs Police Department", "status": "Active"}
-        headers = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
-        r = requests.get(url, params=params, headers=headers, timeout=15)
-
-        if r.status_code == 200:
-            try:
-                data = r.json()
-                for officer in data:
-                    name = f"{officer.get('FirstName','')} {officer.get('LastName','')}".strip()
-                    if name:
-                        officers.append(name)
-            except Exception:
-                # Fallback: scrape the HTML page
-                soup = BeautifulSoup(r.text, "html.parser")
-                for row in soup.select("table tr"):
-                    cells = row.find_all("td")
-                    if len(cells) >= 2:
-                        name = clean_text(cells[0].get_text())
-                        if name and name != "Name":
-                            officers.append(name)
-
-        if officers:
-            OFFICERS_FILE.write_text(json.dumps({
-                "fetched": time.time(),
-                "officers": officers
-            }, indent=2))
-            log.info(f"[POST] Found {len(officers)} active HSPD officers")
-        else:
-            log.warning("[POST] No officers found — POST search may have changed format")
-
-    except Exception as e:
-        log.warning(f"[POST] Officer fetch failed: {e}")
-
-    # Also search Google News for NC POST + Holly Springs mentions
-    try:
-        query = requests.utils.quote('"holly springs" "post commission" OR "decertified" NC')
-        feed = feedparser.parse(
-            f"https://news.google.com/rss/search?q={query}&hl=en-US&gl=US&ceid=US:en"
-        )
-        for entry in feed.entries:
-            title = clean_text(entry.get("title", ""))
-            if is_nc_relevant(title):
-                log.info(f"[POST] NC POST news hit: {title}")
-    except Exception:
-        pass
-
-    KNOWN_OFFICERS = officers
-    return officers
 
 
 # ── News RSS Feeds ────────────────────────────────────────────────────────────
@@ -1118,9 +1034,6 @@ def run():
 
     seen    = load_seen()
     all_new = []
-
-    log.info("Fetching HSPD officer roster from NC POST...")
-    fetch_hspd_officers()
 
     log.info("Scraping RSS feeds...")
     all_new += scrape_rss(seen)
