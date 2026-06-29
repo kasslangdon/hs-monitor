@@ -1,4 +1,4 @@
-# Holly Springs NC Police Monitor 🚔
+# HS NC News and Media Monitor
 
 Automated scraper that monitors news and public social media for mentions of the **Holly Springs NC Police Department**. Filters out results from other states (MS, TX, GA, etc.) using keyword and pattern matching.
 
