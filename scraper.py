@@ -194,6 +194,13 @@ def is_high_priority(text: str) -> bool:
             return True
     return False
 
+def priority_reason(text: str) -> str:
+    """Returns the matched high-priority keyword(s), comma-joined, or ''
+    if nothing matched. Used to show *why* something was flagged."""
+    text_lower = text.lower()
+    matches = [kw for kw in HIGH_PRIORITY_KEYWORDS if kw in text_lower]
+    return ", ".join(matches[:3])  # cap so the badge doesn't get huge
+
 def clean_text(text: str) -> str:
     return re.sub(r"\s+", " ", text or "").strip()
 
@@ -340,6 +347,7 @@ def scrape_rss(seen: set) -> list:
                     "published": entry.get("published", "Unknown date"),
                     "category":  "News",
                     "priority":  is_high_priority(combined),
+                    "priority_reason": priority_reason(combined),
                     "hash":      h,
                 })
                 seen.add(h)
@@ -379,6 +387,7 @@ def scrape_google_news(seen: set) -> list:
                     "published": entry.get("published", "Unknown"),
                     "category":  "News",
                     "priority":  is_high_priority(combined),
+                    "priority_reason": priority_reason(combined),
                     "hash":      h,
                 })
                 seen.add(h)
@@ -551,6 +560,7 @@ def scrape_accountability_sources(seen: set) -> list:
                     "published": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
                     "category":  "Accountability",
                     "priority":  is_high_priority(text),
+                    "priority_reason": priority_reason(text),
                     "hash":      h,
                 })
                 seen.add(h)
@@ -591,6 +601,7 @@ def scrape_accountability_sources(seen: set) -> list:
                     "published": entry.get("published", "Unknown"),
                     "category":  "Accountability",
                     "priority":  is_high_priority(combined),
+                    "priority_reason": priority_reason(combined),
                     "hash":      h,
                 })
                 seen.add(h)
@@ -723,6 +734,7 @@ def scrape_reddit(seen: set) -> list:
                         "published": entry.get("published", ""),
                         "category":  "Reddit",
                         "priority":  is_high_priority(combined),
+                        "priority_reason": priority_reason(combined),
                         "hash":      h,
                     })
                     seen.add(h)
@@ -773,6 +785,7 @@ def scrape_reddit(seen: set) -> list:
                     "published": entry.get("published", ""),
                     "category":  "Reddit",
                     "priority":  is_high_priority(combined),
+                    "priority_reason": priority_reason(combined),
                     "hash":      h,
                 })
                 seen.add(h)
@@ -876,6 +889,7 @@ def scrape_facebook_public(seen: set) -> list:
                     "published": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
                     "category":  "Social Media",
                     "priority":  is_high_priority(text),
+                    "priority_reason": priority_reason(text),
                     "hash":      h,
                 })
                 seen.add(h)
@@ -927,6 +941,7 @@ def scrape_google_for_facebook(seen: set) -> list:
                     "published": entry.get("published", "Unknown"),
                     "category":  "Social Media",
                     "priority":  is_high_priority(combined),
+                    "priority_reason": priority_reason(combined),
                     "hash":      h,
                 })
                 seen.add(h)
@@ -971,6 +986,7 @@ def scrape_twitter_nitter(seen: set) -> list:
                         "published": published,
                         "category":  "Social Media",
                         "priority":  is_high_priority(text),
+                        "priority_reason": priority_reason(text),
                         "hash":      h,
                     })
                     seen.add(h)
@@ -1014,8 +1030,10 @@ def build_html_report(items: list, is_full: bool = False, new_hashes: set = None
         cls = "card card-compact" if compact else "card"
 
         priority_tag = ""
-        if not compact and item.get("priority"):
-            priority_tag = '<span class="priority-tag">⚠ HIGH PRIORITY</span>'
+        if item.get("priority"):
+            reason = item.get("priority_reason", "")
+            label = f"⚠ {reason}" if reason else "⚠ HIGH PRIORITY"
+            priority_tag = f'<span class="priority-tag" title="Flagged for: {reason}">{label}</span>'
 
         summary_html = "" if compact else f'<p class="summary">{item["summary"]}</p>'
 
@@ -1039,9 +1057,9 @@ def build_html_report(items: list, is_full: bool = False, new_hashes: set = None
 
     normal_cards = "".join(render_card(i) for i in normal)
     if not normal_cards:
-        normal_cards = '''<div class="empty">
-          <p>✅ No new routine results this run.</p>
-          <p>The monitor is working — nothing new matched your keywords since the last check.</p>
+        normal_cards = f'''<div class="empty">
+          <p>✅ Nothing in the last {ARCHIVE_WINDOW_DAYS} days.</p>
+          <p>The monitor is working — no matching results have been found yet, or everything found so far was high priority (see sidebar).</p>
         </div>'''
 
     cat_counts = {}
