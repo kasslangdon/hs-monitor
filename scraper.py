@@ -29,6 +29,20 @@ KEYWORDS = [
     "hspd nc",
 ]
 
+# Used alongside mentions_holly_springs() for unscoped/broad searches —
+# mentioning the town alone isn't enough (e.g. a golf round at a local
+# course); there also needs to be some policing/crime-relevant word.
+TOPIC_WORDS = [
+    "police", "officer", "pd", "sheriff", "deputy", "department",
+    "arrest", "arrested", "charged", "indicted", "crime", "criminal",
+    "shooting", "shot", "investigation", "incident", "suspect",
+    "lawsuit", "misconduct", "use of force", "custody", "swat",
+]
+
+def mentions_topic(text: str) -> bool:
+    text_lower = text.lower()
+    return any(re.search(rf"\b{re.escape(w)}\b", text_lower) for w in TOPIC_WORDS)
+
 EXCLUDE_PATTERNS = [
     r"holly springs,?\s*(ms|mississippi)",
     r"holly springs,?\s*(tx|texas)",
@@ -148,12 +162,30 @@ def is_nc_relevant(text: str) -> bool:
         if re.search(pat, text_lower):
             return False
     for signal in NC_SIGNALS:
-        if signal in text_lower:
+        if signal == "nc":
+            # Bare "nc" is too short for a substring check (matches
+            # "announce", "balance", "instance", etc.) — require it
+            # stand alone as a word.
+            if re.search(r"\bnc\b", text_lower):
+                return True
+        elif signal in text_lower:
             return True
     for kw in ["holly springs police", "holly springs pd"]:
         if kw in text_lower:
             return True
     return False
+
+def mentions_holly_springs(text: str) -> bool:
+    """Strict check: does the text actually say 'Holly Springs'?
+    Used for unscoped/broad searches (e.g. sitewide Reddit search)
+    where NC-relevance alone is far too permissive."""
+    return bool(re.search(r"\bholly\s+springs\b", text.lower()))
+
+def is_subreddit_about_link(link: str) -> bool:
+    """Reddit's search.rss sometimes returns a subreddit's own page
+    (e.g. https://www.reddit.com/r/HollySpringsNC/) as a 'result'
+    rather than an actual post. Filter those out."""
+    return bool(re.match(r"^https?://(www\.)?reddit\.com/r/[^/]+/?$", link.strip()))
 
 def is_high_priority(text: str) -> bool:
     text_lower = text.lower()
@@ -187,6 +219,39 @@ def fetch_feed(url: str):
     except Exception as e:
         log.warning(f"Feed fetch failed for {url}: {e}")
         return feedparser.parse(b"")  # empty feed, .entries == []
+
+
+# RSS summaries are often too short to mention "Holly Springs" even when
+# the full article does (e.g. a quote three paragraphs in). For curated
+# local news feeds specifically, we fetch the actual article body as a
+# fallback — but only for borderline candidates, and only up to a fixed
+# budget per run, so this can't reintroduce the multi-hour hang risk.
+ARTICLE_FETCH_TIMEOUT = 8
+ARTICLE_FETCH_BUDGET = 25
+_article_fetches_used = 0
+
+ARTICLE_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                  "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Referer": "https://www.google.com/",
+}
+
+def fetch_article_text(url: str) -> str:
+    global _article_fetches_used
+    if _article_fetches_used >= ARTICLE_FETCH_BUDGET:
+        return ""
+    _article_fetches_used += 1
+    try:
+        r = requests.get(url, headers=ARTICLE_HEADERS, timeout=ARTICLE_FETCH_TIMEOUT)
+        r.raise_for_status()
+        soup = BeautifulSoup(r.content, "html.parser")
+        paragraphs = soup.find_all("p")
+        return clean_text(" ".join(p.get_text() for p in paragraphs))[:5000]
+    except Exception as e:
+        log.warning(f"Article fetch failed for {url}: {e}")
+        return ""
 
 
 
@@ -250,8 +315,17 @@ def scrape_rss(seen: set) -> list:
                 combined = f"{title} {summary}"
 
                 if not any(kw in combined.lower() for kw in KEYWORDS):
-                    continue
-                if not is_nc_relevant(combined):
+                    # Title/summary didn't have the exact phrase — these
+                    # are curated, trustworthy local news feeds, so an
+                    # NC-relevant headline is enough to justify checking
+                    # the full body for a buried Holly Springs mention.
+                    if is_nc_relevant(combined):
+                        body = fetch_article_text(link)
+                        if not mentions_holly_springs(body):
+                            continue
+                    else:
+                        continue
+                elif not is_nc_relevant(combined):
                     continue
 
                 h = make_hash(link, title)
@@ -627,6 +701,8 @@ def scrape_reddit(seen: set) -> list:
                     link    = entry.get("link", "")
                     combined = f"{title} {summary}"
 
+                    if is_subreddit_about_link(link):
+                        continue
                     if any(re.search(pat, combined.lower()) for pat in OBITUARY_PATTERNS):
                         continue
 
@@ -668,6 +744,20 @@ def scrape_reddit(seen: set) -> list:
                 link    = entry.get("link", "")
                 combined = f"{title} {summary}"
 
+                if is_subreddit_about_link(link):
+                    continue
+                if any(re.search(pat, combined.lower()) for pat in OBITUARY_PATTERNS):
+                    continue
+                # Sitewide search casts a very wide net — require the
+                # actual phrase "Holly Springs" to appear, not just any
+                # loose NC signal, or noise from r/all floods in.
+                if not mentions_holly_springs(combined):
+                    continue
+                # Location alone isn't enough either (e.g. a golf round
+                # at a Holly Springs course) — require a policing/crime
+                # related word too.
+                if not mentions_topic(combined):
+                    continue
                 if not is_nc_relevant(combined):
                     continue
 
