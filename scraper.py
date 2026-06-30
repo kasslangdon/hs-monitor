@@ -922,17 +922,24 @@ def build_html_report(items: list, is_full: bool = False, new_hashes: set = None
         is_new = item.get("hash") in new_hashes
         new_tag = '<span class="new-tag">🆕 NEW</span>' if is_new else ""
         cls = "card card-compact" if compact else "card"
+
+        priority_tag = ""
+        if not compact and item.get("priority"):
+            priority_tag = '<span class="priority-tag">⚠ HIGH PRIORITY</span>'
+
+        summary_html = "" if compact else f'<p class="summary">{item["summary"]}</p>'
+
         return f"""
         <div class="{cls}" data-cat="{item['category']}"{pri}>
           <div class="meta">
             <span class="badge" style="background:{color}">{item['category']}</span>
-            {'' if compact else ('<span class=\"priority-tag\">⚠ HIGH PRIORITY</span>' if item.get('priority') else '')}
+            {priority_tag}
             {new_tag}
             <span class="source">{item['source']}</span>
             <span class="date">{item['published']}</span>
           </div>
           <a class="title" href="{item['url']}" target="_blank">{item['title']}</a>
-          {'' if compact else f'<p class="summary">{item["summary"]}</p>'}
+          {summary_html}
         </div>"""
 
     # Sidebar: compact priority list
