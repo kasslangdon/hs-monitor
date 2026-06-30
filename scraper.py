@@ -123,6 +123,25 @@ def clean_text(text: str) -> str:
     return re.sub(r"\s+", " ", text or "").strip()
 
 
+FEED_TIMEOUT = 15
+FEED_HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; hs-monitor/1.0)"}
+
+
+def fetch_feed(url: str):
+    """Fetch a feed URL with a hard timeout and parse it.
+
+    feedparser.parse(url) has no timeout when given a URL string and can
+    hang indefinitely on a slow/unresponsive server. Fetching with
+    requests first (which always has a timeout) avoids that."""
+    try:
+        r = requests.get(url, headers=FEED_HEADERS, timeout=FEED_TIMEOUT)
+        r.raise_for_status()
+        return feedparser.parse(r.content)
+    except Exception as e:
+        log.warning(f"Feed fetch failed for {url}: {e}")
+        return feedparser.parse(b"")  # empty feed, .entries == []
+
+
 
 # ── News RSS Feeds ────────────────────────────────────────────────────────────
 
@@ -176,7 +195,7 @@ def scrape_rss(seen: set) -> list:
     results = []
     for source, url in RSS_FEEDS.items():
         try:
-            feed = feedparser.parse(url)
+            feed = fetch_feed(url)
             for entry in feed.entries:
                 title   = clean_text(entry.get("title", ""))
                 summary = clean_text(entry.get("summary", ""))
@@ -215,7 +234,7 @@ def scrape_google_news(seen: set) -> list:
         try:
             encoded = requests.utils.quote(query)
             url = f"https://news.google.com/rss/search?q={encoded}&hl=en-US&gl=US&ceid=US:en"
-            feed = feedparser.parse(url)
+            feed = fetch_feed(url)
             time.sleep(1)
 
             for entry in feed.entries:
@@ -282,7 +301,7 @@ def scrape_court_records(seen: set) -> list:
 
     for source, url in court_feeds:
         try:
-            feed = feedparser.parse(url)
+            feed = fetch_feed(url)
             for entry in feed.entries:
                 title   = clean_text(entry.get("title", ""))
                 summary = clean_text(entry.get("summary", ""))
@@ -317,7 +336,7 @@ def scrape_court_records(seen: set) -> list:
         try:
             encoded = requests.utils.quote(query)
             url = f"https://news.google.com/rss/search?q={encoded}&hl=en-US&gl=US&ceid=US:en"
-            feed = feedparser.parse(url)
+            feed = fetch_feed(url)
             time.sleep(1.5)
 
             for entry in feed.entries:
@@ -431,7 +450,7 @@ def scrape_accountability_sources(seen: set) -> list:
         try:
             encoded = requests.utils.quote(query)
             url = f"https://news.google.com/rss/search?q={encoded}&hl=en-US&gl=US&ceid=US:en"
-            feed = feedparser.parse(url)
+            feed = fetch_feed(url)
             time.sleep(1)
             for entry in feed.entries:
                 title   = clean_text(entry.get("title", ""))
@@ -488,7 +507,7 @@ def scrape_citizen_app(seen: set) -> list:
         try:
             encoded = requests.utils.quote(query)
             url = f"https://news.google.com/rss/search?q={encoded}&hl=en-US&gl=US&ceid=US:en"
-            feed = feedparser.parse(url)
+            feed = fetch_feed(url)
             time.sleep(1)
 
             for entry in feed.entries:
@@ -547,7 +566,7 @@ def scrape_reddit(seen: set) -> list:
                 url = (f"https://www.reddit.com/r/{subreddit}/search.rss"
                        f"?q={encoded}&sort=new&restrict_sr=1")
                 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
-                feed = feedparser.parse(url)
+                feed = fetch_feed(url)
                 time.sleep(2)
 
                 for entry in feed.entries:
@@ -584,7 +603,7 @@ def scrape_reddit(seen: set) -> list:
         try:
             encoded = requests.utils.quote(query)
             url = f"https://www.reddit.com/search.rss?q={encoded}&sort=new&t=week"
-            feed = feedparser.parse(url)
+            feed = fetch_feed(url)
             time.sleep(2)
 
             for entry in feed.entries:
@@ -736,7 +755,7 @@ def scrape_google_for_facebook(seen: set) -> list:
         try:
             encoded = requests.utils.quote(query)
             url = f"https://news.google.com/rss/search?q={encoded}&hl=en-US&gl=US&ceid=US:en"
-            feed = feedparser.parse(url)
+            feed = fetch_feed(url)
             time.sleep(1.5)
 
             for entry in feed.entries:
