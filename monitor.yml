@@ -34,13 +34,6 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Restore seen hashes cache
-        uses: actions/cache@v4
-        with:
-          path: data/seen_hashes.json
-          key: seen-hashes-${{ github.run_id }}
-          restore-keys: seen-hashes-
-
       - name: Run scraper
         env:
           SMTP_HOST:    ${{ secrets.SMTP_HOST }}
@@ -61,7 +54,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/
+          git add docs/ data/archive.json data/seen_hashes.json
           git diff --staged --quiet || git commit -m "Monitor report $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
 

@@ -38,6 +38,17 @@ EXCLUDE_PATTERNS = [
     r"holly springs,?\s*(ca|california)",
 ]
 
+# Obituaries/death notices regularly mention "Holly Springs" as a hometown
+# or funeral home location and pollute results with irrelevant content.
+OBITUARY_PATTERNS = [
+    r"\bobituary\b", r"\bobituaries\b",
+    r"\bpassed away\b", r"\bpeacefully passed\b",
+    r"\bfuneral (home|service|services|arrangements)\b",
+    r"\bcelebration of life\b", r"\bin lieu of flowers\b",
+    r"\bsurvived by\b", r"\bpreceded in death\b",
+    r"\bvisitation will be held\b", r"\blaid to rest\b",
+]
+
 NC_SIGNALS = [
     "nc", "north carolina", "wake county", "raleigh", "holly springs, nc",
     "hollyspringsnc", "holly springs nc", "27540",
@@ -70,6 +81,7 @@ BASE_DIR    = Path(__file__).parent
 DATA_DIR    = BASE_DIR / "data"
 LOG_DIR     = BASE_DIR / "logs"
 SEEN_FILE   = DATA_DIR / "seen_hashes.json"
+ARCHIVE_FILE = DATA_DIR / "archive.json"
 REPORT_FILE = DATA_DIR / "latest_report.html"
 
 DATA_DIR.mkdir(exist_ok=True)
@@ -96,12 +108,43 @@ def load_seen() -> set:
 def save_seen(seen: set):
     SEEN_FILE.write_text(json.dumps(list(seen), indent=2))
 
+ARCHIVE_WINDOW_DAYS = 365
+
+def load_archive() -> dict:
+    """Returns {hash: item} for everything previously seen, with a
+    'first_seen' ISO timestamp recorded on each item."""
+    if ARCHIVE_FILE.exists():
+        try:
+            return json.loads(ARCHIVE_FILE.read_text())
+        except Exception:
+            return {}
+    return {}
+
+def save_archive(archive: dict):
+    ARCHIVE_FILE.write_text(json.dumps(archive, indent=2))
+
+def prune_archive(archive: dict) -> dict:
+    """Drop anything older than ARCHIVE_WINDOW_DAYS based on first_seen."""
+    cutoff = datetime.now(timezone.utc).timestamp() - ARCHIVE_WINDOW_DAYS * 86400
+    kept = {}
+    for h, item in archive.items():
+        try:
+            ts = datetime.fromisoformat(item["first_seen"]).timestamp()
+        except Exception:
+            ts = 0
+        if ts >= cutoff:
+            kept[h] = item
+    return kept
+
 def make_hash(url: str, title: str) -> str:
     return hashlib.md5(f"{url}{title}".encode()).hexdigest()
 
 def is_nc_relevant(text: str) -> bool:
     text_lower = text.lower()
     for pat in EXCLUDE_PATTERNS:
+        if re.search(pat, text_lower):
+            return False
+    for pat in OBITUARY_PATTERNS:
         if re.search(pat, text_lower):
             return False
     for signal in NC_SIGNALS:
@@ -557,14 +600,19 @@ REDDIT_QUERIES = [
     '"holly springs" police "north carolina"',
     '"holly springs" pd nc',
 ]
-REDDIT_SUBREDDITS = ["raleigh", "NorthCarolina", "triangle"]
+REDDIT_SUBREDDITS = ["raleigh", "NorthCarolina", "triangle", "HollySpringsNC"]
+
+# Hyper-local subreddit already implies location, so we can search broader
+# terms without requiring "nc"/"north carolina" in the query itself.
+REDDIT_LOCAL_QUERIES = ["police", "officer", "arrest", "shooting", "crime"]
 
 
 def scrape_reddit(seen: set) -> list:
     results = []
 
     for subreddit in REDDIT_SUBREDDITS:
-        for query in REDDIT_QUERIES[:2]:
+        queries = REDDIT_LOCAL_QUERIES if subreddit == "HollySpringsNC" else REDDIT_QUERIES[:2]
+        for query in queries:
             try:
                 encoded = requests.utils.quote(query)
                 url = (f"https://www.reddit.com/r/{subreddit}/search.rss"
@@ -579,7 +627,11 @@ def scrape_reddit(seen: set) -> list:
                     link    = entry.get("link", "")
                     combined = f"{title} {summary}"
 
-                    if not any(kw in combined.lower() for kw in KEYWORDS) and \
+                    if any(re.search(pat, combined.lower()) for pat in OBITUARY_PATTERNS):
+                        continue
+
+                    if subreddit != "HollySpringsNC" and \
+                       not any(kw in combined.lower() for kw in KEYWORDS) and \
                        not is_nc_relevant(combined):
                         continue
 
@@ -856,37 +908,37 @@ CATEGORY_COLORS = {
 }
 
 
-def build_html_report(items: list, is_full: bool = False) -> str:
+def build_html_report(items: list, is_full: bool = False, new_hashes: set = None) -> str:
+    new_hashes = new_hashes or set()
     now   = datetime.now().strftime("%B %d, %Y at %I:%M %p")
-    label = "Latest Results"
+    label = f"Last {ARCHIVE_WINDOW_DAYS} Days"
 
     high_priority = [i for i in items if i.get("priority")]
     normal        = [i for i in items if not i.get("priority")]
 
-    def render_card(item):
+    def render_card(item, compact=False):
         color = CATEGORY_COLORS.get(item["category"], "#555")
         pri   = ' data-pri="1"' if item.get("priority") else ""
+        is_new = item.get("hash") in new_hashes
+        new_tag = '<span class="new-tag">🆕 NEW</span>' if is_new else ""
+        cls = "card card-compact" if compact else "card"
         return f"""
-        <div class="card" data-cat="{item['category']}"{pri}>
+        <div class="{cls}" data-cat="{item['category']}"{pri}>
           <div class="meta">
             <span class="badge" style="background:{color}">{item['category']}</span>
-            {'<span class="priority-tag">⚠ HIGH PRIORITY</span>' if item.get('priority') else ''}
+            {'' if compact else ('<span class=\"priority-tag\">⚠ HIGH PRIORITY</span>' if item.get('priority') else '')}
+            {new_tag}
             <span class="source">{item['source']}</span>
             <span class="date">{item['published']}</span>
           </div>
           <a class="title" href="{item['url']}" target="_blank">{item['title']}</a>
-          <p class="summary">{item['summary']}</p>
+          {'' if compact else f'<p class="summary">{item["summary"]}</p>'}
         </div>"""
 
-    # Red banner block for high priority items
-    alert_banner = ""
-    if high_priority:
-        alert_cards = "".join(render_card(i) for i in high_priority)
-        alert_banner = f"""
-        <div class="alert-banner">
-          <div class="alert-header">🚨 {len(high_priority)} HIGH PRIORITY ALERT(S) — Requires Immediate Review</div>
-          <div class="alert-cards">{alert_cards}</div>
-        </div>"""
+    # Sidebar: compact priority list
+    sidebar_cards = "".join(render_card(i, compact=True) for i in high_priority)
+    if not sidebar_cards:
+        sidebar_cards = '<div class="empty-sidebar">✅ No high priority items right now.</div>'
 
     normal_cards = "".join(render_card(i) for i in normal)
     if not normal_cards:
@@ -916,11 +968,11 @@ def build_html_report(items: list, is_full: bool = False) -> str:
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Holly Springs NC Police Monitor</title>
+<title>HS NC News & Media Monitor</title>
 <style>
   * {{ box-sizing: border-box; margin: 0; padding: 0; }}
   body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-         background: #f0f4f8; color: #1a202c; padding: 1.5rem; max-width: 960px; margin: 0 auto; }}
+         background: #f0f4f8; color: #1a202c; padding: 1.5rem; max-width: 1280px; margin: 0 auto; }}
   header {{ background: #1a365d; color: #fff; padding: 1.2rem 1.5rem;
             border-radius: 10px; margin-bottom: 1.5rem;
             display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .5rem; }}
@@ -930,13 +982,26 @@ def build_html_report(items: list, is_full: bool = False) -> str:
                padding: .3rem .8rem; border-radius: 99px; text-decoration: none; }}
   .refresh:hover {{ background: rgba(255,255,255,.25); }}
 
-  /* ── Alert Banner ── */
-  .alert-banner {{ background: #dc2626; border-radius: 10px; margin-bottom: 1.5rem;
-                   overflow: hidden; box-shadow: 0 4px 12px rgba(220,38,38,.35); }}
-  .alert-header  {{ color: #fff; font-weight: 700; font-size: 1rem;
-                    padding: .9rem 1.2rem; letter-spacing: .02em; }}
-  .alert-cards   {{ background: #fff1f1; padding: .5rem; }}
-  .alert-cards .card {{ border-left-color: #dc2626 !important; }}
+  /* ── Two-column layout ── */
+  .layout   {{ display: flex; gap: 1.5rem; align-items: flex-start; }}
+  .main-col {{ flex: 1; min-width: 0; }}
+  .sidebar  {{ width: 300px; flex-shrink: 0; position: sticky; top: 1.5rem;
+               background: #fff1f1; border: 1px solid #fecaca; border-radius: 10px;
+               max-height: calc(100vh - 3rem); overflow-y: auto; }}
+  .sidebar-header {{ background: #dc2626; color: #fff; font-weight: 700; font-size: .85rem;
+                      letter-spacing: .02em; padding: .8rem 1rem; border-radius: 10px 10px 0 0;
+                      position: sticky; top: 0; }}
+  .sidebar-list   {{ padding: .6rem; }}
+  .empty-sidebar  {{ padding: 1.5rem 1rem; text-align: center; color: #6b7280; font-size: .8rem; }}
+  .card-compact {{ padding: .65rem .8rem; margin-bottom: .5rem; }}
+  .card-compact .meta {{ margin-bottom: .25rem; }}
+  .card-compact .title {{ font-size: .82rem; margin-bottom: 0; }}
+  .card-compact .summary {{ display: none; }}
+
+  @media (max-width: 860px) {{
+    .layout {{ flex-direction: column; }}
+    .sidebar {{ width: 100%; position: static; max-height: none; order: -1; }}
+  }}
 
   .stats    {{ display:flex; gap:1rem; flex-wrap:wrap; margin-bottom:1.5rem; }}
   .stat     {{ background:#fff; border-radius:8px; padding:0.8rem 1.2rem;
@@ -955,6 +1020,8 @@ def build_html_report(items: list, is_full: bool = False) -> str:
                border-radius:99px; text-transform:uppercase; letter-spacing:.04em; }}
   .priority-tag {{ background:#dc2626; color:#fff; font-size:.65rem; font-weight:700;
                    padding:.15rem .5rem; border-radius:4px; }}
+  .new-tag  {{ background:#16a34a; color:#fff; font-size:.65rem; font-weight:700;
+               padding:.15rem .5rem; border-radius:4px; }}
   .source   {{ font-size:.78rem; color:#555; }}
   .date     {{ font-size:.72rem; color:#888; margin-left:auto; }}
   .title    {{ font-size:.95rem; font-weight:600; color:#1a56db; text-decoration:none;
@@ -973,7 +1040,7 @@ def build_html_report(items: list, is_full: bool = False) -> str:
 <body>
 <header>
   <div>
-    <h1>🚔 Holly Springs NC Police Monitor</h1>
+    <h1>📰 HS NC News & Media Monitor</h1>
     <p>Threat & Accountability Edition · Auto-updated every 6 hours · {label} · {len(items)} result(s)</p>
   </div>
   <a class="refresh" href="javascript:location.reload()">↻ Refresh</a>
@@ -983,20 +1050,27 @@ def build_html_report(items: list, is_full: bool = False) -> str:
   {stat_html}
 </div>
 
-{alert_banner}
+<div class="layout">
+  <main class="main-col">
+    <div class="filters">
+      <button class="filter-btn active" onclick="filterCards('all', this)">All</button>
+      {filter_btns}
+      <button class="filter-btn" onclick="filterCards('priority', this)">⚠ Priority Only</button>
+    </div>
 
-<div class="filters">
-  <button class="filter-btn active" onclick="filterCards('all', this)">All</button>
-  {filter_btns}
-  <button class="filter-btn" onclick="filterCards('priority', this)">⚠ Priority Only</button>
+    <div class="section-label">All Results</div>
+    <div id="results">
+    {normal_cards}
+    </div>
+  </main>
+
+  <aside class="sidebar">
+    <div class="sidebar-header">⚠ High Priority ({len(high_priority)})</div>
+    <div class="sidebar-list">{sidebar_cards}</div>
+  </aside>
 </div>
 
-<div class="section-label">All Results</div>
-<div id="results">
-{normal_cards}
-</div>
-
-<footer>Generated {now} · Holly Springs NC Police Monitor · Threat & Accountability Edition<br>
+<footer>Generated {now} · HS NC News & Media Monitor · Showing the last {ARCHIVE_WINDOW_DAYS} days, newest first<br>
 Monitors: News · Reddit · Facebook · Twitter · Court Records · NC DOJ · Town Council · Citizen App (critical only)</footer>
 
 <script>
@@ -1090,10 +1164,27 @@ def run():
     high_priority = [i for i in all_new if i.get("priority")]
     log.info(f"Found {len(all_new)} new result(s), {len(high_priority)} HIGH PRIORITY.")
 
+    # Merge newly found items into the persistent archive
+    archive = load_archive()
+    now_iso = datetime.now(timezone.utc).isoformat()
+    new_hashes = set()
+    for item in all_new:
+        h = item["hash"]
+        new_hashes.add(h)
+        item_copy = dict(item)
+        item_copy["first_seen"] = now_iso
+        archive[h] = item_copy
+
+    archive = prune_archive(archive)
+    save_archive(archive)
+
+    # Sort newest-first by first_seen for display
+    display_items = sorted(archive.values(), key=lambda i: i.get("first_seen", ""), reverse=True)
+
     # Save HTML report
-    html = build_html_report(all_new)
+    html = build_html_report(display_items, new_hashes=new_hashes)
     REPORT_FILE.write_text(html, encoding="utf-8")
-    log.info(f"Report saved: {REPORT_FILE}")
+    log.info(f"Report saved: {REPORT_FILE} ({len(display_items)} item(s) in last {ARCHIVE_WINDOW_DAYS} days)")
 
     log.info("Done.")
     return all_new
