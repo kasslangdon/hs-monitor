@@ -215,36 +215,60 @@ def priority_reason(text: str) -> str:
 def clean_text(text: str) -> str:
     return re.sub(r"\s+", " ", text or "").strip()
 
-def format_date(raw: str) -> str:
-    """Published dates come from many different sources in many different
-    formats (RFC822 from RSS, ISO8601 from Reddit/Bluesky, etc). Normalize
-    everything down to a plain date for display, e.g. 'Jun 30, 2026'."""
+def parse_published_dt(raw: str):
+    """Parse a 'published' string from any of our sources (RFC822 from RSS,
+    ISO8601 from Reddit/Bluesky, plain YYYY-MM-DD from our own timestamps)
+    into a timezone-aware datetime. Returns None if it can't be parsed —
+    callers should treat that as 'unknown, sort last'."""
     if not raw:
-        return "Unknown date"
+        return None
     raw = raw.strip()
-    # Try RFC822 (e.g. "Mon, 29 Jun 2026 19:22:04 -0400") — used by RSS feeds
+    # RFC822 (e.g. "Mon, 29 Jun 2026 19:22:04 -0400") — used by RSS feeds
     try:
         from email.utils import parsedate_to_datetime
         dt = parsedate_to_datetime(raw)
         if dt:
-            return dt.strftime("%b %-d, %Y")
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+            return dt
     except Exception:
         pass
-    # Try ISO8601 (e.g. "2026-06-30T12:00:00Z" or with +00:00 offset)
+    # ISO8601 (e.g. "2026-06-30T12:00:00Z" or with +00:00 offset)
     try:
         iso = raw.replace("Z", "+00:00")
         dt = datetime.fromisoformat(iso)
-        return dt.strftime("%b %-d, %Y")
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt
     except Exception:
         pass
-    # Try plain "YYYY-MM-DD"
+    # "YYYY-MM-DD HH:MM UTC" (our own Reddit-global timestamp format)
+    try:
+        dt = datetime.strptime(raw, "%Y-%m-%d %H:%M UTC")
+        return dt.replace(tzinfo=timezone.utc)
+    except Exception:
+        pass
+    # Plain "YYYY-MM-DD"
     try:
         dt = datetime.strptime(raw[:10], "%Y-%m-%d")
-        return dt.strftime("%b %-d, %Y")
+        return dt.replace(tzinfo=timezone.utc)
     except Exception:
         pass
-    # Give up gracefully — show whatever we have, but trimmed
-    return raw[:20] if len(raw) > 20 else raw
+    return None
+
+
+def format_date(raw: str) -> str:
+    """Published dates come from many different sources in many different
+    formats. Normalize to date + time for display, e.g. 'Jun 30, 2026 8:25 AM'.
+    Falls back to a date-only string when no time component is present,
+    and to 'Unknown date' when nothing parses."""
+    dt = parse_published_dt(raw)
+    if dt is None:
+        return "Unknown date"
+    # Plain "YYYY-MM-DD" sources (no time info) — don't show a fake 12:00 AM.
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", raw.strip()):
+        return dt.strftime("%b %-d, %Y")
+    return dt.strftime("%b %-d, %Y %-I:%M %p")
 
 
 FEED_TIMEOUT = 15
@@ -493,6 +517,8 @@ def scrape_court_records(seen: set) -> list:
                 link    = entry.get("link", "")
                 combined = f"{title} {summary}"
 
+                if any(re.search(pat, combined.lower()) for pat in OBITUARY_PATTERNS):
+                    continue
                 if not mentions_holly_springs(combined):
                     continue
                 if not is_nc_relevant(combined):
@@ -532,6 +558,8 @@ def scrape_court_records(seen: set) -> list:
                 link    = entry.get("link", "")
                 combined = f"{title} {summary}"
 
+                if any(re.search(pat, combined.lower()) for pat in OBITUARY_PATTERNS):
+                    continue
                 if not mentions_holly_springs(combined):
                     continue
                 if not is_nc_relevant(combined):
@@ -647,6 +675,8 @@ def scrape_accountability_sources(seen: set) -> list:
                 summary = clean_text(entry.get("summary", ""))
                 link    = entry.get("link", "")
                 combined = f"{title} {summary}"
+                if any(re.search(pat, combined.lower()) for pat in OBITUARY_PATTERNS):
+                    continue
                 if not mentions_holly_springs(combined):
                     continue
                 if not is_nc_relevant(combined):
@@ -711,6 +741,8 @@ def scrape_citizen_app(seen: set) -> list:
 
                 # Strict filter — only serious incidents
                 text_lower = combined.lower()
+                if any(re.search(pat, text_lower) for pat in OBITUARY_PATTERNS):
+                    continue
                 if not any(kw in text_lower for kw in CITIZEN_HIGH_PRIORITY):
                     continue
                 if not mentions_holly_springs(combined):
@@ -1431,8 +1463,19 @@ def run():
     archive = prune_archive(archive)
     save_archive(archive)
 
-    # Sort newest-first by first_seen for display
-    display_items = sorted(archive.values(), key=lambda i: i.get("first_seen", ""), reverse=True)
+    # Sort newest-first by actual publish date/time (falling back to
+    # first_seen when a source's date couldn't be parsed) — sorting by
+    # first_seen alone put items in scrape order, not chronological order.
+    def sort_key(item):
+        dt = parse_published_dt(item.get("published", ""))
+        if dt is not None:
+            return dt
+        try:
+            return datetime.fromisoformat(item.get("first_seen", ""))
+        except Exception:
+            return datetime.min.replace(tzinfo=timezone.utc)
+
+    display_items = sorted(archive.values(), key=sort_key, reverse=True)
 
     # Save HTML report
     html = build_html_report(display_items, new_hashes=new_hashes)
