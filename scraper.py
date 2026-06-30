@@ -190,7 +190,12 @@ def is_subreddit_about_link(link: str) -> bool:
 def is_high_priority(text: str) -> bool:
     text_lower = text.lower()
     for kw in HIGH_PRIORITY_KEYWORDS:
-        if kw in text_lower:
+        if len(kw) <= 4 and kw.isalpha():
+            # Short alphabetic keywords (e.g. "ois") need a word boundary
+            # or they match inside unrelated words ("noise", "moisture").
+            if re.search(rf"\b{re.escape(kw)}\b", text_lower):
+                return True
+        elif kw in text_lower:
             return True
     return False
 
@@ -198,11 +203,48 @@ def priority_reason(text: str) -> str:
     """Returns the matched high-priority keyword(s), comma-joined, or ''
     if nothing matched. Used to show *why* something was flagged."""
     text_lower = text.lower()
-    matches = [kw for kw in HIGH_PRIORITY_KEYWORDS if kw in text_lower]
+    matches = []
+    for kw in HIGH_PRIORITY_KEYWORDS:
+        if len(kw) <= 4 and kw.isalpha():
+            if re.search(rf"\b{re.escape(kw)}\b", text_lower):
+                matches.append(kw)
+        elif kw in text_lower:
+            matches.append(kw)
     return ", ".join(matches[:3])  # cap so the badge doesn't get huge
 
 def clean_text(text: str) -> str:
     return re.sub(r"\s+", " ", text or "").strip()
+
+def format_date(raw: str) -> str:
+    """Published dates come from many different sources in many different
+    formats (RFC822 from RSS, ISO8601 from Reddit/Bluesky, etc). Normalize
+    everything down to a plain date for display, e.g. 'Jun 30, 2026'."""
+    if not raw:
+        return "Unknown date"
+    raw = raw.strip()
+    # Try RFC822 (e.g. "Mon, 29 Jun 2026 19:22:04 -0400") — used by RSS feeds
+    try:
+        from email.utils import parsedate_to_datetime
+        dt = parsedate_to_datetime(raw)
+        if dt:
+            return dt.strftime("%b %-d, %Y")
+    except Exception:
+        pass
+    # Try ISO8601 (e.g. "2026-06-30T12:00:00Z" or with +00:00 offset)
+    try:
+        iso = raw.replace("Z", "+00:00")
+        dt = datetime.fromisoformat(iso)
+        return dt.strftime("%b %-d, %Y")
+    except Exception:
+        pass
+    # Try plain "YYYY-MM-DD"
+    try:
+        dt = datetime.strptime(raw[:10], "%Y-%m-%d")
+        return dt.strftime("%b %-d, %Y")
+    except Exception:
+        pass
+    # Give up gracefully — show whatever we have, but trimmed
+    return raw[:20] if len(raw) > 20 else raw
 
 
 FEED_TIMEOUT = 15
@@ -234,8 +276,9 @@ def fetch_feed(url: str):
 # fallback — but only for borderline candidates, and only up to a fixed
 # budget per run, so this can't reintroduce the multi-hour hang risk.
 ARTICLE_FETCH_TIMEOUT = 8
-ARTICLE_FETCH_BUDGET = 25
+ARTICLE_FETCH_BUDGET = 10
 _article_fetches_used = 0
+_article_fetch_failures = 0
 
 ARTICLE_HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -246,7 +289,7 @@ ARTICLE_HEADERS = {
 }
 
 def fetch_article_text(url: str) -> str:
-    global _article_fetches_used
+    global _article_fetches_used, _article_fetch_failures
     if _article_fetches_used >= ARTICLE_FETCH_BUDGET:
         return ""
     _article_fetches_used += 1
@@ -257,7 +300,11 @@ def fetch_article_text(url: str) -> str:
         paragraphs = soup.find_all("p")
         return clean_text(" ".join(p.get_text() for p in paragraphs))[:5000]
     except Exception as e:
-        log.warning(f"Article fetch failed for {url}: {e}")
+        # Many news sites block scripted requests from cloud/datacenter
+        # IPs outright (403s) — this is routine and expected, not a real
+        # error, so it's logged quietly rather than as a warning.
+        _article_fetch_failures += 1
+        log.info(f"Article fetch skipped (likely blocked) for {url}: {e}")
         return ""
 
 
@@ -1002,6 +1049,76 @@ def scrape_twitter_nitter(seen: set) -> list:
     return results
 
 
+# ── Bluesky ───────────────────────────────────────────────────────────────────
+# Uses Bluesky's public AT Protocol AppView API — no login, no API key, no
+# auth token required for this endpoint. Far more reliable than Nitter,
+# which frequently has every public instance down at once.
+
+BLUESKY_API = "https://public.api.bsky.app/xrpc/app.bsky.feed.searchPosts"
+
+BLUESKY_QUERIES = [
+    "holly springs police nc",
+    "holly springs nc police",
+    '"Holly Springs Police Department"',
+]
+
+def scrape_bluesky(seen: set) -> list:
+    results = []
+    headers = {"User-Agent": "Mozilla/5.0 (compatible; hs-monitor/1.0)"}
+
+    for query in BLUESKY_QUERIES:
+        try:
+            r = requests.get(
+                BLUESKY_API,
+                params={"q": query, "limit": 25, "sort": "latest"},
+                headers=headers,
+                timeout=15,
+            )
+            r.raise_for_status()
+            data = r.json()
+
+            for post in data.get("posts", []):
+                text = clean_text(post.get("record", {}).get("text", ""))
+                if not text:
+                    continue
+
+                author = post.get("author", {})
+                handle = author.get("handle", "unknown")
+                uri = post.get("uri", "")
+                # uri looks like at://did:plc:.../app.bsky.feed.post/<rkey>
+                rkey = uri.rsplit("/", 1)[-1] if uri else ""
+                post_url = f"https://bsky.app/profile/{handle}/post/{rkey}" if rkey else f"https://bsky.app/profile/{handle}"
+
+                if any(re.search(pat, text.lower()) for pat in OBITUARY_PATTERNS):
+                    continue
+                if not is_nc_relevant(text):
+                    continue
+
+                h = make_hash(post_url, text)
+                if h in seen:
+                    continue
+
+                results.append({
+                    "source":    f"Bluesky (@{handle})",
+                    "title":     text[:120] + ("…" if len(text) > 120 else ""),
+                    "summary":   text[:400],
+                    "url":       post_url,
+                    "published": post.get("record", {}).get("createdAt", ""),
+                    "category":  "Social Media",
+                    "priority":  is_high_priority(text),
+                    "priority_reason": priority_reason(text),
+                    "hash":      h,
+                })
+                seen.add(h)
+                log.info(f"[Bluesky] New: {text[:80]}")
+
+            time.sleep(1)
+        except Exception as e:
+            log.warning(f"[Bluesky] Query '{query}' failed: {e}")
+
+    return results
+
+
 # ── HTML Report ───────────────────────────────────────────────────────────────
 
 CATEGORY_COLORS = {
@@ -1044,7 +1161,7 @@ def build_html_report(items: list, is_full: bool = False, new_hashes: set = None
             {priority_tag}
             {new_tag}
             <span class="source">{item['source']}</span>
-            <span class="date">{item['published']}</span>
+            <span class="date">{format_date(item['published'])}</span>
           </div>
           <a class="title" href="{item['url']}" target="_blank">{item['title']}</a>
           {summary_html}
@@ -1186,7 +1303,7 @@ def build_html_report(items: list, is_full: bool = False, new_hashes: set = None
 </div>
 
 <footer>Generated {now} · HS NC News & Media Monitor · Showing the last {ARCHIVE_WINDOW_DAYS} days, newest first<br>
-Monitors: News · Reddit · Facebook · Twitter · Court Records · NC DOJ · Town Council · Citizen App (critical only)</footer>
+Monitors: News · Reddit · Facebook · Twitter · Bluesky · Court Records · NC DOJ · Town Council · Citizen App (critical only)</footer>
 
 <script>
 function filterCards(cat, btn) {{
@@ -1274,6 +1391,9 @@ def run():
     log.info("Scraping Twitter/X via Nitter...")
     all_new += scrape_twitter_nitter(seen)
 
+    log.info("Scraping Bluesky...")
+    all_new += scrape_bluesky(seen)
+
     save_seen(seen)
 
     high_priority = [i for i in all_new if i.get("priority")]
@@ -1300,6 +1420,11 @@ def run():
     html = build_html_report(display_items, new_hashes=new_hashes)
     REPORT_FILE.write_text(html, encoding="utf-8")
     log.info(f"Report saved: {REPORT_FILE} ({len(display_items)} item(s) in last {ARCHIVE_WINDOW_DAYS} days)")
+
+    if _article_fetches_used:
+        log.info(f"Article body fallback: {_article_fetches_used - _article_fetch_failures}/"
+                 f"{_article_fetches_used} succeeded "
+                 f"(many sites block scripted requests — this is expected)")
 
     log.info("Done.")
     return all_new
