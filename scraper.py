@@ -124,7 +124,11 @@ def clean_text(text: str) -> str:
 
 
 FEED_TIMEOUT = 15
-FEED_HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; hs-monitor/1.0)"}
+FEED_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                  "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Accept": "application/rss+xml, application/xml, text/xml, */*",
+}
 
 
 def fetch_feed(url: str):
