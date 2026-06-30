@@ -146,14 +146,14 @@ def fetch_feed(url: str):
 # ── News RSS Feeds ────────────────────────────────────────────────────────────
 
 RSS_FEEDS = {
-    "WRAL News":        "https://www.wral.com/rss/news/",
+    "WRAL News":        "https://www.wral.com/news/rss/142/",
     "WTVD ABC11":       "https://abc11.com/feed/",
     "CBS17":            "https://www.cbs17.com/feed/",
     "News & Observer":  "https://www.newsobserver.com/news/?widgetName=rssfeed&widgetContentId=712015&getXmlFeed=true",
     "Holly Springs Sun":"https://hollyspringssun.com/feed/",
     "NCNewsLine":       "https://ncnewsline.com/feed/",
     "NC DOJ":           "https://ncdoj.gov/feed/",
-    "ACLU NC":          "https://www.acluofnc.org/en/rss.xml",
+    "ACLU NC":          "https://www.acluofnorthcarolina.org/feed/",
 }
 
 GOOGLE_NEWS_QUERIES = [
@@ -1017,8 +1017,8 @@ def send_email(items: list, config: dict, subject_override: str = ""):
         log.info("No new items — skipping email.")
         return
 
-    smtp_host = config.get("SMTP_HOST", "smtp.gmail.com")
-    smtp_port = int(config.get("SMTP_PORT", 587))
+    smtp_host = config.get("SMTP_HOST") or "smtp.gmail.com"
+    smtp_port = int(config.get("SMTP_PORT") or 587)
     smtp_user = config.get("SMTP_USER", "")
     smtp_pass = config.get("SMTP_PASS", "")
     to_addr   = config.get("NOTIFY_EMAIL", smtp_user)
@@ -1090,22 +1090,6 @@ def run():
     html = build_html_report(all_new)
     REPORT_FILE.write_text(html, encoding="utf-8")
     log.info(f"Report saved: {REPORT_FILE}")
-
-    email_config = {k: os.environ.get(k, "") for k in
-                    ["SMTP_HOST", "SMTP_PORT", "SMTP_USER", "SMTP_PASS", "NOTIFY_EMAIL"]}
-
-    # Send immediate alert for high priority items
-    if high_priority:
-        send_email(
-            high_priority,
-            email_config,
-            subject_override=f"🚨 [HS Monitor] HIGH PRIORITY — {len(high_priority)} critical item(s)"
-        )
-
-    # Send regular digest for everything else
-    normal = [i for i in all_new if not i.get("priority")]
-    if normal:
-        send_email(normal, email_config)
 
     log.info("Done.")
     return all_new
