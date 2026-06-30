@@ -419,6 +419,14 @@ def scrape_google_news(seen: set) -> list:
                 link    = entry.get("link", "")
                 combined = f"{title} {summary}"
 
+                if any(re.search(pat, combined.lower()) for pat in OBITUARY_PATTERNS):
+                    continue
+                # Google News' own query matching is loose — generic NC
+                # relevance alone let through unrelated statewide stories
+                # (e.g. a different TV station's coverage area). Require
+                # the actual town name to appear.
+                if not mentions_holly_springs(combined):
+                    continue
                 if not is_nc_relevant(combined):
                     continue
 
@@ -485,6 +493,8 @@ def scrape_court_records(seen: set) -> list:
                 link    = entry.get("link", "")
                 combined = f"{title} {summary}"
 
+                if not mentions_holly_springs(combined):
+                    continue
                 if not is_nc_relevant(combined):
                     continue
 
@@ -522,6 +532,8 @@ def scrape_court_records(seen: set) -> list:
                 link    = entry.get("link", "")
                 combined = f"{title} {summary}"
 
+                if not mentions_holly_springs(combined):
+                    continue
                 if not is_nc_relevant(combined):
                     continue
 
@@ -635,6 +647,8 @@ def scrape_accountability_sources(seen: set) -> list:
                 summary = clean_text(entry.get("summary", ""))
                 link    = entry.get("link", "")
                 combined = f"{title} {summary}"
+                if not mentions_holly_springs(combined):
+                    continue
                 if not is_nc_relevant(combined):
                     continue
                 h = make_hash(link, title)
@@ -698,6 +712,8 @@ def scrape_citizen_app(seen: set) -> list:
                 # Strict filter — only serious incidents
                 text_lower = combined.lower()
                 if not any(kw in text_lower for kw in CITIZEN_HIGH_PRIORITY):
+                    continue
+                if not mentions_holly_springs(combined):
                     continue
                 if not is_nc_relevant(combined):
                     continue
@@ -809,13 +825,13 @@ def scrape_reddit(seen: set) -> list:
                     continue
                 # Sitewide search casts a very wide net — require the
                 # actual phrase "Holly Springs" to appear, not just any
-                # loose NC signal, or noise from r/all floods in.
+                # loose NC signal, or noise from r/all floods in. (We
+                # don't also require a topic word here — REDDIT_QUERIES
+                # already searched for "police"/"pd" terms, and Reddit's
+                # RSS summaries are often blank/short, so an additional
+                # topic-word check on the snippet text was killing
+                # almost all genuinely relevant results.)
                 if not mentions_holly_springs(combined):
-                    continue
-                # Location alone isn't enough either (e.g. a golf round
-                # at a Holly Springs course) — require a policing/crime
-                # related word too.
-                if not mentions_topic(combined):
                     continue
                 if not is_nc_relevant(combined):
                     continue
@@ -972,6 +988,8 @@ def scrape_google_for_facebook(seen: set) -> list:
                 combined = f"{title} {summary} {link}"
 
                 if "facebook.com" not in link.lower():
+                    continue
+                if not mentions_holly_springs(combined):
                     continue
                 if not is_nc_relevant(combined):
                     continue
