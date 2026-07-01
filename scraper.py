@@ -1281,6 +1281,10 @@ def build_html_report(items: list, is_full: bool = False, new_hashes: set = None
     high_priority = [i for i in items if i.get("priority")]
     normal        = [i for i in items if not i.get("priority")]
 
+    REDDIT_CATEGORIES = {"Reddit"}
+    news_normal   = [i for i in normal if i["category"] not in REDDIT_CATEGORIES]
+    reddit_normal = [i for i in normal if i["category"] in REDDIT_CATEGORIES]
+
     def render_card(item, compact=False):
         color = CATEGORY_COLORS.get(item["category"], "#555")
         pri   = ' data-pri="1"' if item.get("priority") else ""
@@ -1314,12 +1318,17 @@ def build_html_report(items: list, is_full: bool = False, new_hashes: set = None
     if not sidebar_cards:
         sidebar_cards = '<div class="empty-sidebar">✅ No high priority items right now.</div>'
 
-    normal_cards = "".join(render_card(i) for i in normal)
-    if not normal_cards:
-        normal_cards = f'''<div class="empty">
+    news_cards = "".join(render_card(i) for i in news_normal)
+    if not news_cards:
+        news_cards = f'''<div class="empty">
           <p>✅ Nothing in the last {ARCHIVE_WINDOW_DAYS} days.</p>
           <p>The monitor is working — no matching results have been found yet, or everything found so far was high priority (see sidebar).</p>
         </div>'''
+
+    reddit_cards = "".join(render_card(i) for i in reddit_normal)
+    if not reddit_cards:
+        reddit_cards = '<div class="empty"><p>No Reddit posts in the last ' \
+                        f'{ARCHIVE_WINDOW_DAYS} days.</p></div>'
 
     cat_counts = {}
     for i in items:
@@ -1432,9 +1441,14 @@ def build_html_report(items: list, is_full: bool = False, new_hashes: set = None
       <button class="filter-btn" onclick="filterCards('priority', this)">⚠ Priority Only</button>
     </div>
 
-    <div class="section-label">All Results</div>
-    <div id="results">
-    {normal_cards}
+    <div class="section-label">📰 News & Records ({len(news_normal)})</div>
+    <div id="news-results">
+    {news_cards}
+    </div>
+
+    <div class="section-label">💬 Reddit / Community ({len(reddit_normal)})</div>
+    <div id="reddit-results">
+    {reddit_cards}
     </div>
   </main>
 
@@ -1451,7 +1465,7 @@ Monitors: News · Reddit · Facebook · Twitter · Bluesky · Court Records · N
 function filterCards(cat, btn) {{
   document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
-  document.querySelectorAll('#results .card').forEach(card => {{
+  document.querySelectorAll('.main-col .card').forEach(card => {{
     if (cat === 'all') {{ card.style.display = ''; }}
     else if (cat === 'priority') {{ card.style.display = card.dataset.pri === '1' ? '' : 'none'; }}
     else {{ card.style.display = card.dataset.cat === cat ? '' : 'none'; }}
