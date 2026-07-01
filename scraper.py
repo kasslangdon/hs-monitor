@@ -29,19 +29,25 @@ KEYWORDS = [
     "hspd nc",
 ]
 
-# Used alongside mentions_holly_springs() for unscoped/broad searches —
+# Used alongside mentions_holly_springs() as the general relevance check —
 # mentioning the town alone isn't enough (e.g. a golf round at a local
 # course); there also needs to be some policing/crime-relevant word.
+# NOTE: this was previously defined but never actually called anywhere in
+# the file, silently making every source stricter than intended.
 TOPIC_WORDS = [
-    "police", "officer", "pd", "sheriff", "deputy", "department",
-    "arrest", "arrested", "charged", "indicted", "crime", "criminal",
+    "police", "officer", "cop", "pd", "sheriff", "deputy", "department",
+    "chief", "k9", "arrest", "charge", "indicted", "crime", "criminal",
     "shooting", "shot", "investigation", "incident", "suspect",
-    "lawsuit", "misconduct", "use of force", "custody", "swat",
+    "lawsuit", "misconduct", "use of force", "custody", "swat", "rescue",
 ]
 
 def mentions_topic(text: str) -> bool:
+    """Word-stem match (not exact-word) so plurals/inflections count —
+    'officer' should match 'officers', 'arrest' should match 'arrested'
+    and 'arrests', etc. Exact \\bword\\b matching was silently missing
+    all of these."""
     text_lower = text.lower()
-    return any(re.search(rf"\b{re.escape(w)}\b", text_lower) for w in TOPIC_WORDS)
+    return any(re.search(rf"\b{re.escape(w)}\w*", text_lower) for w in TOPIC_WORDS)
 
 EXCLUDE_PATTERNS = [
     r"holly springs,?\s*(ms|mississippi)",
@@ -181,6 +187,26 @@ def mentions_holly_springs(text: str) -> bool:
     where NC-relevance alone is far too permissive."""
     return bool(re.search(r"\bholly\s+springs\b", text.lower()))
 
+def is_relevant(text: str, require_topic: bool = True) -> bool:
+    """Single relevance gate used across sources. Requires:
+      1. Text actually says 'Holly Springs'
+      2. Not excluded to another state's Holly Springs, and not an obituary
+      3. (if require_topic) either an explicit NC signal OR a policing/
+         crime topic word — NOT both. Previously several sources required
+         an explicit NC signal in the headline itself, which real NC-only
+         outlets (WRAL, CBS17, ABC11, local blogs) frequently don't
+         include, silently dropping genuine local coverage."""
+    if not mentions_holly_springs(text):
+        return False
+    text_lower = text.lower()
+    if any(re.search(pat, text_lower) for pat in EXCLUDE_PATTERNS):
+        return False
+    if any(re.search(pat, text_lower) for pat in OBITUARY_PATTERNS):
+        return False
+    if not require_topic:
+        return True
+    return is_nc_relevant(text) or mentions_topic(text)
+
 def is_subreddit_about_link(link: str) -> bool:
     """Reddit's search.rss sometimes returns a subreddit's own page
     (e.g. https://www.reddit.com/r/HollySpringsNC/) as a 'result'
@@ -257,6 +283,25 @@ def parse_published_dt(raw: str):
     return None
 
 
+# Google/News search has no date restriction, so a query can surface a
+# genuinely old article (e.g. from 2018) the *first* time it's ever
+# indexed. Previously nothing checked how old the article itself was —
+# only how long ago *we* first saw it — so a stale article discovered
+# today would sit in the report, correctly dated, for a full year. This
+# rejects anything with a confidently-parsed date older than the window
+# before it's ever added to the archive. Items with unparseable/missing
+# dates are NOT dropped — we don't want to lose real results just
+# because a source used a date format we don't recognize.
+RESULT_MAX_AGE_DAYS = 400  # a little past the 365-day display window
+
+def is_too_old(published_raw: str) -> bool:
+    dt = parse_published_dt(published_raw)
+    if dt is None:
+        return False
+    age_days = (datetime.now(timezone.utc) - dt).days
+    return age_days > RESULT_MAX_AGE_DAYS
+
+
 def format_date(raw: str) -> str:
     """Published dates come from many different sources in many different
     formats. Normalize to date + time for display, e.g. 'Jun 30, 2026 8:25 AM'.
@@ -284,14 +329,24 @@ def fetch_feed(url: str):
 
     feedparser.parse(url) has no timeout when given a URL string and can
     hang indefinitely on a slow/unresponsive server. Fetching with
-    requests first (which always has a timeout) avoids that."""
-    try:
-        r = requests.get(url, headers=FEED_HEADERS, timeout=FEED_TIMEOUT)
-        r.raise_for_status()
-        return feedparser.parse(r.content)
-    except Exception as e:
-        log.warning(f"Feed fetch failed for {url}: {e}")
-        return feedparser.parse(b"")  # empty feed, .entries == []
+    requests first (which always has a timeout) avoids that.
+
+    Retries once on HTTP 429 — Reddit in particular rate-limits back-to-
+    back requests, and previously a 429 just meant that query silently
+    contributed nothing, with no backoff attempted at all."""
+    for attempt in range(2):
+        try:
+            r = requests.get(url, headers=FEED_HEADERS, timeout=FEED_TIMEOUT)
+            if r.status_code == 429 and attempt == 0:
+                log.info(f"429 rate-limited, backing off 5s: {url}")
+                time.sleep(5)
+                continue
+            r.raise_for_status()
+            return feedparser.parse(r.content)
+        except Exception as e:
+            log.warning(f"Feed fetch failed for {url}: {e}")
+            return feedparser.parse(b"")  # empty feed, .entries == []
+    return feedparser.parse(b"")
 
 
 # RSS summaries are often too short to mention "Holly Springs" even when
@@ -300,7 +355,7 @@ def fetch_feed(url: str):
 # fallback — but only for borderline candidates, and only up to a fixed
 # budget per run, so this can't reintroduce the multi-hour hang risk.
 ARTICLE_FETCH_TIMEOUT = 8
-ARTICLE_FETCH_BUDGET = 10
+ARTICLE_FETCH_BUDGET = 25
 _article_fetches_used = 0
 _article_fetch_failures = 0
 
@@ -336,14 +391,20 @@ def fetch_article_text(url: str) -> str:
 # ── News RSS Feeds ────────────────────────────────────────────────────────────
 
 RSS_FEEDS = {
+    # Hyper-local sources first — these are Holly Springs-specific, so
+    # they should never lose out on the shared article-fetch budget to
+    # the larger regional outlets below.
+    "Holly Springs Sun":        "https://hollyspringssun.com/feed/",
+    "Holly Springs Update":     "https://www.hollyspringsupdate.com/feed",
+    "NC DOJ":                   "https://ncdoj.gov/feed/",
+    "ACLU NC":                  "https://www.acluofnorthcarolina.org/feed/",
+    "NCNewsLine":                "https://ncnewsline.com/feed/",
+    # Larger regional outlets — cover Holly Springs often, but also cover
+    # a lot that isn't relevant, so these run last.
     "WRAL News":        "https://www.wral.com/news/rss/142/",
     "WTVD ABC11":       "https://abc11.com/feed/",
     "CBS17":            "https://www.cbs17.com/feed/",
     "News & Observer":  "https://www.newsobserver.com/news/?widgetName=rssfeed&widgetContentId=712015&getXmlFeed=true",
-    "Holly Springs Sun":"https://hollyspringssun.com/feed/",
-    "NCNewsLine":       "https://ncnewsline.com/feed/",
-    "NC DOJ":           "https://ncdoj.gov/feed/",
-    "ACLU NC":          "https://www.acluofnorthcarolina.org/feed/",
 }
 
 GOOGLE_NEWS_QUERIES = [
@@ -392,19 +453,29 @@ def scrape_rss(seen: set) -> list:
                 link    = entry.get("link", "")
                 combined = f"{title} {summary}"
 
-                if not any(kw in combined.lower() for kw in KEYWORDS):
-                    # Title/summary didn't have the exact phrase — these
-                    # are curated, trustworthy local news feeds, so an
-                    # NC-relevant headline is enough to justify checking
-                    # the full body for a buried Holly Springs mention.
-                    if is_nc_relevant(combined):
-                        body = fetch_article_text(link)
-                        if not mentions_holly_springs(body):
-                            continue
-                    else:
+                if not mentions_holly_springs(combined):
+                    # Curated, trustworthy local/regional NC feeds — a
+                    # headline mentioning Holly Springs is worth a closer
+                    # look even if the summary is too short to show it,
+                    # so check the full article body before giving up.
+                    body = fetch_article_text(link)
+                    if not mentions_holly_springs(body):
                         continue
-                elif not is_nc_relevant(combined):
+                    combined = f"{combined} {body}"
+                elif any(re.search(pat, combined.lower()) for pat in OBITUARY_PATTERNS):
                     continue
+                elif any(re.search(pat, combined.lower()) for pat in EXCLUDE_PATTERNS):
+                    continue
+                elif not (is_nc_relevant(combined) or mentions_topic(combined)):
+                    # Says "Holly Springs" but nothing yet suggests a
+                    # policing/crime angle (e.g. town council, business,
+                    # weather) — check the body once before dropping it,
+                    # since summaries are often too short to carry the
+                    # relevant sentence.
+                    body = fetch_article_text(link)
+                    if not (is_nc_relevant(body) or mentions_topic(body)):
+                        continue
+                    combined = f"{combined} {body}"
 
                 h = make_hash(link, title)
                 if h in seen:
@@ -446,12 +517,12 @@ def scrape_google_news(seen: set) -> list:
                 if any(re.search(pat, combined.lower()) for pat in OBITUARY_PATTERNS):
                     continue
                 # Google News' own query matching is loose — generic NC
-                # relevance alone let through unrelated statewide stories
-                # (e.g. a different TV station's coverage area). Require
-                # the actual town name to appear.
-                if not mentions_holly_springs(combined):
-                    continue
-                if not is_nc_relevant(combined):
+                # relevance alone let through unrelated statewide stories.
+                # is_relevant() requires the actual town name plus either
+                # an NC signal OR a policing/crime topic word (previously
+                # required an explicit NC signal specifically, which many
+                # genuine local headlines simply don't include).
+                if not is_relevant(combined):
                     continue
 
                 h = make_hash(link, title)
@@ -517,11 +588,7 @@ def scrape_court_records(seen: set) -> list:
                 link    = entry.get("link", "")
                 combined = f"{title} {summary}"
 
-                if any(re.search(pat, combined.lower()) for pat in OBITUARY_PATTERNS):
-                    continue
-                if not mentions_holly_springs(combined):
-                    continue
-                if not is_nc_relevant(combined):
+                if not is_relevant(combined):
                     continue
 
                 h = make_hash(link, title)
@@ -558,11 +625,7 @@ def scrape_court_records(seen: set) -> list:
                 link    = entry.get("link", "")
                 combined = f"{title} {summary}"
 
-                if any(re.search(pat, combined.lower()) for pat in OBITUARY_PATTERNS):
-                    continue
-                if not mentions_holly_springs(combined):
-                    continue
-                if not is_nc_relevant(combined):
+                if not is_relevant(combined):
                     continue
 
                 h = make_hash(link, title)
@@ -675,11 +738,7 @@ def scrape_accountability_sources(seen: set) -> list:
                 summary = clean_text(entry.get("summary", ""))
                 link    = entry.get("link", "")
                 combined = f"{title} {summary}"
-                if any(re.search(pat, combined.lower()) for pat in OBITUARY_PATTERNS):
-                    continue
-                if not mentions_holly_springs(combined):
-                    continue
-                if not is_nc_relevant(combined):
+                if not is_relevant(combined):
                     continue
                 h = make_hash(link, title)
                 if h in seen:
@@ -741,13 +800,12 @@ def scrape_citizen_app(seen: set) -> list:
 
                 # Strict filter — only serious incidents
                 text_lower = combined.lower()
-                if any(re.search(pat, text_lower) for pat in OBITUARY_PATTERNS):
-                    continue
                 if not any(kw in text_lower for kw in CITIZEN_HIGH_PRIORITY):
                     continue
-                if not mentions_holly_springs(combined):
-                    continue
-                if not is_nc_relevant(combined):
+                # CITIZEN_HIGH_PRIORITY already establishes this is a
+                # serious-incident topic — don't also require an explicit
+                # NC signal in the snippet on top of that.
+                if not is_relevant(combined, require_topic=False):
                     continue
 
                 h = make_hash(link, title)
@@ -841,7 +899,7 @@ def scrape_reddit(seen: set) -> list:
     for query in REDDIT_QUERIES:
         try:
             encoded = requests.utils.quote(query)
-            url = f"https://www.reddit.com/search.rss?q={encoded}&sort=new&t=week"
+            url = f"https://www.reddit.com/search.rss?q={encoded}&sort=new&t=month"
             feed = fetch_feed(url)
             time.sleep(2)
 
@@ -857,15 +915,12 @@ def scrape_reddit(seen: set) -> list:
                     continue
                 # Sitewide search casts a very wide net — require the
                 # actual phrase "Holly Springs" to appear, not just any
-                # loose NC signal, or noise from r/all floods in. (We
-                # don't also require a topic word here — REDDIT_QUERIES
-                # already searched for "police"/"pd" terms, and Reddit's
-                # RSS summaries are often blank/short, so an additional
-                # topic-word check on the snippet text was killing
-                # almost all genuinely relevant results.)
-                if not mentions_holly_springs(combined):
-                    continue
-                if not is_nc_relevant(combined):
+                # loose NC signal, or noise from r/all floods in.
+                # REDDIT_QUERIES already searched for "police"/"pd" terms,
+                # so topic relevance is already established by the query
+                # itself — don't also require an explicit NC signal in
+                # Reddit's often blank/short RSS summary text.
+                if not is_relevant(combined, require_topic=False):
                     continue
 
                 h = make_hash(link, title)
@@ -1021,9 +1076,7 @@ def scrape_google_for_facebook(seen: set) -> list:
 
                 if "facebook.com" not in link.lower():
                     continue
-                if not mentions_holly_springs(combined):
-                    continue
-                if not is_nc_relevant(combined):
+                if not is_relevant(combined):
                     continue
 
                 h = make_hash(link, title)
@@ -1445,6 +1498,15 @@ def run():
     all_new += scrape_bluesky(seen)
 
     save_seen(seen)
+
+    # Drop anything with a confidently old publish date before it ever
+    # enters the archive — see RESULT_MAX_AGE_DAYS / is_too_old above.
+    before_age_filter = len(all_new)
+    all_new = [i for i in all_new if not is_too_old(i.get("published", ""))]
+    dropped_for_age = before_age_filter - len(all_new)
+    if dropped_for_age:
+        log.info(f"Dropped {dropped_for_age} stale result(s) older than "
+                 f"{RESULT_MAX_AGE_DAYS} days (newly discovered, but old).")
 
     high_priority = [i for i in all_new if i.get("priority")]
     log.info(f"Found {len(all_new)} new result(s), {len(high_priority)} HIGH PRIORITY.")
