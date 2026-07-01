@@ -56,7 +56,6 @@ EXCLUDE_PATTERNS = [
     r"holly springs,?\s*(ky|kentucky)",
     r"holly springs,?\s*(sc|south carolina)",
     r"holly springs,?\s*(ca|california)",
-    r"holly springs,?\s*(tn|tennessee)",
 ]
 
 # Obituaries/death notices regularly mention "Holly Springs" as a hometown
@@ -85,13 +84,13 @@ HIGH_PRIORITY_KEYWORDS = [
     "shot by police", "killed by police", "tased", "choked",
     "in custody death", "death in custody", "died in custody",
     # Legal / accountability
-    "civil rights lawsuit", "§1983", "section 1983",
+    "civil rights lawsuit", "1983", "§1983", "section 1983",
     "wrongful death", "police misconduct", "brutality",
     "internal affairs", "under investigation", "indicted",
     "criminal charges", "officer charged", "officer arrested",
-    "decertified", "sustained complaint",
+    "decertified", "post commission", "sustained complaint",
     # Threats / serious incidents
-    "active shooter", "hostage", "barricade", "srt",
+    "active shooter", "hostage", "barricade", "swat",
     "pursuit ended", "high speed chase", "officer struck",
     "officer injured", "officer killed", "ambush",
 ]
@@ -436,7 +435,7 @@ GOOGLE_NEWS_QUERIES = [
     "Holly Springs North Carolina crime report",
     # NC POST
     '"Holly Springs" officer decertified NC',
-    '"Holly Springs Police" BLET commission',
+    '"Holly Springs Police" POST commission',
     # Town governance
     "Holly Springs NC town council police",
     "Holly Springs NC police budget",
@@ -552,7 +551,7 @@ def scrape_google_news(seen: set) -> list:
 
 COURT_QUERIES = [
     # Federal civil rights
-    '"holly springs" "north carolina",
+    '"holly springs" "north carolina" "1983"',
     '"holly springs police" "civil rights"',
     '"holly springs" officer "use of force" lawsuit',
     '"holly springs" police "wrongful death"',
@@ -1008,12 +1007,6 @@ FB_PAGES = [
      "keyword_filter": True},
     {"name": "Holly Springs Happenings (Facebook)",
      "url":  "https://www.facebook.com/groups/hollyspringshappenings",
-     "keyword_filter": True},
-    {"name": "Holly Springs, NC Community Information (Facebook)",
-     "url":  "https://www.facebook.com/groups/HollySpringsCommunityInformations",
-     "keyword_filter": True},
-    {"name": "Wake County Mugshots (Facebook)",
-     "url":  "https://www.facebook.com/profile.php?id=61573866571453",
      "keyword_filter": True},
 ]
 
