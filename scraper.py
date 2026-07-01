@@ -838,18 +838,58 @@ REDDIT_QUERIES = [
     '"holly springs" police "north carolina"',
     '"holly springs" pd nc',
 ]
-REDDIT_SUBREDDITS = ["raleigh", "NorthCarolina", "triangle", "HollySpringsNC"]
+# Broader NC/regional subs still need keyword search to avoid noise.
+REDDIT_SUBREDDITS = ["raleigh", "NorthCarolina", "triangle"]
 
-# Hyper-local subreddit already implies location, so we can search broader
-# terms without requiring "nc"/"north carolina" in the query itself.
-REDDIT_LOCAL_QUERIES = ["police", "officer", "arrest", "shooting", "crime"]
+# r/HollySpringsNC is hyper-local — the subreddit itself IS the topic, so
+# every new post there is worth surfacing rather than only ones matching
+# a policing/crime keyword. Pulled via its own /new/.rss feed below
+# instead of a keyword search.
+HOLLYSPRINGS_SUBREDDIT = "HollySpringsNC"
 
 
 def scrape_reddit(seen: set) -> list:
     results = []
 
+    # r/HollySpringsNC — pull every new post, unfiltered by keyword.
+    try:
+        url = f"https://www.reddit.com/r/{HOLLYSPRINGS_SUBREDDIT}/new/.rss?limit=25"
+        feed = fetch_feed(url)
+        time.sleep(2)
+
+        for entry in feed.entries:
+            title   = clean_text(entry.get("title", ""))
+            summary = clean_text(entry.get("summary", ""))
+            link    = entry.get("link", "")
+            combined = f"{title} {summary}"
+
+            if is_subreddit_about_link(link):
+                continue
+            if any(re.search(pat, combined.lower()) for pat in OBITUARY_PATTERNS):
+                continue
+
+            h = make_hash(link, title)
+            if h in seen:
+                continue
+
+            results.append({
+                "source":    f"Reddit r/{HOLLYSPRINGS_SUBREDDIT}",
+                "title":     title,
+                "summary":   BeautifulSoup(summary, "html.parser").get_text()[:300],
+                "url":       link,
+                "published": entry.get("published", ""),
+                "category":  "Reddit",
+                "priority":  is_high_priority(combined),
+                "priority_reason": priority_reason(combined),
+                "hash":      h,
+            })
+            seen.add(h)
+            log.info(f"[Reddit] New (r/{HOLLYSPRINGS_SUBREDDIT}, unfiltered): {title}")
+    except Exception as e:
+        log.warning(f"[Reddit] r/{HOLLYSPRINGS_SUBREDDIT} new feed failed: {e}")
+
     for subreddit in REDDIT_SUBREDDITS:
-        queries = REDDIT_LOCAL_QUERIES if subreddit == "HollySpringsNC" else REDDIT_QUERIES[:2]
+        queries = REDDIT_QUERIES[:2]
         for query in queries:
             try:
                 encoded = requests.utils.quote(query)
@@ -870,8 +910,7 @@ def scrape_reddit(seen: set) -> list:
                     if any(re.search(pat, combined.lower()) for pat in OBITUARY_PATTERNS):
                         continue
 
-                    if subreddit != "HollySpringsNC" and \
-                       not any(kw in combined.lower() for kw in KEYWORDS) and \
+                    if not any(kw in combined.lower() for kw in KEYWORDS) and \
                        not is_nc_relevant(combined):
                         continue
 
