@@ -1793,5 +1793,41 @@
     "priority_reason": "",
     "hash": "419d950d35f3dc529a09ffc2376af40f",
     "first_seen": "2026-07-01T19:55:00.817603+00:00"
+  },
+  "f31eea32a9a0fdd3df625bd1c8cab425": {
+    "source": "Google News",
+    "title": "Woman accused of firing gun in Holly Springs neighborhood in custody - WRAL",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqAFBVV95cUxPVVg2MjVTLXotNS1XVUtVNW1QcHpkdDl2UjU3WS1Ra1BZaTJyNXRuVER5V1NSVERzdklzdzB5eVRIZWl2eXV5cnFKbHpVWDVzT3doOXJwVjNySjdUNUpyVW9WSGU4MlR1Ujg5LXB2ZG13SmdJME44VGpRc3NabXpWUURZVXZvcExOaGh1SVFkNTdYQmdhanpWdXgyNU9RT0RqSGtpNVl1MDI?oc=5\" target=\"_blank\">",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPVVg2MjVTLXotNS1XVUtVNW1QcHpkdDl2UjU3WS1Ra1BZaTJyNXRuVER5V1NSVERzdklzdzB5eVRIZWl2eXV5cnFKbHpVWDVzT3doOXJwVjNySjdUNUpyVW9WSGU4MlR1Ujg5LXB2ZG13SmdJME44VGpRc3NabXpWUURZVXZvcExOaGh1SVFkNTdYQmdhanpWdXgyNU9RT0RqSGtpNVl1MDI?oc=5",
+    "published": "Sat, 26 Jul 2025 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "f31eea32a9a0fdd3df625bd1c8cab425",
+    "first_seen": "2026-07-02T03:00:19.859387+00:00"
+  },
+  "232c7244875e464c12e0201041ad8049": {
+    "source": "Google News",
+    "title": "Chief: Mount Holly Springs Police detained 19 people for ICE in last month - cumberlink.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxQOWV6UnBXQzQtY2JYdTFMZXZrTHUtZmg5UmhNRlZGSkRybHNma1p3cHRabTFWRlppY1FGVDdSa2NwdlZuQUVJNVdocXcxZXNtdndQeGZycFVIbk0xeGtTNjdRLXh6dGQyMHVOMkE0ZFFqbHcySU52X0F1Wl84bkxQR3pNSDRGNE5zZVBzQ1ZaUlB1RkJ6blRUZmFaa1M5Qk4xbXUxZDlB?oc=5\" target=\"_blank\">Chi",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQOWV6UnBXQzQtY2JYdTFMZXZrTHUtZmg5UmhNRlZGSkRybHNma1p3cHRabTFWRlppY1FGVDdSa2NwdlZuQUVJNVdocXcxZXNtdndQeGZycFVIbk0xeGtTNjdRLXh6dGQyMHVOMkE0ZFFqbHcySU52X0F1Wl84bkxQR3pNSDRGNE5zZVBzQ1ZaUlB1RkJ6blRUZmFaa1M5Qk4xbXUxZDlB?oc=5",
+    "published": "Sat, 30 May 2026 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "232c7244875e464c12e0201041ad8049",
+    "first_seen": "2026-07-02T03:00:19.859387+00:00"
+  },
+  "e8d2d5ffe0eecab1ce38cf29371be707": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Recommendations for Force Free Dog Trainers in the area?",
+    "summary": "We\u2019re looking for a trainer to help us with separation anxiety and frustration based reactivity. Who have some of you used, and how were the results?    submitted by    /u/Otharsis   [link] [comments]",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1ukwc0w/recommendations_for_force_free_dog_trainers_in/",
+    "published": "2026-07-01T20:00:44+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "e8d2d5ffe0eecab1ce38cf29371be707",
+    "first_seen": "2026-07-02T03:00:19.859387+00:00"
   }
 }
