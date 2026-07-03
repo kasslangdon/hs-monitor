@@ -2343,5 +2343,28 @@
     "priority_reason": "",
     "hash": "249f0c05491e576da8d1a2718fa16195",
     "first_seen": "2026-07-03T14:01:16.306311+00:00"
+  },
+  "076897c61f3627ac5fa7f0769a760150": {
+    "source": "Google News",
+    "title": "Holly Springs Teen Indicted For DUI Murder Of Classmate - thencbeat.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMifEFVX3lxTE5nczNvLUhuUDlWMEZKbVFhdl9xcU5ONEIzVEpHOUZOT0Mwa1FNQmZsX2VUU0p5c1AyWGI2YzBsU1FVS1JxRHUtZUFLNWtUaloxNWdlNjVFMUdCWXMxLWN6ZXBJSzZOY1RfanVGcTJQZ01BVXVuTTNzcW5OZlE?oc=5\" target=\"_blank\">Holly Springs Teen Indicted For DUI Murder Of Classmate</a>&",
+    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5nczNvLUhuUDlWMEZKbVFhdl9xcU5ONEIzVEpHOUZOT0Mwa1FNQmZsX2VUU0p5c1AyWGI2YzBsU1FVS1JxRHUtZUFLNWtUaloxNWdlNjVFMUdCWXMxLWN6ZXBJSzZOY1RfanVGcTJQZ01BVXVuTTNzcW5OZlE?oc=5",
+    "published": "Mon, 24 Nov 2025 08:00:00 GMT",
+    "category": "News",
+    "priority": true,
+    "priority_reason": "indicted",
+    "hash": "076897c61f3627ac5fa7f0769a760150",
+    "first_seen": "2026-07-03T19:19:57.891576+00:00"
+  },
+  "ab0ad0fb45850caa9753004c91f13c45": {
+    "source": "Court / Legal (Google)",
+    "title": "Holly Springs police make arrest in connection with dog mauling - WNDU",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxPcF9ZakV3NkplUTdKSzRUaGVGZ2x3dlpqQmZQb2pGbm9OLWlwLUp6aThkZzBFU04xWlQ3Zm05NEpfT2RSSUFMVk8wdUZZYktnc3ZKcUJ5RDVZWU9vOGd3RXNITEEtZ0lXZUF4RnpQZkhaLXJ1aXNYRGUxYzZvZ2ROMTlibHJYUHpQQkgxV2NiUGszSDVXNHhGWlowNzFiNVJf?oc=5\" target=\"_blank\">Holly Sprin",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPcF9ZakV3NkplUTdKSzRUaGVGZ2x3dlpqQmZQb2pGbm9OLWlwLUp6aThkZzBFU04xWlQ3Zm05NEpfT2RSSUFMVk8wdUZZYktnc3ZKcUJ5RDVZWU9vOGd3RXNITEEtZ0lXZUF4RnpQZkhaLXJ1aXNYRGUxYzZvZ2ROMTlibHJYUHpQQkgxV2NiUGszSDVXNHhGWlowNzFiNVJf?oc=5",
+    "published": "Mon, 23 Mar 2026 07:00:00 GMT",
+    "category": "Court Records",
+    "priority": true,
+    "hash": "ab0ad0fb45850caa9753004c91f13c45",
+    "first_seen": "2026-07-03T19:19:57.891576+00:00"
   }
 }
