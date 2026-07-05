@@ -2546,5 +2546,17 @@
     "priority_reason": "",
     "hash": "fe42df0de18556e0148e3f63ffceca0e",
     "first_seen": "2026-07-05T02:51:55.662189+00:00"
+  },
+  "7d7f9fc992d649ce030a25891831f52a": {
+    "source": "Google News",
+    "title": "Holly Springs Mini\u2011Mart Owner Arrested After Drug Raid - Hoodline",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiowFBVV95cUxNZXdMRlIxcW1pWWhCbFI1TW9BMDdfVHI2V0ZEM1ljVUU3YjhtZkRvVFR6Zjl1R2t3MzZORlY1Q0VaWVNhM3ozZVVCaFRQY2Vxc05FMFR5Tjk0REdMZERsZzFUQ1N5OTU2SGMzbDRhVzhfY05sS1RHSDJsSGRScS1QYTd6X1N0M3c4UXdHaG9pS3dJZXVJbWN0aWx2Wk5WbkU4QzJn?oc=5\" target=\"_blank\">Holly S",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZXdMRlIxcW1pWWhCbFI1TW9BMDdfVHI2V0ZEM1ljVUU3YjhtZkRvVFR6Zjl1R2t3MzZORlY1Q0VaWVNhM3ozZVVCaFRQY2Vxc05FMFR5Tjk0REdMZERsZzFUQ1N5OTU2SGMzbDRhVzhfY05sS1RHSDJsSGRScS1QYTd6X1N0M3c4UXdHaG9pS3dJZXVJbWN0aWx2Wk5WbkU4QzJn?oc=5",
+    "published": "Thu, 23 Apr 2026 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "7d7f9fc992d649ce030a25891831f52a",
+    "first_seen": "2026-07-05T08:53:03.633194+00:00"
   }
 }
