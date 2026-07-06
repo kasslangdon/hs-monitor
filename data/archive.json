@@ -2630,5 +2630,17 @@
     "priority_reason": "",
     "hash": "dcb0a52d4cd2973c0a1eef1d526d6846",
     "first_seen": "2026-07-06T15:29:49.746421+00:00"
+  },
+  "171c6446d76d9af6332f88da29848d4e": {
+    "source": "Reddit r/NorthCarolina",
+    "title": "License plate stickers going away as NCDOT gets electronic reboot",
+    "summary": "      Any privacy and security concerns about these upcoming digital changes to driver's license and registration in NC? I have several but the first paragraph of this Winston-Salem Journal article (7/5/26) really got my attention...   When North Carolina motorists are asked by law enforcement offic",
+    "url": "https://www.reddit.com/r/NorthCarolina/comments/1unznaz/license_plate_stickers_going_away_as_ncdot_gets/",
+    "published": "2026-07-05T11:19:31+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "171c6446d76d9af6332f88da29848d4e",
+    "first_seen": "2026-07-06T19:56:01.924194+00:00"
   }
 }
