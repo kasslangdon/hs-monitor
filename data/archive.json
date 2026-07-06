@@ -2594,5 +2594,29 @@
     "priority_reason": "",
     "hash": "35fa080f8e2811fdca93547066d06fe6",
     "first_seen": "2026-07-05T19:17:41.580683+00:00"
+  },
+  "8d33e4edbfc368b3e9299ea1d9a5a1b5": {
+    "source": "Google News",
+    "title": "Holly Springs crash: 70-year-old killed after suspected medical emergency - Hoodline",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxNSHg4dHIxWHdnYlV1dnpqXzJacHlrVDZzNjBqeTVvSURUbFNsQURObDVmdF9qY0xGV1dXeW5YNWlKODhwSEZvYmx3eGIyVGxqajRUb2xyY3dfZWRYR1lLUm1ORnQ2ZWNsZEozRXdLM0EyRkJ4RXB3TmFsWUo2RlhEQjRuTkVrUVU5ZnJva1ZRMnNHWVdzUHVvWHhNdTNUak9QS3BfLXo1R0N3TllvZHFhUmtVbk9RTzdmbl",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNSHg4dHIxWHdnYlV1dnpqXzJacHlrVDZzNjBqeTVvSURUbFNsQURObDVmdF9qY0xGV1dXeW5YNWlKODhwSEZvYmx3eGIyVGxqajRUb2xyY3dfZWRYR1lLUm1ORnQ2ZWNsZEozRXdLM0EyRkJ4RXB3TmFsWUo2RlhEQjRuTkVrUVU5ZnJva1ZRMnNHWVdzUHVvWHhNdTNUak9QS3BfLXo1R0N3TllvZHFhUmtVbk9RTzdmblE?oc=5",
+    "published": "Thu, 23 Apr 2026 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "8d33e4edbfc368b3e9299ea1d9a5a1b5",
+    "first_seen": "2026-07-06T02:57:59.257038+00:00"
+  },
+  "ff0e4d69d6e5c452d77734b9483a013b": {
+    "source": "Google News",
+    "title": "Judge maintains no bond for teen charged in deadly Holly Springs crash - WRAL",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTXNDY29tNUV2QmFkOGp0ejVQRG8yYjdCN09NSkpLZVFXcExhNDlVR01seURGdzZoN0dwRHprc2d1RWJ6aGI2eTdpU2tzN3o0aHltcGR0T2s4M1NFLXVzeTZDT1QxMUVRWGE5b2VxWGpHc1NnS3RmcFFXdFBrbkd5Um5GODd1UXVEd3IwMlNLbDhRb1JiTWk0ZWlkT1Z0eVdkdTlJR1JqX2pWQ2M?oc=5\" target=\"_bla",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTXNDY29tNUV2QmFkOGp0ejVQRG8yYjdCN09NSkpLZVFXcExhNDlVR01seURGdzZoN0dwRHprc2d1RWJ6aGI2eTdpU2tzN3o0aHltcGR0T2s4M1NFLXVzeTZDT1QxMUVRWGE5b2VxWGpHc1NnS3RmcFFXdFBrbkd5Um5GODd1UXVEd3IwMlNLbDhRb1JiTWk0ZWlkT1Z0eVdkdTlJR1JqX2pWQ2M?oc=5",
+    "published": "Thu, 20 Nov 2025 08:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "ff0e4d69d6e5c452d77734b9483a013b",
+    "first_seen": "2026-07-06T02:57:59.257038+00:00"
   }
 }
