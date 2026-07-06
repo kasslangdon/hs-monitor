@@ -2618,5 +2618,17 @@
     "priority_reason": "",
     "hash": "ff0e4d69d6e5c452d77734b9483a013b",
     "first_seen": "2026-07-06T02:57:59.257038+00:00"
+  },
+  "dcb0a52d4cd2973c0a1eef1d526d6846": {
+    "source": "Holly Springs Update",
+    "title": "Apex (NC) Restaurant Health Inspections: June 2026",
+    "summary": "All 33 Apex food service establishments inspected this cycle earned Grade A sanitation ratings, with scores ranging from 92 to 100 and no uncorrected critical food safety violations.",
+    "url": "https://www.hollyspringsupdate.com/p/apex-nc-restaurant-health-inspections",
+    "published": "Mon, 06 Jul 2026 15:11:10 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "dcb0a52d4cd2973c0a1eef1d526d6846",
+    "first_seen": "2026-07-06T15:29:49.746421+00:00"
   }
 }
