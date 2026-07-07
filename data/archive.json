@@ -2642,5 +2642,53 @@
     "priority_reason": "",
     "hash": "171c6446d76d9af6332f88da29848d4e",
     "first_seen": "2026-07-06T19:56:01.924194+00:00"
+  },
+  "bf802ea75a2fdfe739cd2de8aff10add": {
+    "source": "Holly Springs Update",
+    "title": "Holly Springs (NC) Begins Stage 1 Water Restrictions Effective July 6th as Drought Prompts Regional Conservation",
+    "summary": "Beginning July 6, Holly Springs limits lawn irrigation to designated days and times under a Stage 1 Water Shortage Alert, joining nearby communities responding to ongoing drought conditions.",
+    "url": "https://www.hollyspringsupdate.com/p/holly-springs-nc-begins-stage-1-water",
+    "published": "Mon, 06 Jul 2026 23:01:25 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "bf802ea75a2fdfe739cd2de8aff10add",
+    "first_seen": "2026-07-07T02:52:20.095986+00:00"
+  },
+  "d77167372b80532c9bd2f2c971060c6f": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Welcome Party Holly Springs",
+    "summary": "hi! Planning my wedding next May and looking for somewhere to host a welcome party/more chill welcome cocktail event the night before. all of our guests are traveling from out of town so we wanted to meet up with people before! any recs for a bar/restaurant or nice space for this?! thank u!!    subm",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1uph1w4/welcome_party_holly_springs/",
+    "published": "2026-07-07T01:43:05+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "d77167372b80532c9bd2f2c971060c6f",
+    "first_seen": "2026-07-07T02:52:20.095986+00:00"
+  },
+  "ec7072baa0f05a3519ca072fdfdb6e57": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "USA Game",
+    "summary": "Is anyone watching the game somewhere in town? Don\u2019t feel like driving 30 mins to Raleigh     submitted by    /u/drumella   [link] [comments]",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1upa3xp/usa_game/",
+    "published": "2026-07-06T21:02:25+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "ec7072baa0f05a3519ca072fdfdb6e57",
+    "first_seen": "2026-07-07T02:52:20.095986+00:00"
+  },
+  "1db39a8ce3b9027533aaa18be6d46058": {
+    "source": "Reddit r/raleigh",
+    "title": "Moving to Raleigh help!",
+    "summary": "I'm moving to Raleigh as a newly single woman in my 30s and have narrowed my apartment search down to a few communities that seem to fit what I'm looking for. They're within my budget, pet-friendly (my top priority!), have great amenities, and offer a reasonable commute to downtown while still being",
+    "url": "https://www.reddit.com/r/raleigh/comments/1uoepu5/moving_to_raleigh_help/",
+    "published": "2026-07-05T21:56:35+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "1db39a8ce3b9027533aaa18be6d46058",
+    "first_seen": "2026-07-07T02:52:20.095986+00:00"
   }
 }
