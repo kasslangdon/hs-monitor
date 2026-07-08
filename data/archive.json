@@ -2714,5 +2714,40 @@
     "priority_reason": "",
     "hash": "e23fd16fa46694d6a1b72d876c517e65",
     "first_seen": "2026-07-07T19:55:07.277527+00:00"
+  },
+  "d9850f5d8f04973e184c61f4c9713984": {
+    "source": "Court / Legal (Google)",
+    "title": "Former Holly Springs mayor found liable in lawsuit filed by administrative assistant - FOX13 Memphis",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMi_AFBVV95cUxQVEp4OTV5WnpUMW5qblFDOFFIaFFHZlkwWENVaUstR0J5T1NsdkZkRVI4bzRLTGsyVkFKV2lSOUtVZ0RENG9XMGwzSzdJeE9pRWxUNnJoSlJaVVhNMDNTNURiSUZMblR2Wkl1a0NOdlBLT0d1MDFIcTU0ajNOYVhlaUpVUzlKZEVtU3RzS1Uyd2ZXSW9zSHk4U2FuU1VmQUZUTTA3ZVhKNl9iSWJsdjV0UWhYMXZIRjJlcT",
+    "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQVEp4OTV5WnpUMW5qblFDOFFIaFFHZlkwWENVaUstR0J5T1NsdkZkRVI4bzRLTGsyVkFKV2lSOUtVZ0RENG9XMGwzSzdJeE9pRWxUNnJoSlJaVVhNMDNTNURiSUZMblR2Wkl1a0NOdlBLT0d1MDFIcTU0ajNOYVhlaUpVUzlKZEVtU3RzS1Uyd2ZXSW9zSHk4U2FuU1VmQUZUTTA3ZVhKNl9iSWJsdjV0UWhYMXZIRjJlcTNUQmJMU2FSYmsxbTRIeVNpREFFOXZWbTVMNENQcUEwNlMwRE9sc1Q0RjBUckx1eUduMHJGVXlzMVRuSWpXVXlCTEE?oc=5",
+    "published": "Mon, 27 Oct 2025 07:00:00 GMT",
+    "category": "Court Records",
+    "priority": true,
+    "hash": "d9850f5d8f04973e184c61f4c9713984",
+    "first_seen": "2026-07-08T02:29:57.103241+00:00"
+  },
+  "75e3e77eb2b58a4cbdb1a1a496dd6a34": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Advice for young 30 couple ..",
+    "summary": "Hi ! My wife and I are visiting HS for the first time this weekend to hopefully \u201ccatch a vibe\u201d on the Triangle Area as a potential landing spot to reside. Pending job opportunities would put us in the area permanently in 2027\u2019. Any neighborhoods/regions we should specifically focus on to scope out ?",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1uq8agb/advice_for_young_30_couple/",
+    "published": "2026-07-07T21:14:02+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "75e3e77eb2b58a4cbdb1a1a496dd6a34",
+    "first_seen": "2026-07-08T02:29:57.103241+00:00"
+  },
+  "53db2437d0cdfb563409aadc36fe60f0": {
+    "source": "Reddit r/triangle",
+    "title": "Looking at moving here: some stuff Google won't tell you",
+    "summary": "I'm a native whose career who post grad school lived other places then boomeranged back. For context: there was no I-40 when I grew up in these parts. Some stuff you need to know if the area is in your sights. * The Triangle is a series of small towns around Raleigh and Durham and the unincorporated",
+    "url": "https://www.reddit.com/r/triangle/comments/1up0yxx/looking_at_moving_here_some_stuff_google_wont/",
+    "published": "2026-07-06T15:41:09+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "53db2437d0cdfb563409aadc36fe60f0",
+    "first_seen": "2026-07-08T02:29:57.103241+00:00"
   }
 }
