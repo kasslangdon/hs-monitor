@@ -2809,5 +2809,29 @@
     "priority_reason": "",
     "hash": "645c01c50b21f8acc64bff9abc53e2d8",
     "first_seen": "2026-07-09T02:44:14.873104+00:00"
+  },
+  "a8c894fe5dba0a91107ebfd2ed872a0d": {
+    "source": "Google News",
+    "title": "3 hurt, EMS unit flips in Holly Springs crash on NC 55 - CBS17.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMilgFBVV95cUxQbVhrYndWenlIYzJuc2Fwa0F6bE43UVFjY3dNMDBlNV83eFZYcnh2UXFNYTRrRGNSWDljRHF5Q29CaFllT2JLQzdPT19GYklreExDbS1yYjdkRjdZVDhmbGlOU1FHS1lERk5JbWFFVXVrdEFWZmROam1tSFEybW4zdlVYQ0ZrbTd1aVZ4ZTNjNG9FbGp1eXc?oc=5\" target=\"_blank\">3 hurt, EMS unit flips i",
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQbVhrYndWenlIYzJuc2Fwa0F6bE43UVFjY3dNMDBlNV83eFZYcnh2UXFNYTRrRGNSWDljRHF5Q29CaFllT2JLQzdPT19GYklreExDbS1yYjdkRjdZVDhmbGlOU1FHS1lERk5JbWFFVXVrdEFWZmROam1tSFEybW4zdlVYQ0ZrbTd1aVZ4ZTNjNG9FbGp1eXc?oc=5",
+    "published": "Mon, 02 Mar 2026 01:01:27 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "a8c894fe5dba0a91107ebfd2ed872a0d",
+    "first_seen": "2026-07-09T14:56:09.217262+00:00"
+  },
+  "1ee2b3256baf60f3e5ed8868defdcb3b": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Birthday letter left at Olive Garden",
+    "summary": "      This was left at the olive garden in holly springs. It's a note from joby's mom for his 18th. Joby bro this is so sweet please lmk if I can get this back to you. Id want to have it if my mom wrote me something like this.    submitted by    /u/Low_Wallaby_8316   [link] [comments] ",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1urq759/birthday_letter_left_at_olive_garden/",
+    "published": "2026-07-09T13:23:40+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "1ee2b3256baf60f3e5ed8868defdcb3b",
+    "first_seen": "2026-07-09T14:56:09.217262+00:00"
   }
 }
