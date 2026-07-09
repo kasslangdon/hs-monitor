@@ -2833,5 +2833,53 @@
     "priority_reason": "",
     "hash": "1ee2b3256baf60f3e5ed8868defdcb3b",
     "first_seen": "2026-07-09T14:56:09.217262+00:00"
+  },
+  "d73b0f29fdebc75fb39ecf9179420bb0": {
+    "source": "Holly Springs Update",
+    "title": "Out and About This Weekend in Holly Springs (NC), Apex & Fuquay-Varina (7/10 through 7/12)",
+    "summary": "Blueberry Day at the Holly Springs Farmers Market, a Summer Family Dance in Apex, live music across South Wake, and big-name concerts just down the road make this a weekend to get out and explore.",
+    "url": "https://www.hollyspringsupdate.com/p/out-and-about-this-weekend-in-holly-c02",
+    "published": "Thu, 09 Jul 2026 18:00:50 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "d73b0f29fdebc75fb39ecf9179420bb0",
+    "first_seen": "2026-07-09T19:45:56.501615+00:00"
+  },
+  "e8771b0779736b90ed4079c84f3e4383": {
+    "source": "Google News",
+    "title": "3 hurt, EMS unit flips in Holly Springs crash on NC 55 - CBS 17",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMilgFBVV95cUxQbVhrYndWenlIYzJuc2Fwa0F6bE43UVFjY3dNMDBlNV83eFZYcnh2UXFNYTRrRGNSWDljRHF5Q29CaFllT2JLQzdPT19GYklreExDbS1yYjdkRjdZVDhmbGlOU1FHS1lERk5JbWFFVXVrdEFWZmROam1tSFEybW4zdlVYQ0ZrbTd1aVZ4ZTNjNG9FbGp1eXc?oc=5\" target=\"_blank\">3 hurt, EMS unit flips i",
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQbVhrYndWenlIYzJuc2Fwa0F6bE43UVFjY3dNMDBlNV83eFZYcnh2UXFNYTRrRGNSWDljRHF5Q29CaFllT2JLQzdPT19GYklreExDbS1yYjdkRjdZVDhmbGlOU1FHS1lERk5JbWFFVXVrdEFWZmROam1tSFEybW4zdlVYQ0ZrbTd1aVZ4ZTNjNG9FbGp1eXc?oc=5",
+    "published": "Mon, 02 Mar 2026 01:01:27 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "e8771b0779736b90ed4079c84f3e4383",
+    "first_seen": "2026-07-09T19:45:56.501615+00:00"
+  },
+  "1ad2263764e7ca3d00620a80aebbc55f": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "O2 Fitness Closing",
+    "summary": "Anybody know if it got bought out by another gym or being replaced by something else?     submitted by    /u/OtherwiseSquirrel658   [link] [comments]",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1urzb2g/o2_fitness_closing/",
+    "published": "2026-07-09T18:48:59+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "1ad2263764e7ca3d00620a80aebbc55f",
+    "first_seen": "2026-07-09T19:45:56.501615+00:00"
+  },
+  "ceb5e800d5891e41b07745e0ef3e8e88": {
+    "source": "Reddit r/triangle",
+    "title": "Andrew Ramon Deras is a Killer on the Loose in North Carolina. Wake County Bureaucrats Enabled Him",
+    "summary": "       Originally posted on Medium.  It\u2019s been over a year since former Wake County Sheriff\u2019s Deputy Andrew Ramon Deras broke into a Raleigh home and killed a family dog named Zelda. Briggs family and their beloved dog, Zelda  Deras arrived at Paul and Paige Briggs\u2019 home in Raleigh to serve a civil ",
+    "url": "https://www.reddit.com/r/triangle/comments/1ur6dz2/andrew_ramon_deras_is_a_killer_on_the_loose_in/",
+    "published": "2026-07-08T21:32:46+00:00",
+    "category": "Reddit",
+    "priority": true,
+    "priority_reason": "criminal charges",
+    "hash": "ceb5e800d5891e41b07745e0ef3e8e88",
+    "first_seen": "2026-07-09T19:45:56.501615+00:00"
   }
 }
