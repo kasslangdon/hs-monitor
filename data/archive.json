@@ -2881,5 +2881,29 @@
     "priority_reason": "criminal charges",
     "hash": "ceb5e800d5891e41b07745e0ef3e8e88",
     "first_seen": "2026-07-09T19:45:56.501615+00:00"
+  },
+  "f9f6faa725fcea72c14b0f156936c3fb": {
+    "source": "Google News",
+    "title": "Juvenile on bicycle killed after multi-car crash in Holly Springs, police say - CBS 17",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxQYml3Vm5yTnlOcnpsUmdQRzhCNWJvRzZDTDUydk1ucFpsaWVkVVdKa1JudHY1NTE4Vnp0bm5iMEZlTEhBU3NlV3Y3MFQ2UE1QT2dSTWRWX1NnOUh3SXdSZTJZTUtaZndvNkxYc3hBNXVtRmZRMHFNVGl1UXB5THVzQlMzMS12VFY4OGRxbjNyVmxyUUF0ME0tcEdtS2FPZ29fM3FMNkJyUnpRUTR4WlZGbG9NbWc?oc=5\" ",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQYml3Vm5yTnlOcnpsUmdQRzhCNWJvRzZDTDUydk1ucFpsaWVkVVdKa1JudHY1NTE4Vnp0bm5iMEZlTEhBU3NlV3Y3MFQ2UE1QT2dSTWRWX1NnOUh3SXdSZTJZTUtaZndvNkxYc3hBNXVtRmZRMHFNVGl1UXB5THVzQlMzMS12VFY4OGRxbjNyVmxyUUF0ME0tcEdtS2FPZ29fM3FMNkJyUnpRUTR4WlZGbG9NbWc?oc=5",
+    "published": "Sun, 26 Oct 2025 12:52:51 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "f9f6faa725fcea72c14b0f156936c3fb",
+    "first_seen": "2026-07-10T14:20:49.511076+00:00"
+  },
+  "50dbbc3d10175fb4548625452955940c": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Nail salon recommendations?",
+    "summary": "      I got my nails done at DP nail spa literally two days ago and this is what they already look like \u2026 they\u2019re super nice I\u2019m just tired of getting mediocre manicures \u2026 the gel nail polish is always far away from the cuticle \u2026 anyone have any recommendations?     submitted by    /u/Classic_Rub247",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1usmxjc/nail_salon_recommendations/",
+    "published": "2026-07-10T12:56:39+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "50dbbc3d10175fb4548625452955940c",
+    "first_seen": "2026-07-10T14:20:49.511076+00:00"
   }
 }
