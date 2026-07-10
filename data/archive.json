@@ -2905,5 +2905,29 @@
     "priority_reason": "",
     "hash": "50dbbc3d10175fb4548625452955940c",
     "first_seen": "2026-07-10T14:20:49.511076+00:00"
+  },
+  "8779ac989b23e9c2c0f34eab8a6bf745": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Burger King",
+    "summary": "Does anyone know if the Burger King shut down or if they're just doing renovations? I saw a bunch of construction there today and they took the sign down. I hope they shut that place down.     submitted by    /u/GroundbreakingGap465   [link] [comments]",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1uswg0j/burger_king/",
+    "published": "2026-07-10T18:46:08+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "8779ac989b23e9c2c0f34eab8a6bf745",
+    "first_seen": "2026-07-10T19:27:17.606434+00:00"
+  },
+  "fc3e5c8e44e7fbd58dda114476a836b9": {
+    "source": "Reddit r/raleigh",
+    "title": "Things to do this weekend!",
+    "summary": "Friday  NE-YO and Akon, Coastal Credit Union Music Park at Walnut Creek, Raleigh  Blackberry Smoke, DPAC, Durham  Artist Notes featuring Larry & Joe, The Corner at Centennial Campus, Raleigh Tommy Davidson, Goodnights Comedy Club, Raleigh  Jess Hilarious, Raleigh Improv, Cary Chris Higgins, Goodnigh",
+    "url": "https://www.reddit.com/r/raleigh/comments/1usnkhy/things_to_do_this_weekend/",
+    "published": "2026-07-10T13:22:17+00:00",
+    "category": "Reddit",
+    "priority": true,
+    "priority_reason": "1983",
+    "hash": "fc3e5c8e44e7fbd58dda114476a836b9",
+    "first_seen": "2026-07-10T19:27:17.606434+00:00"
   }
 }
