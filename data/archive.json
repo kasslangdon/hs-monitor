@@ -2929,5 +2929,17 @@
     "priority_reason": "1983",
     "hash": "fc3e5c8e44e7fbd58dda114476a836b9",
     "first_seen": "2026-07-10T19:27:17.606434+00:00"
+  },
+  "d53ad7fa00e17194487d54b6ac9883e2": {
+    "source": "WRAL News",
+    "title": "Some firetrucks operate without air conditioning during intense heat",
+    "summary": "The Holly Springs Fire Department said three of its six front-line vehicles are without functioning air conditioning. Temperatures have reached triple digits several days so far in the month of July.",
+    "url": "https://www.wral.com/news/local/some-firetrucks-operate-without-air-conditioning-intense-heat-july-2026/",
+    "published": "Fri, 10 Jul 2026 16:12:58 -0400",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "d53ad7fa00e17194487d54b6ac9883e2",
+    "first_seen": "2026-07-11T02:27:57.754345+00:00"
   }
 }
