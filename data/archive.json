@@ -3168,5 +3168,29 @@
     "priority": true,
     "hash": "06ddfd3c2feab7de622fd2dae570b0fe",
     "first_seen": "2026-07-12T13:17:41.177652+00:00"
+  },
+  "b666f9e853cc9b2dd6bcfceea63a898a": {
+    "source": "Google News",
+    "title": "Holly Springs cop who rescued kid from icy pond becomes National Law Enforcement Officer of the Month - CBS 17",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMi7gFBVV95cUxNdGpTU2JSczRyWGpPVmVYcVhDSTBCU3JScC1BemFaeFAzQXY4TjFyMV9CREhLb1hJaFBfQW5XQUU0R3Z5VjRYSVBXUmlIRTNOaGtseXkyWTd1WjNnME55Wk81OHVlR2NyU0ZRUU1MU3E5S3dRZUxxWUU4bTlPZVctcC1kdE1SOTBOX1NWdTQ0QzVBLVUxZFpVQ0wtaDlpWkxfV1l2UEUxY2h4OXlMUmYzdHRGQVVkY0txMD",
+    "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNdGpTU2JSczRyWGpPVmVYcVhDSTBCU3JScC1BemFaeFAzQXY4TjFyMV9CREhLb1hJaFBfQW5XQUU0R3Z5VjRYSVBXUmlIRTNOaGtseXkyWTd1WjNnME55Wk81OHVlR2NyU0ZRUU1MU3E5S3dRZUxxWUU4bTlPZVctcC1kdE1SOTBOX1NWdTQ0QzVBLVUxZFpVQ0wtaDlpWkxfV1l2UEUxY2h4OXlMUmYzdHRGQVVkY0txMDM2ZVZEd0xtXzBWOUFLUGQ5MDZqYVZVUkdxdnJXN3B6dVVGQmJfNElLaEd5VWpjTlhYbGhB?oc=5",
+    "published": "Wed, 25 Feb 2026 08:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "b666f9e853cc9b2dd6bcfceea63a898a",
+    "first_seen": "2026-07-12T19:05:29.147856+00:00"
+  },
+  "34c227aa4d0387743fc12339fbea3b04": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Utility Costs: Moving To Holly Springs",
+    "summary": "Hello All, Would love to get your feedback and share your monthly utility costs. Also share any that I am not thinking of as we are moving in from out of state. If there are multiple companies to choose from on certain utilities and services, please let me know. Base projections off a 3200 sq ft hom",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1uug5vl/utility_costs_moving_to_holly_springs/",
+    "published": "2026-07-12T13:55:33+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "34c227aa4d0387743fc12339fbea3b04",
+    "first_seen": "2026-07-12T19:05:29.147856+00:00"
   }
 }
