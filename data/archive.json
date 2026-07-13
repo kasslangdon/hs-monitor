@@ -3192,5 +3192,41 @@
     "priority_reason": "",
     "hash": "34c227aa4d0387743fc12339fbea3b04",
     "first_seen": "2026-07-12T19:05:29.147856+00:00"
+  },
+  "d3276bffcd341d699cbc42a34f8f5d8e": {
+    "source": "Google News",
+    "title": "Man, woman dead after Holly Springs shootings - WJTV",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMihAFBVV95cUxNR29Dc0xTYjN4V2d2T2hrN3hqM0h6VXZqX3ROZGFmVi1GcTRWQkdLSW9DLThQVTBjaFpaZHV0Y3o4QTJZU1FGWGtnZUtxZHNqYkhZZTFobHFmaktkWDdIVE9JNFlBVDBkczlud093VE81ZTRKdGs3VWx1RWNuR0Vab2JNWXDSAYoBQVVfeXFMTmY2M2JBS05YRV9hUWJITGFrS3BpUTVWVW5jSllfZ0xHY21hS0ZTOVNUSD",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNR29Dc0xTYjN4V2d2T2hrN3hqM0h6VXZqX3ROZGFmVi1GcTRWQkdLSW9DLThQVTBjaFpaZHV0Y3o4QTJZU1FGWGtnZUtxZHNqYkhZZTFobHFmaktkWDdIVE9JNFlBVDBkczlud093VE81ZTRKdGs3VWx1RWNuR0Vab2JNWXDSAYoBQVVfeXFMTmY2M2JBS05YRV9hUWJITGFrS3BpUTVWVW5jSllfZ0xHY21hS0ZTOVNUSDVteF9zem5vdDg3cWg4MUlYaUhDaWN6UWJzeWJ5UzVtcFJjZ1I3Njk4eDBUdUFnV0RzQ1JJRmFuUFF6Y0F3NnJMMGxNcjU5WkFNaGdHcWtQRmJ4OXpmVXB3?oc=5",
+    "published": "Sat, 09 Aug 2025 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "d3276bffcd341d699cbc42a34f8f5d8e",
+    "first_seen": "2026-07-13T14:31:10.986542+00:00"
+  },
+  "d27e466ef8ef7a1ae3703a46d23dc08c": {
+    "source": "Reddit r/NorthCarolina",
+    "title": "NC requires police to audit license-plate-reader use only once a year \u2014 reported to their own agency head. For drones, ShotSpotter, and social-media tools, state law requires no audit at all.",
+    "summary": "After reading about the wave of Georgia arrests this year \u2014 a dozen-plus officers across at least nine agencies charged or fired for using Flock license-plate cameras to track exes, crushes, and strangers (GBI on the Albany case; AJC overview) \u2014 I went looking at what North Carolina actually require",
+    "url": "https://www.reddit.com/r/NorthCarolina/comments/1utekfl/nc_requires_police_to_audit_licenseplatereader/",
+    "published": "2026-07-11T08:37:10+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "d27e466ef8ef7a1ae3703a46d23dc08c",
+    "first_seen": "2026-07-13T14:31:10.986542+00:00"
+  },
+  "542713e02686d6fd6e659098a9091ceb": {
+    "source": "Reddit r/NorthCarolina",
+    "title": "NC A&T's 16 campus license-plate cameras were searched 1.4 million times in three months \u2014 mostly by agencies outside NC, per the school's own records",
+    "summary": "North Carolina A&T in Greensboro runs 16 Flock license-plate reader cameras around campus. In response to a public-records request, its police department released the full Flock audit. The March\u2013May 2026 logs:  The shared network those 16 cameras feed was searched 1,390,776 times in three months, by",
+    "url": "https://www.reddit.com/r/NorthCarolina/comments/1usja17/nc_ats_16_campus_licenseplate_cameras_were/",
+    "published": "2026-07-10T10:02:36+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "542713e02686d6fd6e659098a9091ceb",
+    "first_seen": "2026-07-13T14:31:10.986542+00:00"
   }
 }
