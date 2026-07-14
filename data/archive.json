@@ -3228,5 +3228,29 @@
     "priority_reason": "",
     "hash": "542713e02686d6fd6e659098a9091ceb",
     "first_seen": "2026-07-13T14:31:10.986542+00:00"
+  },
+  "30a8294f662243c9632994da204173fd": {
+    "source": "Google News",
+    "title": "Rescue crews at NC 540 crash with car smashed into wall near Holly Springs - CBS 17",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxOajhqZTBWeGpjU0pqclA4SDNiUGxKZDh0dnREVXJwcF9RVXVvN05wV05veUI0U0pwaWtZTDhvSGJPeEZLTTUybTNHeXo3eGZiVmJxRklSMlZtUENsWFhmRkhmMVFueEVFNkxUOFJHWUtZWUxWX1FkbVVJUzZOQVk0dWFhOUhQWHh2R052Nkc3R001LTFXb2lPUWdBbF84ZlhKQzBPYXNMRy1xR2gtakdhQnJ3?oc=5\" tar",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOajhqZTBWeGpjU0pqclA4SDNiUGxKZDh0dnREVXJwcF9RVXVvN05wV05veUI0U0pwaWtZTDhvSGJPeEZLTTUybTNHeXo3eGZiVmJxRklSMlZtUENsWFhmRkhmMVFueEVFNkxUOFJHWUtZWUxWX1FkbVVJUzZOQVk0dWFhOUhQWHh2R052Nkc3R001LTFXb2lPUWdBbF84ZlhKQzBPYXNMRy1xR2gtakdhQnJ3?oc=5",
+    "published": "Thu, 08 Jan 2026 18:17:46 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "30a8294f662243c9632994da204173fd",
+    "first_seen": "2026-07-14T02:13:29.788214+00:00"
+  },
+  "fcad6bb9d12d603003dad6f36db9d67c": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Burger King",
+    "summary": "Is Burger King remodeling or is something new going its place?    submitted by    /u/greyjedi12345   [link] [comments]",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1uvs6lk/burger_king/",
+    "published": "2026-07-13T23:41:41+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "fcad6bb9d12d603003dad6f36db9d67c",
+    "first_seen": "2026-07-14T02:13:29.788214+00:00"
   }
 }
