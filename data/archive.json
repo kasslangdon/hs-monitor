@@ -3312,5 +3312,29 @@
     "priority_reason": "",
     "hash": "dd0702fff83f605b2a52e046091f833c",
     "first_seen": "2026-07-15T13:42:06.656256+00:00"
+  },
+  "d79c451f747cb311df7f0d10d85a7f54": {
+    "source": "Google News",
+    "title": "NC parent raises concerns over hot mobile classroom in Holly Springs - AOL.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1oUFg5eWFBWVVXSXJTYnowNE5wcUswMlRYTXRLTWszSmhzdHdLbTVJdmpLa3VqSXd0VWhlUUxHUzJhMS16T0o5aTZyOEh6eTdyYUgwcHQ3dHFkZG5QUGFxekF5bmdiTXlza1F4NUhrelVqR0J4ZE5mLVNHakRFeGs?oc=5\" target=\"_blank\">NC parent raises concerns over hot mobile classroom in H",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1oUFg5eWFBWVVXSXJTYnowNE5wcUswMlRYTXRLTWszSmhzdHdLbTVJdmpLa3VqSXd0VWhlUUxHUzJhMS16T0o5aTZyOEh6eTdyYUgwcHQ3dHFkZG5QUGFxekF5bmdiTXlza1F4NUhrelVqR0J4ZE5mLVNHakRFeGs?oc=5",
+    "published": "Sat, 27 Jun 2026 20:24:04 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "d79c451f747cb311df7f0d10d85a7f54",
+    "first_seen": "2026-07-15T19:10:20.709018+00:00"
+  },
+  "7d475438236d56d1b9f5e9d66e8df310": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Pickup Soccer Group HS/Raleigh",
+    "summary": "  submitted by    /u/EthanStrik   [link] [comments]",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1ux7m94/pickup_soccer_group_hsraleigh/",
+    "published": "2026-07-15T14:33:45+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "7d475438236d56d1b9f5e9d66e8df310",
+    "first_seen": "2026-07-15T19:10:20.709018+00:00"
   }
 }
