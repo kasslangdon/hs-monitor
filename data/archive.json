@@ -3371,5 +3371,29 @@
     "priority": true,
     "hash": "9f83bf45321297586aa9aa519288665f",
     "first_seen": "2026-07-16T08:11:12.648625+00:00"
+  },
+  "d74bef41c52ddd565df2ef7fcdc784a3": {
+    "source": "Google News",
+    "title": "NC parent raises concerns over hot mobile classroom in Holly Springs - aol.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1oUFg5eWFBWVVXSXJTYnowNE5wcUswMlRYTXRLTWszSmhzdHdLbTVJdmpLa3VqSXd0VWhlUUxHUzJhMS16T0o5aTZyOEh6eTdyYUgwcHQ3dHFkZG5QUGFxekF5bmdiTXlza1F4NUhrelVqR0J4ZE5mLVNHakRFeGs?oc=5\" target=\"_blank\">NC parent raises concerns over hot mobile classroom in H",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1oUFg5eWFBWVVXSXJTYnowNE5wcUswMlRYTXRLTWszSmhzdHdLbTVJdmpLa3VqSXd0VWhlUUxHUzJhMS16T0o5aTZyOEh6eTdyYUgwcHQ3dHFkZG5QUGFxekF5bmdiTXlza1F4NUhrelVqR0J4ZE5mLVNHakRFeGs?oc=5",
+    "published": "Sat, 27 Jun 2026 20:24:04 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "d74bef41c52ddd565df2ef7fcdc784a3",
+    "first_seen": "2026-07-16T13:47:49.999514+00:00"
+  },
+  "7644200a06ceda826ab3332c47a0e583": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Mint mobile in our area?",
+    "summary": "Hi reddit! Thinking of moving to mint mobile from tmobile. If anyone uses it in HS, how is the coverage? Support? Any issues to be aware of? Thanks in advance!    submitted by    /u/Low-Earth-7752   [link] [comments]",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1uxzzca/mint_mobile_in_our_area/",
+    "published": "2026-07-16T11:20:42+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "7644200a06ceda826ab3332c47a0e583",
+    "first_seen": "2026-07-16T13:47:49.999514+00:00"
   }
 }
