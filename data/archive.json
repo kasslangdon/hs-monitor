@@ -3336,5 +3336,17 @@
     "priority_reason": "",
     "hash": "7d475438236d56d1b9f5e9d66e8df310",
     "first_seen": "2026-07-15T19:10:20.709018+00:00"
+  },
+  "ed3f15251f9720ef3dacc83836c20c2e": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Missing Dog",
+    "summary": "        submitted by    /u/Mother-Land-20   [link] [comments] ",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1uxporf/missing_dog/",
+    "published": "2026-07-16T02:09:04+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "ed3f15251f9720ef3dacc83836c20c2e",
+    "first_seen": "2026-07-16T02:25:09.105678+00:00"
   }
 }
