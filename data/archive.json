@@ -3348,5 +3348,28 @@
     "priority_reason": "",
     "hash": "ed3f15251f9720ef3dacc83836c20c2e",
     "first_seen": "2026-07-16T02:25:09.105678+00:00"
+  },
+  "49463a6f045ad6061e05fe4de4b1852a": {
+    "source": "Google News",
+    "title": "Man, woman dead after Holly Springs shootings - WREG.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMifkFVX3lxTE84TzlBalFfbkN5eGdSeVhpY0FLN0FHNVV6RTlpZTNueGNYaE5QRnE1SjhULWJMQjFobXp1OW9lWkVKY0dMNE93Yk9ldWVLSEFvaTlxNkg5NXNVRUt4NXhjbExnZFltZTgzS0x1R29VVVNFb3JDUVJxUHpLdzJad9IBiwFBVV95cUxPZThCb0RfTkpscnFjSHozRWN0Ulpkc1RTN1FtQUhlMFJuWHBKWlpXSDhicXQ4aUQtNl",
+    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE84TzlBalFfbkN5eGdSeVhpY0FLN0FHNVV6RTlpZTNueGNYaE5QRnE1SjhULWJMQjFobXp1OW9lWkVKY0dMNE93Yk9ldWVLSEFvaTlxNkg5NXNVRUt4NXhjbExnZFltZTgzS0x1R29VVVNFb3JDUVJxUHpLdzJad9IBiwFBVV95cUxPZThCb0RfTkpscnFjSHozRWN0Ulpkc1RTN1FtQUhlMFJuWHBKWlpXSDhicXQ4aUQtNlZ4TGF6b3AzWUlSLWo4ck54ZnBEX3lZN2hxNUEyQzFBZGtZaGo3NUhwb2M0ZHMwd05nTFUzd2VzSWRIVFZyNmkxYUExTUdxYVg5d1dBWkcxeFVJ?oc=5",
+    "published": "Sat, 09 Aug 2025 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "49463a6f045ad6061e05fe4de4b1852a",
+    "first_seen": "2026-07-16T08:11:12.648625+00:00"
+  },
+  "9f83bf45321297586aa9aa519288665f": {
+    "source": "Court / Legal (Google)",
+    "title": "Mother of 3 killed in dog attack in Holly Springs; suspect in custody, police say - WLBT",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxPX2NYZkQ1MnZ4VDlpUjU4cE1UY3RndGhsb2xVX2tWTXJrSG5NbmRoZXg2QVhSTTluVV9fQlBwVHJUOEUzMHYyeU1ySmhGbS1xcEptX0xSZXpHak9XVEhDY2FLVnNOWl82M3NpTXF4VUt3X0Vnb3BOOEE4ekJCMTZ5NjZER0tPRGdPUXA5YnFnUDBqeG92andzaNIBrAFBVV95cUxPelE1QXl5eGxIUDRMWXprNXN4UGlCVW",
+    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPX2NYZkQ1MnZ4VDlpUjU4cE1UY3RndGhsb2xVX2tWTXJrSG5NbmRoZXg2QVhSTTluVV9fQlBwVHJUOEUzMHYyeU1ySmhGbS1xcEptX0xSZXpHak9XVEhDY2FLVnNOWl82M3NpTXF4VUt3X0Vnb3BOOEE4ekJCMTZ5NjZER0tPRGdPUXA5YnFnUDBqeG92andzaNIBrAFBVV95cUxPelE1QXl5eGxIUDRMWXprNXN4UGlCVWpRVWNIX09oeklXb0tfOUgtanRqaUVxQnVGSThkMy1lN085MlBSMkhvVGp6eFZIaVhYYVdFYnJmTldHNVJkcnMzSFpZRkZoMnFMTWl4cmZBOVpXN0FMck93Q0NEcHNjdk9vdUNWVVloSGhldFZNT25vLWc4S25wYzJkSENXMm50eTJuMzNVQXE1cHZrc3lN?oc=5",
+    "published": "Mon, 23 Mar 2026 07:00:00 GMT",
+    "category": "Court Records",
+    "priority": true,
+    "hash": "9f83bf45321297586aa9aa519288665f",
+    "first_seen": "2026-07-16T08:11:12.648625+00:00"
   }
 }
