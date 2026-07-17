@@ -3479,5 +3479,29 @@
     "priority_reason": "",
     "hash": "94635dfd0070e2ce8e54303611145f7b",
     "first_seen": "2026-07-17T08:08:02.844845+00:00"
+  },
+  "fe118f745da15ca641dc9c778a6a48ca": {
+    "source": "Reddit r/raleigh",
+    "title": "Things to do this weekend!",
+    "summary": "Friday  Movie Night: Finding Nemo, DCP Great Lawn Pavilion, Cary Third Friday, Downtown, Durham  Oyster Fest, The Durham, Durham Lindsey Stirling - Duality Untamed Tour, Red Hat Amphitheatre, Raleigh  Phish, Coastal Credit Union Music Park, Raleigh The Notebook, DPAC, Durham Durham Bulls v. Charlott",
+    "url": "https://www.reddit.com/r/raleigh/comments/1uyylmy/things_to_do_this_weekend/",
+    "published": "2026-07-17T12:41:02+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "fe118f745da15ca641dc9c778a6a48ca",
+    "first_seen": "2026-07-17T13:25:29.440922+00:00"
+  },
+  "296fa09cf034eb1ee7bd04e6a4e84960": {
+    "source": "Reddit (all)",
+    "title": "Chinese Human Rights Lawyer Seeking Asylum Is Arrested by ICE",
+    "summary": "      For years, Shaoping Wu was part of an increasingly endangered group of human rights lawyers in China. His work culminated in 2019, when he attended a meeting with other prominent lawyers and activists. Within days, the Chinese government began to detain the participants. Mr. Wu quickly fled to",
+    "url": "https://www.reddit.com/r/neoliberal/comments/1uyl0ag/chinese_human_rights_lawyer_seeking_asylum_is/",
+    "published": "2026-07-17T00:58:23+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "296fa09cf034eb1ee7bd04e6a4e84960",
+    "first_seen": "2026-07-17T13:25:29.440922+00:00"
   }
 }
