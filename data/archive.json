@@ -3608,5 +3608,17 @@
     "priority": true,
     "hash": "15a0fcc3d8080369d024d71c6fd49718",
     "first_seen": "2026-07-21T02:28:41.830458+00:00"
+  },
+  "8d120dd82e60a92701646b61c9ccc094": {
+    "source": "WRAL News",
+    "title": "Holly Springs officer honored for pulling 11-year-old boy from icy pond",
+    "summary": "A Holly Springs police officer will be honored on Tuesday for his heroic actions in January.",
+    "url": "https://www.wral.com/news/local/holly-springs-officer-honored-pulling-boy-icy-pond-july-2026/",
+    "published": "Tue, 21 Jul 2026 08:17:52 -0400",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "8d120dd82e60a92701646b61c9ccc094",
+    "first_seen": "2026-07-21T13:46:17.870887+00:00"
   }
 }
