@@ -3824,5 +3824,41 @@
     "priority_reason": "",
     "hash": "5cd64cb781d1d42bbccff3e67dacd9c9",
     "first_seen": "2026-07-24T13:41:27.670901+00:00"
+  },
+  "1ba451daf20b4ed68d347876c0111b46": {
+    "source": "Google News",
+    "title": "Boy saved after falling through ice on Holly Springs pond; police officer jumped into water for rescue - Queen City News",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMi4wFBVV95cUxQaUo2RGpmXzFkN1kyNzgxU3g1TzY3RGd3UjBuN3Y5MjZLcnNZanc1ekxseXBCVlVDRkhfdFcySFBUaHR0RnV6ZHp2ZXk4dWYyZzktdkV1dUNfblFmWXF4azBHLXp6Ti1tUWpxLWtWbk1fMXhjaW82QmFxRWlxdDFmQXZOU0tXM3V1VVZkVUIxSC1HWHA1LUZDbnByUkQ5YXg4N01INGJCdE94Sm9TcGFMWk9Rb0s0Skk0OH",
+    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQaUo2RGpmXzFkN1kyNzgxU3g1TzY3RGd3UjBuN3Y5MjZLcnNZanc1ekxseXBCVlVDRkhfdFcySFBUaHR0RnV6ZHp2ZXk4dWYyZzktdkV1dUNfblFmWXF4azBHLXp6Ti1tUWpxLWtWbk1fMXhjaW82QmFxRWlxdDFmQXZOU0tXM3V1VVZkVUIxSC1HWHA1LUZDbnByUkQ5YXg4N01INGJCdE94Sm9TcGFMWk9Rb0s0Skk0OHMxeW5mZ2Z2MmZMQnZYdmpMLUhVSXJNblNKdEhJQlFTRF9xMXAwVkhVOA?oc=5",
+    "published": "Sun, 01 Feb 2026 08:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "1ba451daf20b4ed68d347876c0111b46",
+    "first_seen": "2026-07-24T19:24:41.568593+00:00"
+  },
+  "9bd22342bbb27feee787d2e889a827b1": {
+    "source": "Google News",
+    "title": "A teen bicyclist dead and another teen arrested in overnight crash in Holly Springs - WRAL",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiT0FVX3lxTE52UnBUWDVSUnV6Z3hnUFZsTkV5RmdmZDN2Rk0yVzFqTFVvYzlZSzZOekZkYWtCOEw3Zms0NmRBVDVvM3dCR1lRVFNGRDE0bVE?oc=5\" target=\"_blank\">A teen bicyclist dead and another teen arrested in overnight crash in Holly Springs</a>&nbsp;&nbsp;<font color=\"#6f6f6f\"",
+    "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE52UnBUWDVSUnV6Z3hnUFZsTkV5RmdmZDN2Rk0yVzFqTFVvYzlZSzZOekZkYWtCOEw3Zms0NmRBVDVvM3dCR1lRVFNGRDE0bVE?oc=5",
+    "published": "Sun, 26 Oct 2025 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "9bd22342bbb27feee787d2e889a827b1",
+    "first_seen": "2026-07-24T19:24:41.568593+00:00"
+  },
+  "211600e3f45efceeef8385017a7b5e47": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Flock Cameras in Town",
+    "summary": "        submitted by    /u/NoSuggestion17   [link] [comments] ",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1v5d4uo/flock_cameras_in_town/",
+    "published": "2026-07-24T14:33:51+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "211600e3f45efceeef8385017a7b5e47",
+    "first_seen": "2026-07-24T19:24:41.568593+00:00"
   }
 }
