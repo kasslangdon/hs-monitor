@@ -3776,5 +3776,17 @@
     "priority_reason": "",
     "hash": "0ce0f37713301630216e99647e24cb88",
     "first_seen": "2026-07-24T02:29:41.952918+00:00"
+  },
+  "c3fb622150f1bfa733e5cfbcce41fe58": {
+    "source": "Google News",
+    "title": "Woman arrested after gunfire in Holly Springs neighborhood, police say - CBS17.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxOR1FXYkNMWFFsN3Z2eDVBMDJzVzNhZXRXUTg3elQ2bEo4ekhvTWhiMkRoMlpBRlhmdFpQUWo0ZUtTVzZRX3Q2ZGNsdXRwNmpjQzhLWjlJQlVxcTd5dFp6UEY5WHg2bzYwSmFNUlNBcURoQ1c4MW1QbDJIZ3o0bWFtSGpHa3U0ejVCcHBGUkZCUHZKdUV6dE5Mbi1KVVJJOTc3MHBaZTl4dWlMaGc?oc=5\" target=\"_bla",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOR1FXYkNMWFFsN3Z2eDVBMDJzVzNhZXRXUTg3elQ2bEo4ekhvTWhiMkRoMlpBRlhmdFpQUWo0ZUtTVzZRX3Q2ZGNsdXRwNmpjQzhLWjlJQlVxcTd5dFp6UEY5WHg2bzYwSmFNUlNBcURoQ1c4MW1QbDJIZ3o0bWFtSGpHa3U0ejVCcHBGUkZCUHZKdUV6dE5Mbi1KVVJJOTc3MHBaZTl4dWlMaGc?oc=5",
+    "published": "Sun, 27 Jul 2025 00:25:33 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "c3fb622150f1bfa733e5cfbcce41fe58",
+    "first_seen": "2026-07-24T08:26:42.307543+00:00"
   }
 }
