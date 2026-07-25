@@ -3860,5 +3860,29 @@
     "priority_reason": "",
     "hash": "211600e3f45efceeef8385017a7b5e47",
     "first_seen": "2026-07-24T19:24:41.568593+00:00"
+  },
+  "40c856cbf58d8c62dfb145eb271a193f": {
+    "source": "Holly Springs Update",
+    "title": "Out and About This Weekend in Holly Springs (NC), Apex & Fuquay-Varina (7/24 through 7/26)",
+    "summary": "Jazz at Ashe Music Hall, the Salamanders' celebrate Holly Springs' 150th anniversary, Christmas in July in Fuquay-Varina, and live music spilling out of every corner of South Wake.",
+    "url": "https://www.hollyspringsupdate.com/p/out-and-about-this-weekend-in-holly-4ae",
+    "published": "Fri, 24 Jul 2026 20:12:23 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "40c856cbf58d8c62dfb145eb271a193f",
+    "first_seen": "2026-07-25T02:27:33.747757+00:00"
+  },
+  "b9900f2fb81426665a8e8c31f8656c32": {
+    "source": "Google News",
+    "title": "Out and About This Weekend in Holly Springs (NC), Apex & Fuquay-Varina (7/24 through 7/26) - hollyspringsupdate.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxOZ0JmRWUwRDBuUm5wX1VlMHV4YTBXVzU1UFY1Zlh5UHgwbnpFdFhyU25rWndDdkVzZ0NtMW5GcW1HOGNIZHNTZWVoQVA2cTJETEtrc29LcmpDQXNiRkxrdm1xby1ZQlJSOUlYZVJkN3B2dHBKa3hTVmJVMTllTWNBSTBB?oc=5\" target=\"_blank\">Out and About This Weekend in Holly Springs (NC), A",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOZ0JmRWUwRDBuUm5wX1VlMHV4YTBXVzU1UFY1Zlh5UHgwbnpFdFhyU25rWndDdkVzZ0NtMW5GcW1HOGNIZHNTZWVoQVA2cTJETEtrc29LcmpDQXNiRkxrdm1xby1ZQlJSOUlYZVJkN3B2dHBKa3hTVmJVMTllTWNBSTBB?oc=5",
+    "published": "Fri, 24 Jul 2026 20:12:23 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "b9900f2fb81426665a8e8c31f8656c32",
+    "first_seen": "2026-07-25T02:27:33.747757+00:00"
   }
 }
