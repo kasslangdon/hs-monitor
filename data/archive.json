@@ -3884,5 +3884,17 @@
     "priority_reason": "",
     "hash": "b9900f2fb81426665a8e8c31f8656c32",
     "first_seen": "2026-07-25T02:27:33.747757+00:00"
+  },
+  "9bd3b2589c970fd5c88edd67849fac79": {
+    "source": "Google News",
+    "title": "Crime Drops Again in Holly Springs as Police Report 14% Decline from Five-Year Average - hollyspringsupdate.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMie0FVX3lxTE9wMG9Va1luY2c5TmpUeTQwMU9EenpFay1NdDZYWkJpRTdrNE1NNTAxQjN3UFJYOVJraEVkN2ZPeG1oR2FEa3l5SUNSLUdWbFMwZnFqWWpZVXBKZnMwOGlXdmRQc1pBMFNnU3J3ckNsU2ZleVozdlA0dmZfRQ?oc=5\" target=\"_blank\">Crime Drops Again in Holly Springs as Police Report 14% Decli",
+    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9wMG9Va1luY2c5TmpUeTQwMU9EenpFay1NdDZYWkJpRTdrNE1NNTAxQjN3UFJYOVJraEVkN2ZPeG1oR2FEa3l5SUNSLUdWbFMwZnFqWWpZVXBKZnMwOGlXdmRQc1pBMFNnU3J3ckNsU2ZleVozdlA0dmZfRQ?oc=5",
+    "published": "Mon, 09 Mar 2026 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "9bd3b2589c970fd5c88edd67849fac79",
+    "first_seen": "2026-07-25T13:21:18.255648+00:00"
   }
 }
