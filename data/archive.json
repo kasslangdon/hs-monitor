@@ -3944,5 +3944,41 @@
     "priority_reason": "",
     "hash": "13cbcceddd9cc72fdec4a11fe13856df",
     "first_seen": "2026-07-26T13:22:53.617262+00:00"
+  },
+  "b9003c7281edbd1be8021be81c60b652": {
+    "source": "Holly Springs Update",
+    "title": "Holly Springs (NC) Police Chief Details License Plate Reader Program, Confirms Outside Agencies Can Install Cameras Without Town Approval",
+    "summary": "Chief Liquorie explained how Holly Springs uses automated license plate readers, the safeguards governing them, and confirmed outside agencies can install cameras without town approval.",
+    "url": "https://www.hollyspringsupdate.com/p/holly-springs-nc-police-chief-details",
+    "published": "Sun, 26 Jul 2026 19:00:41 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "b9003c7281edbd1be8021be81c60b652",
+    "first_seen": "2026-07-26T19:14:56.137283+00:00"
+  },
+  "6d04484da2adc8e87f873c01dbe25ed8": {
+    "source": "Holly Springs Update",
+    "title": "Holly Springs (NC) Town Council Approves 450-Unit Meridian at Sunset Commons Apartments, But Sewer Capacity Keeps Project on Hold",
+    "summary": "A motion to deny failed for lack of a second before the council approved the project 3-1, but no construction can begin until Holly Springs resolves its sewer capacity shortfall.",
+    "url": "https://www.hollyspringsupdate.com/p/holly-springs-nc-town-council-approves-faf",
+    "published": "Sun, 26 Jul 2026 13:30:23 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "6d04484da2adc8e87f873c01dbe25ed8",
+    "first_seen": "2026-07-26T19:14:56.137283+00:00"
+  },
+  "b7399603070f8eecbe0b1efb5ca597ed": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Lost beagle siblings?",
+    "summary": "I saw two beagles running together down pierce olive rd. I stopped for gas and tried to call animal control and were basically told they weren\u2019t going to bother. I want back to look for them but couldn\u2019t find them, i wish i got them in my car first. If anyone is or knows someone missing two dogs ple",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1v754k9/lost_beagle_siblings/",
+    "published": "2026-07-26T14:17:09+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "b7399603070f8eecbe0b1efb5ca597ed",
+    "first_seen": "2026-07-26T19:14:56.137283+00:00"
   }
 }
