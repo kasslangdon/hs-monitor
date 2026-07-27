@@ -3980,5 +3980,29 @@
     "priority_reason": "",
     "hash": "b7399603070f8eecbe0b1efb5ca597ed",
     "first_seen": "2026-07-26T19:14:56.137283+00:00"
+  },
+  "8dfad44554699c95b56d1fcd381ce554": {
+    "source": "Google News",
+    "title": "Holly Springs (NC) Police Chief Details License Plate Reader Program, Confirms Outside Agencies Can Install Cameras Without Town Approval - hollyspringsupdate.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE01X3dDTUt2ODNDdHJSdGktYkVxR2dXVGVEcGM3X1NhQ1ZUUlZVQmU4eG1JazN0QWZ5NFc2T2FIcVotcWJ3bkxhRExPQkVQR1lMQzB4WndrVGxudUxtcGsyQy1qdmdUZi01TDU3TUtHeWtZVVVLVVV2aXZMYko1eHc?oc=5\" target=\"_blank\">Holly Springs (NC) Police Chief Details License Plate Re",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE01X3dDTUt2ODNDdHJSdGktYkVxR2dXVGVEcGM3X1NhQ1ZUUlZVQmU4eG1JazN0QWZ5NFc2T2FIcVotcWJ3bkxhRExPQkVQR1lMQzB4WndrVGxudUxtcGsyQy1qdmdUZi01TDU3TUtHeWtZVVVLVVV2aXZMYko1eHc?oc=5",
+    "published": "Sun, 26 Jul 2026 19:00:41 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "8dfad44554699c95b56d1fcd381ce554",
+    "first_seen": "2026-07-27T02:41:10.995825+00:00"
+  },
+  "a77594f3ea48acc507fc61e3ca195e8d": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Town Council Meeting 7/21 - If you voted DEM...",
+    "summary": "      If you don't know, town council was flipped from 6 grumpy old white men to a nearly 100% progressive council, including a new mayor in just 2 election cycles. We were promised a council who would quell some of the irresponsible development approvals. The town council meeting on 7/21 was a comp",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1v7mjxh/town_council_meeting_721_if_you_voted_dem/",
+    "published": "2026-07-27T01:38:48+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "a77594f3ea48acc507fc61e3ca195e8d",
+    "first_seen": "2026-07-27T02:41:10.995825+00:00"
   }
 }
