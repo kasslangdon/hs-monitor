@@ -4016,5 +4016,29 @@
     "priority_reason": "",
     "hash": "655aa4a7a3195614c8a18523b52e7d4f",
     "first_seen": "2026-07-27T09:48:31.518910+00:00"
+  },
+  "0bbb34a63691aaeb9c0dca4dd19c2faf": {
+    "source": "Holly Springs Update",
+    "title": "Holly Springs (NC) Salamanders\u2019 Playoff Hopes Come Down to Two Home Games This Week",
+    "summary": "Team holds the East Division&#8217;s final playoff spot entering the regular season&#8217;s last week. Games Thursday and Saturday could determine whether the Salamanders reach the postseason.",
+    "url": "https://www.hollyspringsupdate.com/p/holly-springs-nc-salamanders-playoff",
+    "published": "Mon, 27 Jul 2026 22:00:01 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "0bbb34a63691aaeb9c0dca4dd19c2faf",
+    "first_seen": "2026-07-28T02:15:13.308230+00:00"
+  },
+  "bd9e8035a2937cd4d78b3ed57d9aa796": {
+    "source": "Google News",
+    "title": "Mother identifies teen son injured in deadly Holly Springs crash, police issue statement - WSPA 7News",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxNZVJDa3pEamZiLUMzVHJSR1RZbTdoanlaVVQ3LTVIUmxKNVVyeTluRUNYYVl3VkxKaFdaSkNWaVFLYUI4RmItcU1WWDd1OXAxemlSMGpndHNQOXFtNWxDTGFBTE56Z00tQ3VYdVFnUENJMDBfSnNFVEwtb0VUcEdUS1RrOHZudDNJOTZxOUtBVjVtZlFxNGUyTVQwT0dKVVBQbnVuLURzRTZCd0Z6U25xeC1hZWs?oc=5\" ",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNZVJDa3pEamZiLUMzVHJSR1RZbTdoanlaVVQ3LTVIUmxKNVVyeTluRUNYYVl3VkxKaFdaSkNWaVFLYUI4RmItcU1WWDd1OXAxemlSMGpndHNQOXFtNWxDTGFBTE56Z00tQ3VYdVFnUENJMDBfSnNFVEwtb0VUcEdUS1RrOHZudDNJOTZxOUtBVjVtZlFxNGUyTVQwT0dKVVBQbnVuLURzRTZCd0Z6U25xeC1hZWs?oc=5",
+    "published": "Fri, 31 Oct 2025 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "bd9e8035a2937cd4d78b3ed57d9aa796",
+    "first_seen": "2026-07-28T02:15:13.308230+00:00"
   }
 }
