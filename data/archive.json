@@ -4336,5 +4336,41 @@
     "priority_reason": "",
     "hash": "44eed610f505fe339624adf09c98064f",
     "first_seen": "2026-07-31T08:48:02.614025+00:00"
+  },
+  "777b1b7bc089660f215804f2b34f37bb": {
+    "source": "Google News",
+    "title": "Woman Seriously Injured in Suspected Dog Attack in Holly Springs - desotocountynews.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxQa05nNnE1VG83VnBLOUZyMVN6ZjRKUGQ0LVo1YmxYNGZGUXZFNGxtU092YzRkSXVreFRwV3lBX0JqWEx2UTBmenpYbXEtQlptU2JaLTYxaGQzb1IzR3lrNXY4b2JHTlNwRnVId0dMS1hGOXJBVVo0VXJRSHVlLUFXMTdsdG9MTThpWnRpLV9KT1lUQlJyOU9hRzFVZkx4NnRFSWxrUEtla3ZUX3NiNTZJRFFPTQ?oc=5\" t",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQa05nNnE1VG83VnBLOUZyMVN6ZjRKUGQ0LVo1YmxYNGZGUXZFNGxtU092YzRkSXVreFRwV3lBX0JqWEx2UTBmenpYbXEtQlptU2JaLTYxaGQzb1IzR3lrNXY4b2JHTlNwRnVId0dMS1hGOXJBVVo0VXJRSHVlLUFXMTdsdG9MTThpWnRpLV9KT1lUQlJyOU9hRzFVZkx4NnRFSWxrUEtla3ZUX3NiNTZJRFFPTQ?oc=5",
+    "published": "Mon, 09 Mar 2026 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "777b1b7bc089660f215804f2b34f37bb",
+    "first_seen": "2026-07-31T14:01:20.259765+00:00"
+  },
+  "db4b781676fc61c12a25735d87a4042d": {
+    "source": "Google News",
+    "title": "Holly Springs Woman Arrested in Dog Mauling That Left Victim Critically Injured - desotocountynews.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxNdGhNblZVLU1VM09MeHU3OTFFTFhLY1VrWDJqRTQxenAydXF3TWNZR3lEZWhvUmJhaTJhT290dkhkYk0xc1hiblY0OElBLXFjUjg2dHZmaDI0VDlaZ0RUamJVSEQwODAza0lvUGk2cktQenRPRl9nS2tTTmk1bE1EV2pKMnM4WnAzNXlaVzBvZGs5V3ZRdTNLanRxY2N5VDdYeDB5a282LW5wdnBidTEtZlpSdEZjbzVDaE",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNdGhNblZVLU1VM09MeHU3OTFFTFhLY1VrWDJqRTQxenAydXF3TWNZR3lEZWhvUmJhaTJhT290dkhkYk0xc1hiblY0OElBLXFjUjg2dHZmaDI0VDlaZ0RUamJVSEQwODAza0lvUGk2cktQenRPRl9nS2tTTmk1bE1EV2pKMnM4WnAzNXlaVzBvZGs5V3ZRdTNLanRxY2N5VDdYeDB5a282LW5wdnBidTEtZlpSdEZjbzVDaEU0Yk5oYW9BYk92?oc=5",
+    "published": "Wed, 25 Mar 2026 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "db4b781676fc61c12a25735d87a4042d",
+    "first_seen": "2026-07-31T14:01:20.259765+00:00"
+  },
+  "f9c39b3be5ba0c56a731c6ecc7ce4ff7": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Dunkin Donuts",
+    "summary": "        submitted by    /u/NoSuggestion17   [link] [comments] ",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1vbqwnw/dunkin_donuts/",
+    "published": "2026-07-31T13:25:38+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "f9c39b3be5ba0c56a731c6ecc7ce4ff7",
+    "first_seen": "2026-07-31T14:01:20.259765+00:00"
   }
 }
