@@ -4372,5 +4372,29 @@
     "priority_reason": "",
     "hash": "f9c39b3be5ba0c56a731c6ecc7ce4ff7",
     "first_seen": "2026-07-31T14:01:20.259765+00:00"
+  },
+  "d1a672324766fac0734844a3780d4c36": {
+    "source": "Holly Springs Update",
+    "title": "Out and About This Weekend in Holly Springs (NC), Apex & Fuquay-Varina (7/31 through 8/2)",
+    "summary": "Splash pads, comedy hypnosis, watermelon showdowns, and Salamanders under the lights. This weekend, the Triangle is dishing out beer, bourbon, and back-to-back live music from every corner.",
+    "url": "https://www.hollyspringsupdate.com/p/out-and-about-this-weekend-in-holly-a46",
+    "published": "Fri, 31 Jul 2026 18:01:37 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "d1a672324766fac0734844a3780d4c36",
+    "first_seen": "2026-07-31T19:23:41.602435+00:00"
+  },
+  "bf043ef74ece168d53ff30292f091228": {
+    "source": "Reddit (all)",
+    "title": "Things to do this weekend!",
+    "summary": "Friday  Beer, Bourbon & BBQ Festival 2026, Koka Booth Amphitheatre, Cary Durham Bulls vs. Gwinnett, DBAP, Durham  Discover Dance: DISHOOM, Downtown Cary Park, Cary The Mavericks & Friends, Carolina Theatre, Durham  Passion Pit - The Pretty Penny Tour, The Ritz, Raleigh  Comedy Show: Cyrus Steele + J",
+    "url": "https://www.reddit.com/r/raleigh/comments/1vbqgre/things_to_do_this_weekend/",
+    "published": "2026-07-31T13:07:18+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "bf043ef74ece168d53ff30292f091228",
+    "first_seen": "2026-07-31T19:23:41.602435+00:00"
   }
 }
