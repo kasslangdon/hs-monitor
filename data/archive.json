@@ -4288,5 +4288,53 @@
     "priority_reason": "",
     "hash": "c859538eeb7d130258e1da26f5388219",
     "first_seen": "2026-07-31T02:34:41.344571+00:00"
+  },
+  "2adcac3cbdc48510de2bcf64e1d432e9": {
+    "source": "Google News",
+    "title": "Man arrested in Holly Springs mini-mart raid after tobacco sold to kids, pot labeled as hemp: NC ALE - CBS 17",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMi6AFBVV95cUxQVy1WUFY5MWhMQWlfWHJQd3EydTZ0dUUwMUdrUGZWM3g3VHZ5QkUtQ2hiZS1CV1VDMGpNb3VzY215clctekc0bTIxVjFIUWZEYk1jX1R6em1rSVpfVUFyVHNKSlFFa3I5RmpVcFFkcGpLN3NKM2ZpZjdLNmRfNlFodVY0Tjluc0tnbzZfMGEzMjhIa05ZdWZ2RGk1QXdVdGU5VG5QX2hfOTE4SkhFRDgxdmd1TzlLSmhENz",
+    "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQVy1WUFY5MWhMQWlfWHJQd3EydTZ0dUUwMUdrUGZWM3g3VHZ5QkUtQ2hiZS1CV1VDMGpNb3VzY215clctekc0bTIxVjFIUWZEYk1jX1R6em1rSVpfVUFyVHNKSlFFa3I5RmpVcFFkcGpLN3NKM2ZpZjdLNmRfNlFodVY0Tjluc0tnbzZfMGEzMjhIa05ZdWZ2RGk1QXdVdGU5VG5QX2hfOTE4SkhFRDgxdmd1TzlLSmhENzJ3aW9WNDVrbHk4QUtlMGpWZ0plbEItU2dUaVNjYlVEczU0YmhRampmVzl2MDFh?oc=5",
+    "published": "Wed, 22 Apr 2026 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "2adcac3cbdc48510de2bcf64e1d432e9",
+    "first_seen": "2026-07-31T08:48:02.614025+00:00"
+  },
+  "641856d47528c4fc186e00b3015d6a13": {
+    "source": "Reddit r/NorthCarolina",
+    "title": "NC quietly ends decades of tracking racial disparities in policing",
+    "summary": "      Another in a long line of Republican efforts to reduce what they perceive as a problem... i.e., actually looking at problems. They like to...  Reduce COVID cases by not counting them Reduce military war casualties by calling them something else Reduce opposition votes by preventing them being ",
+    "url": "https://www.reddit.com/r/NorthCarolina/comments/1v9xnnh/nc_quietly_ends_decades_of_tracking_racial/",
+    "published": "2026-07-29T14:22:49+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "641856d47528c4fc186e00b3015d6a13",
+    "first_seen": "2026-07-31T08:48:02.614025+00:00"
+  },
+  "2ab46df463dbcd8fb8e7b0331744730d": {
+    "source": "Reddit r/NorthCarolina",
+    "title": "Notice for public comment on pollution from Amazon's hyperscale data center in Richmond County",
+    "summary": "      The Department of Environmental Quality will hold a public hearing on July 30 regarding data center emissions in Richmond County, NC:  July 30, 6\u20139pm Old Richmond County Courthouse Courtroom A 114 East Franklin Street Rockingham, NC 28379  Amazon is currently constructing a 21-building hypersc",
+    "url": "https://www.reddit.com/r/NorthCarolina/comments/1v9b7h8/notice_for_public_comment_on_pollution_from/",
+    "published": "2026-07-28T21:06:21+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "2ab46df463dbcd8fb8e7b0331744730d",
+    "first_seen": "2026-07-31T08:48:02.614025+00:00"
+  },
+  "44eed610f505fe339624adf09c98064f": {
+    "source": "Reddit r/NorthCarolina",
+    "title": "HB 328 isn't hemp regulation. It's a hemp ban with an age-gate paint job.",
+    "summary": "      Full disclosure up front: I own a hemp shop in Salisbury, so I'm not a neutral bystander here. Take that for what it's worth, but I think the facts hold up regardless of who's saying them. HB 328 passed the Senate and is sitting in front of the House as a conference report \u2014 meaning no amendme",
+    "url": "https://www.reddit.com/r/NorthCarolina/comments/1v8rgdr/hb_328_isnt_hemp_regulation_its_a_hemp_ban_with/",
+    "published": "2026-07-28T07:47:40+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "44eed610f505fe339624adf09c98064f",
+    "first_seen": "2026-07-31T08:48:02.614025+00:00"
   }
 }
