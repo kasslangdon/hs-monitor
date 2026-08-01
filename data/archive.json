@@ -4468,5 +4468,41 @@
     "priority_reason": "",
     "hash": "267175ba07e126157e14925678a35ef9",
     "first_seen": "2026-08-01T13:15:51.071287+00:00"
+  },
+  "5ad743e97264d4ce6a705f4403c3bfed": {
+    "source": "Google News",
+    "title": "Man, woman dead after Holly Springs shootings - wreg.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMihgFBVV95cUxQZDVrMzdONjJiM2dYZ3ZVLTdyaURnQWJ0SmNUZU8wa2hkQWFweDRXNzBTcXIwcU9qZ1BtNDFQUTVCOGVMeWNhekpoU3JYdGNyM0hIa3A2Mk5IdXdrSUVXRnA4N2ZEeWU3V0ZJSzU4Z1MyNS1kZXNsVmFuYkV6SWNmWnN2ZlEtQQ?oc=5\" target=\"_blank\">Man, woman dead after Holly Springs shootings",
+    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQZDVrMzdONjJiM2dYZ3ZVLTdyaURnQWJ0SmNUZU8wa2hkQWFweDRXNzBTcXIwcU9qZ1BtNDFQUTVCOGVMeWNhekpoU3JYdGNyM0hIa3A2Mk5IdXdrSUVXRnA4N2ZEeWU3V0ZJSzU4Z1MyNS1kZXNsVmFuYkV6SWNmWnN2ZlEtQQ?oc=5",
+    "published": "Sat, 09 Aug 2025 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "5ad743e97264d4ce6a705f4403c3bfed",
+    "first_seen": "2026-08-01T19:08:19.687373+00:00"
+  },
+  "c491960bcf78588ecd5ca0a5db0f2a55": {
+    "source": "Reddit r/raleigh",
+    "title": "Urgent plea for advice re: mental health inpatient situation",
+    "summary": "I convinced a dear friend that he needed intensive inpatient therapy to deal with a mental health crisis stemming from childhood trauma and his coping mechanisms throughout his life which are now careening toward destructive. He isn't suicidal; just really poor choices and other destructive behavior",
+    "url": "https://www.reddit.com/r/raleigh/comments/1vbbmoq/urgent_plea_for_advice_re_mental_health_inpatient/",
+    "published": "2026-07-31T00:44:51+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "c491960bcf78588ecd5ca0a5db0f2a55",
+    "first_seen": "2026-08-01T19:08:19.687373+00:00"
+  },
+  "82555fae00e1cb98b7f77625a50137c2": {
+    "source": "Reddit r/raleigh",
+    "title": "This case is a joke and everyone knows it\u2019s going to get tossed on First Amendment grounds. - Wiley Nickel",
+    "summary": "      Seashells. The Eastern District of NC (which includes Wake County) indicted the guy over a photo of seashells on a beach. It\u2019s hard to watch what the Justice Department has become: a weapon for Trump to go after his political enemies instead of an instrument of justice. Staffed at the top by p",
+    "url": "https://www.reddit.com/r/raleigh/comments/1v8cm6u/this_case_is_a_joke_and_everyone_knows_its_going/",
+    "published": "2026-07-27T20:42:35+00:00",
+    "category": "Reddit",
+    "priority": true,
+    "priority_reason": "indicted",
+    "hash": "82555fae00e1cb98b7f77625a50137c2",
+    "first_seen": "2026-08-01T19:08:19.687373+00:00"
   }
 }
