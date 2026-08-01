@@ -4432,5 +4432,17 @@
     "priority_reason": "",
     "hash": "8f40c31c440577dc753257a12412a275",
     "first_seen": "2026-08-01T02:34:44.532392+00:00"
+  },
+  "e1544c25589b6a8c40be2d33f7a57148": {
+    "source": "Google News",
+    "title": "Mother of 3 killed in dog attack in Holly Springs; suspect in custody, police say - actionnews5.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiogFBVV95cUxOTVF5TzVHMmpnRkwyM3Z3ck96TVA0NXdQUUI1UWp6Qzd1Wlgya19QV2dOOEx3WFdxX08tbXFoR21pd0ZTMzV2Z2QxVTVCN0ZVUFRlMUEwM2RmZy1DWGJ6RzhwbHRlZWlpRk1FVjZFMkEtZXZ6aTU0U1N4ZHVlVU5hMnJocjdvRnZvTDRtTzFzQUFrenlEUmd0TVR0SG5VbG9nSWfSAbYBQVVfeXFMUExQME10bnFoWnVkNF",
+    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTVF5TzVHMmpnRkwyM3Z3ck96TVA0NXdQUUI1UWp6Qzd1Wlgya19QV2dOOEx3WFdxX08tbXFoR21pd0ZTMzV2Z2QxVTVCN0ZVUFRlMUEwM2RmZy1DWGJ6RzhwbHRlZWlpRk1FVjZFMkEtZXZ6aTU0U1N4ZHVlVU5hMnJocjdvRnZvTDRtTzFzQUFrenlEUmd0TVR0SG5VbG9nSWfSAbYBQVVfeXFMUExQME10bnFoWnVkNFFEaWxmOGhTWjBxRUotVkZncm90MmF0UzBiV2pEOU41TTBZZnNERk1ERHN1ZV9JSjNIbmpxQ2JWelEwRmZuQ1BENmdHR1RXazdZQy15N1gwVDhwR0J0Y1Awb0dlOHNhdzU0Y2sxa3haeXBGSmxsV01UNVFsWm9FSGtfRWdScFc0TkNRLWtsWWFsenAxZnFyV0JuZ2VDXzVDRnRxRmN5c01ueWc?oc=5",
+    "published": "Mon, 23 Mar 2026 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "e1544c25589b6a8c40be2d33f7a57148",
+    "first_seen": "2026-08-01T08:17:58.113537+00:00"
   }
 }
