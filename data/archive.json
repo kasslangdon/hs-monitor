@@ -4444,5 +4444,29 @@
     "priority_reason": "",
     "hash": "e1544c25589b6a8c40be2d33f7a57148",
     "first_seen": "2026-08-01T08:17:58.113537+00:00"
+  },
+  "4d1330be25370330ab5e7d358d7750f1": {
+    "source": "Google News",
+    "title": "14-year-old bicyclist killed, teen charged with DWI in Holly Springs crash - newsobserver.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTFA2a3pSejFhc3Zjcks5RkJ5Ujc3SUJtTmRWb0dFWVV3WXlqWDFjZVZIZ3BUUjZ2OEdGQlFNSFR2b0FCTWtad1FvNXFiQTFjRmN3dVRJUDFyVkp0WXRsSWg4MkkzVi1QME9fSEw0VlNn0gFuQVVfeXFMT0F6QzJaSEJHYkNyOUpQSl9KdU90THA2Tm9JMXFpbnN4Q05vbHZ5YlVkMWNpdGd0RWhhMVJnUlh2MGFSakRvNm9IWj",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA2a3pSejFhc3Zjcks5RkJ5Ujc3SUJtTmRWb0dFWVV3WXlqWDFjZVZIZ3BUUjZ2OEdGQlFNSFR2b0FCTWtad1FvNXFiQTFjRmN3dVRJUDFyVkp0WXRsSWg4MkkzVi1QME9fSEw0VlNn0gFuQVVfeXFMT0F6QzJaSEJHYkNyOUpQSl9KdU90THA2Tm9JMXFpbnN4Q05vbHZ5YlVkMWNpdGd0RWhhMVJnUlh2MGFSakRvNm9IWjZ3YkZIRWVueXZHbnZ6Y1c1NFZnZkxsRUdtdGRDZ09HV2NxQkE?oc=5",
+    "published": "Tue, 28 Oct 2025 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "4d1330be25370330ab5e7d358d7750f1",
+    "first_seen": "2026-08-01T13:15:51.071287+00:00"
+  },
+  "267175ba07e126157e14925678a35ef9": {
+    "source": "Google News",
+    "title": "Winds down power lines, force NC 55 between Fuquay-Varina, Holly Springs to close - newsobserver.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxOeDluNmdsTk5tV3JhOEs5VUhJUzVXRUtXckpXTUVxdzJJaGpyalNpa2UtTnhTbjVMdE94RGFQdlpaaVFkcTRPX3pJVi1ZNU1CYkQ5MVZEaFRBWDhBWnpEN3htUERCNG1zODVQSzVhMDlHTEw5QUEwdEdLWWhZZnBhOHNJVG1DMklKbVHSAYoBQVVfeXFMTzlvd2gxSHl1b1o3TjRncEtvOHlpV210LVJ3akZUTHNDZE9JWm",
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOeDluNmdsTk5tV3JhOEs5VUhJUzVXRUtXckpXTUVxdzJJaGpyalNpa2UtTnhTbjVMdE94RGFQdlpaaVFkcTRPX3pJVi1ZNU1CYkQ5MVZEaFRBWDhBWnpEN3htUERCNG1zODVQSzVhMDlHTEw5QUEwdEdLWWhZZnBhOHNJVG1DMklKbVHSAYoBQVVfeXFMTzlvd2gxSHl1b1o3TjRncEtvOHlpV210LVJ3akZUTHNDZE9JWmFCWmxoaFU5TjA2QUtFRDBVME1ET3VGcFlSWW1NeTVmMXUzMFZRWHZhRG9iREI3VDN0LVJWamFpSHc2QUo5U01vRU5hOExqWS1zNV9VQkRfa09tbVVCbGJRTmkzMERn?oc=5",
+    "published": "Thu, 12 Mar 2026 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "267175ba07e126157e14925678a35ef9",
+    "first_seen": "2026-08-01T13:15:51.071287+00:00"
   }
 }
