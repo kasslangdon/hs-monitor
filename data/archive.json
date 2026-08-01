@@ -4396,5 +4396,41 @@
     "priority_reason": "",
     "hash": "bf043ef74ece168d53ff30292f091228",
     "first_seen": "2026-07-31T19:23:41.602435+00:00"
+  },
+  "2d83d2d97bf84af09e73fb99cced6974": {
+    "source": "Google News",
+    "title": "Holly Springs Mini\u2011Mart Owner Arrested After Drug Raid - hoodline.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiowFBVV95cUxNZXdMRlIxcW1pWWhCbFI1TW9BMDdfVHI2V0ZEM1ljVUU3YjhtZkRvVFR6Zjl1R2t3MzZORlY1Q0VaWVNhM3ozZVVCaFRQY2Vxc05FMFR5Tjk0REdMZERsZzFUQ1N5OTU2SGMzbDRhVzhfY05sS1RHSDJsSGRScS1QYTd6X1N0M3c4UXdHaG9pS3dJZXVJbWN0aWx2Wk5WbkU4QzJn?oc=5\" target=\"_blank\">Holly S",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZXdMRlIxcW1pWWhCbFI1TW9BMDdfVHI2V0ZEM1ljVUU3YjhtZkRvVFR6Zjl1R2t3MzZORlY1Q0VaWVNhM3ozZVVCaFRQY2Vxc05FMFR5Tjk0REdMZERsZzFUQ1N5OTU2SGMzbDRhVzhfY05sS1RHSDJsSGRScS1QYTd6X1N0M3c4UXdHaG9pS3dJZXVJbWN0aWx2Wk5WbkU4QzJn?oc=5",
+    "published": "Thu, 23 Apr 2026 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "2d83d2d97bf84af09e73fb99cced6974",
+    "first_seen": "2026-08-01T02:34:44.532392+00:00"
+  },
+  "12d9856f0f6de91fe97008965d5ba2ce": {
+    "source": "Google News",
+    "title": "Man, woman dead after Holly Springs shootings - wreg.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMihgFBVV95cUxQZDVrMzdONjJiM2dYZ3ZVLTdyaURnQWJ0SmNUZU8wa2hkQWFweDRXNzBTcXIwcU9qZ1BtNDFQUTVCOGVMeWNhekpoU3JYdGNyM0hIa3A2Mk5IdXdrSUVXRnA4N2ZEeWU3V0ZJSzU4Z1MyNS1kZXNsVmFuYkV6SWNmWnN2ZlEtQdIBiwFBVV95cUxPZThCb0RfTkpscnFjSHozRWN0Ulpkc1RTN1FtQUhlMFJuWHBKWlpXSD",
+    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQZDVrMzdONjJiM2dYZ3ZVLTdyaURnQWJ0SmNUZU8wa2hkQWFweDRXNzBTcXIwcU9qZ1BtNDFQUTVCOGVMeWNhekpoU3JYdGNyM0hIa3A2Mk5IdXdrSUVXRnA4N2ZEeWU3V0ZJSzU4Z1MyNS1kZXNsVmFuYkV6SWNmWnN2ZlEtQdIBiwFBVV95cUxPZThCb0RfTkpscnFjSHozRWN0Ulpkc1RTN1FtQUhlMFJuWHBKWlpXSDhicXQ4aUQtNlZ4TGF6b3AzWUlSLWo4ck54ZnBEX3lZN2hxNUEyQzFBZGtZaGo3NUhwb2M0ZHMwd05nTFUzd2VzSWRIVFZyNmkxYUExTUdxYVg5d1dBWkcxeFVJ?oc=5",
+    "published": "Sat, 09 Aug 2025 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "12d9856f0f6de91fe97008965d5ba2ce",
+    "first_seen": "2026-08-01T02:34:44.532392+00:00"
+  },
+  "8f40c31c440577dc753257a12412a275": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "New School Montessori",
+    "summary": "Does anyone have children enrolled here? I would love any feedback. We are thinking of leaving our current school due to a few unsettling experiences.     submitted by    /u/Reasonable-Garlic324   [link] [comments]",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1vc7uce/new_school_montessori/",
+    "published": "2026-08-01T00:10:13+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "8f40c31c440577dc753257a12412a275",
+    "first_seen": "2026-08-01T02:34:44.532392+00:00"
   }
 }
