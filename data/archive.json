@@ -4564,5 +4564,17 @@
     "priority_reason": "",
     "hash": "446f192515c8c1071dfc8fb4f23095fb",
     "first_seen": "2026-08-02T02:32:31.214454+00:00"
+  },
+  "c3d2be39fbbe83bb4484f85a7986e405": {
+    "source": "Reddit r/NorthCarolina",
+    "title": "NC's license-plate cameras are searched mostly by out-of-state police \u2014 and states like Texas have no law against selling the data",
+    "summary": "A handful of North Carolina communities released the audit logs from their Flock license-plate-reader cameras. Combined, those cameras were searched about 3.9 million times in three months, and nearly 90% of the searches came from outside North Carolina. The single busiest searcher was a police depa",
+    "url": "https://www.reddit.com/r/NorthCarolina/comments/1vcp525/ncs_licenseplate_cameras_are_searched_mostly_by/",
+    "published": "2026-08-01T14:39:56+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "c3d2be39fbbe83bb4484f85a7986e405",
+    "first_seen": "2026-08-02T13:17:05.031221+00:00"
   }
 }
