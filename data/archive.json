@@ -4754,5 +4754,17 @@
     "priority": true,
     "hash": "40543186406bd74ef70d349e3defd33b",
     "first_seen": "2026-08-04T08:34:40.288924+00:00"
+  },
+  "57891523dcbe361fe6a8af80ec9a31fd": {
+    "source": "Google News",
+    "title": "Woman arrested on statutory rape charge in Holly Springs - Yahoo",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxQazA1Vm5CeW5lOHpRV2RaTGxnUnZpNldGVVhnWXBJUkt5Y1RXTVI3dDhWZVRGZ2lpbzc0aHRLMnVZNGUtT2JZdjRlN2w1WE40cUFhODU5STVRUENkSnJaNzYwQVZEVVBhTGdocHN4aVFWUk9LWl9WNTV5R0paUXZnUUhEWlZsN2lJbkRCSWp0WnVVUEhH?oc=5\" target=\"_blank\">Woman arrested on statutory",
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQazA1Vm5CeW5lOHpRV2RaTGxnUnZpNldGVVhnWXBJUkt5Y1RXTVI3dDhWZVRGZ2lpbzc0aHRLMnVZNGUtT2JZdjRlN2w1WE40cUFhODU5STVRUENkSnJaNzYwQVZEVVBhTGdocHN4aVFWUk9LWl9WNTV5R0paUXZnUUhEWlZsN2lJbkRCSWp0WnVVUEhH?oc=5",
+    "published": "Fri, 17 Jul 2026 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "57891523dcbe361fe6a8af80ec9a31fd",
+    "first_seen": "2026-08-04T19:30:18.018198+00:00"
   }
 }
