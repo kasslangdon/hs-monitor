@@ -4933,5 +4933,29 @@
     "priority_reason": "",
     "hash": "f51cea7a2ac331ffa6682ac10d9ebe92",
     "first_seen": "2026-08-07T02:34:21.440384+00:00"
+  },
+  "838c34e3837d6c7f11e74945b71e4050": {
+    "source": "Google News",
+    "title": "Teen driver charged with second-degree murder in Holly Springs crash that killed 14-year-old bicyclist: Police - CBS17.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMi-gFBVV95cUxQcTZOa3ZxVmo0TjBnOUFTZkUzNngtS3BidS11QjFTZUhMMDhKSXh0X244NTc3WHp5emxhOGpwZFowbVZGOG5oeG5QYnFjSjdjRHZUaVNBRHE3SGxUTXUyZEgzTTBNNDM2OEY2a2l0eFFsZ3ZQc2E1MXVLN1JrQnA4Q2JTZnJac3dvS2k5UmFLejUyUklMV215Qmp4WGpUcUJvQU1OTk5WTjhxR1dLS015NWhVaF9xLTFfcl",
+    "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQcTZOa3ZxVmo0TjBnOUFTZkUzNngtS3BidS11QjFTZUhMMDhKSXh0X244NTc3WHp5emxhOGpwZFowbVZGOG5oeG5QYnFjSjdjRHZUaVNBRHE3SGxUTXUyZEgzTTBNNDM2OEY2a2l0eFFsZ3ZQc2E1MXVLN1JrQnA4Q2JTZnJac3dvS2k5UmFLejUyUklMV215Qmp4WGpUcUJvQU1OTk5WTjhxR1dLS015NWhVaF9xLTFfclZBMVp5UHRDRzBPa09jdzlQVlcwSW9TWXdsNTVBNXlsQUVNWjVzYUJ4SjJCMThvb2h4MmtlVzlOTThjT01mRktB?oc=5",
+    "published": "Wed, 19 Nov 2025 08:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "838c34e3837d6c7f11e74945b71e4050",
+    "first_seen": "2026-08-07T12:58:49.077395+00:00"
+  },
+  "bb57532150dac23ab74a27aa131872b7": {
+    "source": "Google News",
+    "title": "Man, woman dead after Holly Springs shootings - WJTV",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMihAFBVV95cUxNR29Dc0xTYjN4V2d2T2hrN3hqM0h6VXZqX3ROZGFmVi1GcTRWQkdLSW9DLThQVTBjaFpaZHV0Y3o4QTJZU1FGWGtnZUtxZHNqYkhZZTFobHFmaktkWDdIVE9JNFlBVDBkczlud093VE81ZTRKdGs3VWx1RWNuR0Vab2JNWXA?oc=5\" target=\"_blank\">Man, woman dead after Holly Springs shootings</a",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNR29Dc0xTYjN4V2d2T2hrN3hqM0h6VXZqX3ROZGFmVi1GcTRWQkdLSW9DLThQVTBjaFpaZHV0Y3o4QTJZU1FGWGtnZUtxZHNqYkhZZTFobHFmaktkWDdIVE9JNFlBVDBkczlud093VE81ZTRKdGs3VWx1RWNuR0Vab2JNWXA?oc=5",
+    "published": "Sat, 09 Aug 2025 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "bb57532150dac23ab74a27aa131872b7",
+    "first_seen": "2026-08-07T12:58:49.077395+00:00"
   }
 }
