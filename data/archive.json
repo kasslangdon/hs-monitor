@@ -5041,5 +5041,17 @@
     "priority_reason": "under investigation",
     "hash": "aee2dd2ec4c5fe00008549519818acb4",
     "first_seen": "2026-08-08T01:22:06.079881+00:00"
+  },
+  "d272e8c1e242610b117c5568963b9de1": {
+    "source": "Google News",
+    "title": "Woman accused of firing gun in Holly Springs neighborhood in custody - wral.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqAFBVV95cUxPVVg2MjVTLXotNS1XVUtVNW1QcHpkdDl2UjU3WS1Ra1BZaTJyNXRuVER5V1NSVERzdklzdzB5eVRIZWl2eXV5cnFKbHpVWDVzT3doOXJwVjNySjdUNUpyVW9WSGU4MlR1Ujg5LXB2ZG13SmdJME44VGpRc3NabXpWUURZVXZvcExOaGh1SVFkNTdYQmdhanpWdXgyNU9RT0RqSGtpNVl1MDI?oc=5\" target=\"_blank\">",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPVVg2MjVTLXotNS1XVUtVNW1QcHpkdDl2UjU3WS1Ra1BZaTJyNXRuVER5V1NSVERzdklzdzB5eVRIZWl2eXV5cnFKbHpVWDVzT3doOXJwVjNySjdUNUpyVW9WSGU4MlR1Ujg5LXB2ZG13SmdJME44VGpRc3NabXpWUURZVXZvcExOaGh1SVFkNTdYQmdhanpWdXgyNU9RT0RqSGtpNVl1MDI?oc=5",
+    "published": "Sat, 26 Jul 2025 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "d272e8c1e242610b117c5568963b9de1",
+    "first_seen": "2026-08-08T06:49:18.704333+00:00"
   }
 }
