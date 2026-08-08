@@ -5053,5 +5053,29 @@
     "priority_reason": "",
     "hash": "d272e8c1e242610b117c5568963b9de1",
     "first_seen": "2026-08-08T06:49:18.704333+00:00"
+  },
+  "e2537fe209b69a87a03439e1b9cfad1a": {
+    "source": "Google News",
+    "title": "Man, woman dead after Holly Springs shootings - wjtv.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMihAFBVV95cUxNR29Dc0xTYjN4V2d2T2hrN3hqM0h6VXZqX3ROZGFmVi1GcTRWQkdLSW9DLThQVTBjaFpaZHV0Y3o4QTJZU1FGWGtnZUtxZHNqYkhZZTFobHFmaktkWDdIVE9JNFlBVDBkczlud093VE81ZTRKdGs3VWx1RWNuR0Vab2JNWXA?oc=5\" target=\"_blank\">Man, woman dead after Holly Springs shootings</a",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNR29Dc0xTYjN4V2d2T2hrN3hqM0h6VXZqX3ROZGFmVi1GcTRWQkdLSW9DLThQVTBjaFpaZHV0Y3o4QTJZU1FGWGtnZUtxZHNqYkhZZTFobHFmaktkWDdIVE9JNFlBVDBkczlud093VE81ZTRKdGs3VWx1RWNuR0Vab2JNWXA?oc=5",
+    "published": "Sat, 09 Aug 2025 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "e2537fe209b69a87a03439e1b9cfad1a",
+    "first_seen": "2026-08-08T18:35:29.376640+00:00"
+  },
+  "819f0ec4b7a2e3bcaf9dd2081e5f62f7": {
+    "source": "Google News",
+    "title": "Out and About This Weekend in Holly Springs (NC), Apex & Fuquay-Varina (8/7 through 8/9) - newsbreak.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMi5wFBVV95cUxPSk1iU3c1NVFmdHZWSnF4al9FaG9SY3E5eDRqN3puNkQ0Umsyc0VoZW8ya21RR2ZLZmVZTEcxbnBuRGdBWVlCblRGSXNTN0pqZ2tKZ2J3X1pzMjluTnNIY29ZY0xOOURqWTB5d2lXZmRfVy1JV0hKU1VVREF6XzB0M2MtekJWd0Zaa1V5OEo3OXc2ci15TE91d2FaM20yQy10NWpfbkVUVGtkZGttSHpVem83eGFBTU1Sdm",
+    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPSk1iU3c1NVFmdHZWSnF4al9FaG9SY3E5eDRqN3puNkQ0Umsyc0VoZW8ya21RR2ZLZmVZTEcxbnBuRGdBWVlCblRGSXNTN0pqZ2tKZ2J3X1pzMjluTnNIY29ZY0xOOURqWTB5d2lXZmRfVy1JV0hKU1VVREF6XzB0M2MtekJWd0Zaa1V5OEo3OXc2ci15TE91d2FaM20yQy10NWpfbkVUVGtkZGttSHpVem83eGFBTU1SdmVvdzN1TGJqc0hOV1ZobkZ0TzlIb1IxY1RzQzhvS1pJMmZjTU4xV3VCalotbTQ?oc=5",
+    "published": "Thu, 06 Aug 2026 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "819f0ec4b7a2e3bcaf9dd2081e5f62f7",
+    "first_seen": "2026-08-08T18:35:29.376640+00:00"
   }
 }
