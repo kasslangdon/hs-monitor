@@ -5005,5 +5005,41 @@
     "priority_reason": "",
     "hash": "e613caed2d193523085054925ddeaedb",
     "first_seen": "2026-08-07T18:54:30.637865+00:00"
+  },
+  "9f574d091b5c298b7855017e0eb95068": {
+    "source": "CBS17",
+    "title": "Substitute bus driver struggling with route causes concern in Wake County neighborhood",
+    "summary": "HOLLY SPRINGS, N.C. (WNCN) -- Confusion behind the wheel of a school bus led to chaos in Holly Springs earlier this week. Parents of students at Middle Creek Elementary School said their kid's bus was running late on Tuesday. So, they tracked it on the \"Here Comes the Bus\" app, only to find the driv",
+    "url": "https://www.cbs17.com/news/cbs17-investigates/substitute-bus-driver-struggling-with-route-causes-concern-in-wake-county-neighborhood/",
+    "published": "Fri, 07 Aug 2026 22:00:13 +0000",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "9f574d091b5c298b7855017e0eb95068",
+    "first_seen": "2026-08-08T01:22:06.079881+00:00"
+  },
+  "651be8db2c00e78aba5d70e1c060a73e": {
+    "source": "Reddit r/NorthCarolina",
+    "title": "Two days after NC police groups lobbied to ban hemp products, a CMPD officer was arrested for using Flock cameras to tip off a drug dealer",
+    "summary": "        submitted by    /u/Own_Beautiful_9977   [link] [comments] ",
+    "url": "https://www.reddit.com/r/NorthCarolina/comments/1vi2l97/two_days_after_nc_police_groups_lobbied_to_ban/",
+    "published": "2026-08-07T14:44:30+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "651be8db2c00e78aba5d70e1c060a73e",
+    "first_seen": "2026-08-08T01:22:06.079881+00:00"
+  },
+  "aee2dd2ec4c5fe00008549519818acb4": {
+    "source": "Reddit r/NorthCarolina",
+    "title": "After the NC Flock-camera misuse arrests, even law enforcement is now floating \"regulation.\" Would that actually fix it?",
+    "summary": "With two North Carolina officers charged in the past couple weeks for misusing the Flock license-plate camera system \u2014 a Mooresville officer accused of running it 31 times to track her ex's new partner, and a Charlotte-Mecklenburg officer in a separate case \u2014 the conversation has shifted from \"does ",
+    "url": "https://www.reddit.com/r/NorthCarolina/comments/1vi0092/after_the_nc_flockcamera_misuse_arrests_even_law/",
+    "published": "2026-08-07T13:00:55+00:00",
+    "category": "Reddit",
+    "priority": true,
+    "priority_reason": "under investigation",
+    "hash": "aee2dd2ec4c5fe00008549519818acb4",
+    "first_seen": "2026-08-08T01:22:06.079881+00:00"
   }
 }
