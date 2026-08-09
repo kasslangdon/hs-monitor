@@ -5113,5 +5113,29 @@
     "priority_reason": "",
     "hash": "3c508c0748c3a7c6d7c552a868319849",
     "first_seen": "2026-08-09T06:55:11.807697+00:00"
+  },
+  "51d65f1842e507c6f1afd75c06536e79": {
+    "source": "Google News",
+    "title": "2 rescued in NC 540 wreck after SUV flips, crashes on its side against wall near Holly Springs - CBS 17",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMi6gFBVV95cUxNcnQ1enFrczk1RW5oSVk2Ry1Wc0hzTHY3TWVUZ3FBb3BxUjVwN3ItcWc0bEtoaUh4QzlEY1VWUnQ5UGtGU2JSb0t2MGFrYVJuYWpISXVpdjNoWmlxdnZVeU1melN0SWpiNGxqMWVGTnYtbjhwN0cyU2NJczBIb0RIWEdlNkVpZkJjdDg1X0tSMEg2ZVpNU0x4LWhfb1h0aWtTNjNudE0xVWhFbExDRUlsd2JQR2VYblBLTm",
+    "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNcnQ1enFrczk1RW5oSVk2Ry1Wc0hzTHY3TWVUZ3FBb3BxUjVwN3ItcWc0bEtoaUh4QzlEY1VWUnQ5UGtGU2JSb0t2MGFrYVJuYWpISXVpdjNoWmlxdnZVeU1melN0SWpiNGxqMWVGTnYtbjhwN0cyU2NJczBIb0RIWEdlNkVpZkJjdDg1X0tSMEg2ZVpNU0x4LWhfb1h0aWtTNjNudE0xVWhFbExDRUlsd2JQR2VYblBLTmRKMXJtQ0tZMUVCRjNxMnhoaXNIMXJnT0lrV3huWWh6b05SZ2loU0s5NWx6ZFRIaHc?oc=5",
+    "published": "Thu, 08 Jan 2026 08:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "51d65f1842e507c6f1afd75c06536e79",
+    "first_seen": "2026-08-09T18:38:30.416380+00:00"
+  },
+  "1dd244760d6a5793c80aec1216151558": {
+    "source": "Google News",
+    "title": "Toll Brothers Announces Model Home Grand Opening at Longleaf Crest in Holly Springs, North Carolina - sahmcapital.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMi5AFBVV95cUxPTE5hWEZHRERVMDFCT1NnZVBqVHdjVThTNFdzdlAwVWN4QjFkNGFSa3NNcXVfSmdrbFBuVVNtRGQ1blBVZXl1bXRJYkE5VDFuU1ZlX1Ytc1RaMDZmUjJKNXY4WXlNODcwWVZiUVRRZFVBcTlndklGM0xXbmR6N193Tkp6eWJ3UndiYllVWlVIU0p0QkE4cWs1YmpqVmVYdm5fa3lpVUhSalJPRDlfMWZmaTVGSVl4cm1Kdm",
+    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPTE5hWEZHRERVMDFCT1NnZVBqVHdjVThTNFdzdlAwVWN4QjFkNGFSa3NNcXVfSmdrbFBuVVNtRGQ1blBVZXl1bXRJYkE5VDFuU1ZlX1Ytc1RaMDZmUjJKNXY4WXlNODcwWVZiUVRRZFVBcTlndklGM0xXbmR6N193Tkp6eWJ3UndiYllVWlVIU0p0QkE4cWs1YmpqVmVYdm5fa3lpVUhSalJPRDlfMWZmaTVGSVl4cm1KdmpuMmhZcEY0NFY1VkJxQUcyZXlLSlNJSW8ySUhRcGVVczQ0NWFwdldFWE4?oc=5",
+    "published": "Tue, 16 Dec 2025 08:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "1dd244760d6a5793c80aec1216151558",
+    "first_seen": "2026-08-09T18:38:30.416380+00:00"
   }
 }
