@@ -5161,5 +5161,17 @@
     "priority_reason": "",
     "hash": "7d2644709b5d0fb275d4757fa84cecf5",
     "first_seen": "2026-08-11T01:26:58.304574+00:00"
+  },
+  "3f319a0dbdcb1e6ec878344ef85ee227": {
+    "source": "Reddit r/raleigh",
+    "title": "Raleigh Police appears to have ignored their own audits, which stated that former employees were among the active users in their Flock Mass Surveillance System.",
+    "summary": "      These audits reveal two highly concerning trends. First, despite repeatedly stating that \u201cproper reason codes are necessary to ensure compliance with [North Carolina Statute],\u201d recent audits recommend accepting \"less restrictive information\" as valid codes\u2014effectively lowering standards to mas",
+    "url": "https://www.reddit.com/r/raleigh/comments/1vljffk/raleigh_police_appears_to_have_ignored_their_own/",
+    "published": "2026-08-11T14:43:33+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "3f319a0dbdcb1e6ec878344ef85ee227",
+    "first_seen": "2026-08-13T19:02:17.266601+00:00"
   }
 }
