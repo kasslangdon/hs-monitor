@@ -5185,5 +5185,17 @@
     "priority_reason": "",
     "hash": "6cf56a295ac89b59ae6156d0e5ba41f0",
     "first_seen": "2026-08-14T01:44:30.021933+00:00"
+  },
+  "7d80b2a629832a96751964661a80ed26": {
+    "source": "Google News",
+    "title": "Mt. Holly Springs sees growing number of ICE arrests under 287(g) agreement - fox43.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMi_AFBVV95cUxOc0hWbzVad3hBQ21TdUdRajFlY0ZSWFlLeUpJa0M5ODlORGlMbUd5LXVsUU1YMTExQTl6WVRkSWU2bU9kNTZXSlhtalllV1k3V05HX0RMM2s5S1pTY3VSLUZCZHNJUmpCOTVCY3RXdFhOQ3BCVl9uOEVmcHhzX3doWUExQl92SFo3WnotUkM4blBqU0xnTXc5Qmk3cFFNLTZXUG0tN1FiX01tZzBsbDFSUEN1ZnQ3YVg5Tm",
+    "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOc0hWbzVad3hBQ21TdUdRajFlY0ZSWFlLeUpJa0M5ODlORGlMbUd5LXVsUU1YMTExQTl6WVRkSWU2bU9kNTZXSlhtalllV1k3V05HX0RMM2s5S1pTY3VSLUZCZHNJUmpCOTVCY3RXdFhOQ3BCVl9uOEVmcHhzX3doWUExQl92SFo3WnotUkM4blBqU0xnTXc5Qmk3cFFNLTZXUG0tN1FiX01tZzBsbDFSUEN1ZnQ3YVg5TmZBSXhlc2QxU3FjT0xhT3JtZXFHTTdjdWVhNk1WRU90ZkpPZDFGTVBNWjEteG9OdXBHX0NNOG1wZHVmR3B1YmxrS3k?oc=5",
+    "published": "Thu, 13 Aug 2026 21:08:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "7d80b2a629832a96751964661a80ed26",
+    "first_seen": "2026-08-14T07:22:55.240282+00:00"
   }
 }
