@@ -5197,5 +5197,17 @@
     "priority_reason": "",
     "hash": "7d80b2a629832a96751964661a80ed26",
     "first_seen": "2026-08-14T07:22:55.240282+00:00"
+  },
+  "fe65eaf186bddc74189cfaae76a707d5": {
+    "source": "Reddit r/NorthCarolina",
+    "title": "Official NCDMV Update: No Longer Issuing Printed Registration Cards and License Plate Stickers Starting October 1",
+    "summary": "Effective October 1, 2026, NCDMV is no longer issuing printed vehicle registration cards or license plate stickers. This transition to an all-electronic registration system is a result of change to state law that was part of the recently passed state budget.  NCDMV didn\u2019t request this change, but we",
+    "url": "https://www.reddit.com/r/NorthCarolina/comments/1vmdum5/official_ncdmv_update_no_longer_issuing_printed/",
+    "published": "2026-08-12T13:15:30+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "fe65eaf186bddc74189cfaae76a707d5",
+    "first_seen": "2026-08-14T13:02:10.845764+00:00"
   }
 }
