@@ -5496,5 +5496,17 @@
     "priority_reason": "",
     "hash": "e26a547db52a9c7c4e70eea0b74f490c",
     "first_seen": "2026-08-20T01:05:40.763583+00:00"
+  },
+  "ef199b0903f48e2c3e9dea85e1c80984": {
+    "source": "Google News",
+    "title": "Genentech And Roche Breaks Ground On New Drug Manufacturing Facility In Holly Springs NC - Pharmaceutical Online",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMizwFBVV95cUxOdHNWd2pUZk83MDgza3JyQ3hmd0dhTnQyME54QzVYcGpJQlY3akV6WXNVQkZZUGVCYlVOSDVHUEhBNDNrZVNCMXRtZWxQS0M2WjJ2NVFPN3JRWjFVemg1N0hVcmVpX0JHV3Mzc1BSckdnbzQ3RnV1VksweDBpQ1hkY0pScG1XZW90c1JQcEVQN01QOGdnRTRWaW85QUV1anZmeVVHeC1oMkVObmJFQXZFakFBYjVpZllVbF",
+    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOdHNWd2pUZk83MDgza3JyQ3hmd0dhTnQyME54QzVYcGpJQlY3akV6WXNVQkZZUGVCYlVOSDVHUEhBNDNrZVNCMXRtZWxQS0M2WjJ2NVFPN3JRWjFVemg1N0hVcmVpX0JHV3Mzc1BSckdnbzQ3RnV1VksweDBpQ1hkY0pScG1XZW90c1JQcEVQN01QOGdnRTRWaW85QUV1anZmeVVHeC1oMkVObmJFQXZFakFBYjVpZllVbFJmMWExdGhUNkpiTkxzbHFVbDk0TUE?oc=5",
+    "published": "Tue, 26 Aug 2025 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "ef199b0903f48e2c3e9dea85e1c80984",
+    "first_seen": "2026-08-20T06:42:36.384529+00:00"
   }
 }
