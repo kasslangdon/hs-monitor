@@ -5604,5 +5604,17 @@
     "priority_reason": "",
     "hash": "b905b0a58024d1696c02aba11b4c81d3",
     "first_seen": "2026-08-21T06:43:29.615825+00:00"
+  },
+  "c692689410a26e13cb5effff7b030e26": {
+    "source": "Google News",
+    "title": "Biotech | Genentech breaks ground on new facility, bring hundreds of jobs to Holly Springs, North Carolina - ABC11 News",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMilgFBVV95cUxQWURPM1BYblU2YWJVX0c0ZVU0Q05NYWprOVZBckNZOTNVNlp4cm5lc00wNGJ5RUdfSTZjOHQ5eW53WGdISGM3Ri12WlZTc29NTmFOcUVOM2dDNlpHLUU5Z1YyTVpRUW1BQ3dlZUg3cDhLblZzVnRTM1E1LTIzUU5fRFhWakNidXM0OHZoT3NPLXZXbzhteGfSAZsBQVVfeXFMTm5KUGR0ZWdDa2ctUlAxbFhOZzJaM005Sm",
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQWURPM1BYblU2YWJVX0c0ZVU0Q05NYWprOVZBckNZOTNVNlp4cm5lc00wNGJ5RUdfSTZjOHQ5eW53WGdISGM3Ri12WlZTc29NTmFOcUVOM2dDNlpHLUU5Z1YyTVpRUW1BQ3dlZUg3cDhLblZzVnRTM1E1LTIzUU5fRFhWakNidXM0OHZoT3NPLXZXbzhteGfSAZsBQVVfeXFMTm5KUGR0ZWdDa2ctUlAxbFhOZzJaM005SmN1VzJPZW5WLVMzcUlYWDc4cTZ6OXhKSEtZaXA3LW5QanNsWkZ6LXlhd2U1el9XblFiSzhFa0FtRXlwYXJweVVVUlNtaUQ0S210SWpHU21DS2dxUGRqdHVsZldLcFhYQ0FRcjBIWUhHZG5mWlJtbk5zSzVVbU1KXzM3eTQ?oc=5",
+    "published": "Mon, 25 Aug 2025 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "c692689410a26e13cb5effff7b030e26",
+    "first_seen": "2026-08-21T12:42:33.466040+00:00"
   }
 }
