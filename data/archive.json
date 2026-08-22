@@ -5688,5 +5688,29 @@
     "priority_reason": "",
     "hash": "1f2dcba956f1d2289c87377641885769",
     "first_seen": "2026-08-22T01:06:05.638125+00:00"
+  },
+  "45c246d3e33279ff25cfda4724f42667": {
+    "source": "Google News",
+    "title": "Police investigate Holly Springs crash involving school van with 13 students - News & Observer",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE5tcjBURERjU2Q1ak1HRGVoVnh4Qm9nUURyeDFKUFkyeldSWWI3S094RWd5eHVzTXp3Rm14NVJRdl9yNXZqTklCQjRCbTNqbHdmNUc5b0o1dUJBZVFheUpTMjZ2dS1NRGdtQXplZ3JR0gFuQVVfeXFMUDczcmRkSmFjT1hXS3lfbGg1ejM0R0pRanZ4NVhFOU10ZTZNLTJnNmJMNHJwdnlVTmpTR2RidEJtSVQ3ckVqdVd3Tz",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5tcjBURERjU2Q1ak1HRGVoVnh4Qm9nUURyeDFKUFkyeldSWWI3S094RWd5eHVzTXp3Rm14NVJRdl9yNXZqTklCQjRCbTNqbHdmNUc5b0o1dUJBZVFheUpTMjZ2dS1NRGdtQXplZ3JR0gFuQVVfeXFMUDczcmRkSmFjT1hXS3lfbGg1ejM0R0pRanZ4NVhFOU10ZTZNLTJnNmJMNHJwdnlVTmpTR2RidEJtSVQ3ckVqdVd3TzRlcUdxcWdGWmdqUXlmLVU2VXpUZjlfd205SkNodTdJX1pnUkE?oc=5",
+    "published": "Sat, 27 Sep 2025 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "45c246d3e33279ff25cfda4724f42667",
+    "first_seen": "2026-08-22T12:35:02.781848+00:00"
+  },
+  "9af7ff5b699c4567d288897be2f0ad64": {
+    "source": "Reddit r/NorthCarolina",
+    "title": "Is this normal for USPS in NC?",
+    "summary": "      Does anyone else have the problem of USPS bouncing the packages around from Gastonia and Charlotte? I don't know why it keeps reaching facilities that are close to my destination and then just gets sent back to Gastonia.     submitted by    /u/EdgeMcMuffin925   [link] [comments] ",
+    "url": "https://www.reddit.com/r/NorthCarolina/comments/1vv7ryk/is_this_normal_for_usps_in_nc/",
+    "published": "2026-08-22T09:28:55+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "9af7ff5b699c4567d288897be2f0ad64",
+    "first_seen": "2026-08-22T12:35:02.781848+00:00"
   }
 }
