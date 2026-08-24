@@ -5759,5 +5759,17 @@
     "priority": true,
     "hash": "601c0a488de1a39cd60021288249ffe2",
     "first_seen": "2026-08-23T06:38:44.041396+00:00"
+  },
+  "4483e903da0e82cc5104a50f3b1dbcfa": {
+    "source": "Holly Springs Update",
+    "title": "Holly Springs (NC) Lifts Water Restrictions After Nearly Seven Weeks",
+    "summary": "Stage 1 restrictions ended Aug. 21st after recent rainfall, removing the designated watering schedule that had been in place since July 6th.",
+    "url": "https://www.hollyspringsupdate.com/p/holly-springs-nc-lifts-water-restrictions",
+    "published": "Sun, 23 Aug 2026 20:44:45 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "4483e903da0e82cc5104a50f3b1dbcfa",
+    "first_seen": "2026-08-24T01:08:45.201590+00:00"
   }
 }
