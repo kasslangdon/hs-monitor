@@ -5806,5 +5806,28 @@
     "priority_reason": "",
     "hash": "747f056dd4e91ca47d713a14be9d9cfb",
     "first_seen": "2026-08-25T18:38:01.418195+00:00"
+  },
+  "4b5f1d5b48226f9c66b0a1445c988603": {
+    "source": "Court / Legal (Google)",
+    "title": "Mount Holly Springs man charged with years of alleged sexual assaults against four girls - Tri-State Alert",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxPTHJZTzZ1RWtwb1F5WV9qM1cxLTF0REtpQnAzN0lZV2EtdlBYVVFFY084bTJBV19ESVJKZjdtMkFmVDBDV0oyc0FkVzlrcC12WnJpNW8zN291LU9ab2pmbzd6eXBXeXV1UmI1V3AyeEdZRUw4RVlBZElLczc4bGRJbk9MNzgySElMbjBKQkxUcnZCejhZdzBmMXV5dExESEJrUjk0VWpnUWI0NG02N2JoNndlVUE0SjB0aV",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPTHJZTzZ1RWtwb1F5WV9qM1cxLTF0REtpQnAzN0lZV2EtdlBYVVFFY084bTJBV19ESVJKZjdtMkFmVDBDV0oyc0FkVzlrcC12WnJpNW8zN291LU9ab2pmbzd6eXBXeXV1UmI1V3AyeEdZRUw4RVlBZElLczc4bGRJbk9MNzgySElMbjBKQkxUcnZCejhZdzBmMXV5dExESEJrUjk0VWpnUWI0NG02N2JoNndlVUE0SjB0aVE?oc=5",
+    "published": "Fri, 21 Aug 2026 15:45:47 GMT",
+    "category": "Court Records",
+    "priority": true,
+    "hash": "4b5f1d5b48226f9c66b0a1445c988603",
+    "first_seen": "2026-08-26T01:08:57.347733+00:00"
+  },
+  "b642d7c7ebe4b6d20da82822948bed6a": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "draft of a poem about Avent Ferry Rd during the evening commute",
+    "summary": "Aug 25, 2026 I drove on a street named Avent Ferry but her pavement was tinged quite orange Did I not drive by here this morning? I asked til a slow understanding did grasp me that her form was like a second sun she marks my day as coming done whence her morning form didn't tarry    submitted by    ",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1vyhvz7/draft_of_a_poem_about_avent_ferry_rd_during_the/",
+    "published": "2026-08-26T00:42:29+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "b642d7c7ebe4b6d20da82822948bed6a",
+    "first_seen": "2026-08-26T01:08:57.347733+00:00"
   }
 }
