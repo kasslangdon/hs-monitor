@@ -5841,5 +5841,17 @@
     "priority_reason": "",
     "hash": "653e8c86ca6c5a20653be2ab16541550",
     "first_seen": "2026-08-26T06:46:10.147329+00:00"
+  },
+  "57d202d6c88810c3ed9d14cd0264a2eb": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Meeting w/ Chief Smith @ FV PD re: ALPR",
+    "summary": "        submitted by    /u/MattTheAncap   [link] [comments] ",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1w02j9g/meeting_w_chief_smith_fv_pd_re_alpr/",
+    "published": "2026-08-27T18:41:48+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "57d202d6c88810c3ed9d14cd0264a2eb",
+    "first_seen": "2026-08-27T21:45:45.594013+00:00"
   }
 }
