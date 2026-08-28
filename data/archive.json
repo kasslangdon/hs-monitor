@@ -5853,5 +5853,41 @@
     "priority_reason": "",
     "hash": "57d202d6c88810c3ed9d14cd0264a2eb",
     "first_seen": "2026-08-27T21:45:45.594013+00:00"
+  },
+  "4c0ef5e6e2226ef9ca8ed094b224c580": {
+    "source": "Google News",
+    "title": "Teen on bike injured after crash with box truck in Holly Springs, police say - CBS17.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiywFBVV95cUxQUVRNekxyVGdGT1lldmlMVll2S3licDR3cFdBNl9OcUJybmtNT2NZcHhmdVZEQmJlVUNFNXliaU5jT0c4SEVPNHhFY3dEc1oySXo3dEEzVThwRHhPb3VMSFdfRTZQOUJGY2pHUGJzdEJiSVhKMmUtWU5aRUloQTB2eWpMTl9VTmVNalBPS09mMVJkbDBjcmtLVE5GT1NUSU9lTFpwTXZKeEc4QkdJVVpvQURyaDFzU0pxb3",
+    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQUVRNekxyVGdGT1lldmlMVll2S3licDR3cFdBNl9OcUJybmtNT2NZcHhmdVZEQmJlVUNFNXliaU5jT0c4SEVPNHhFY3dEc1oySXo3dEEzVThwRHhPb3VMSFdfRTZQOUJGY2pHUGJzdEJiSVhKMmUtWU5aRUloQTB2eWpMTl9VTmVNalBPS09mMVJkbDBjcmtLVE5GT1NUSU9lTFpwTXZKeEc4QkdJVVpvQURyaDFzU0pxb3c0RHp0NkdwZFJVanl6LTZiSQ?oc=5",
+    "published": "Wed, 10 Jun 2026 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "4c0ef5e6e2226ef9ca8ed094b224c580",
+    "first_seen": "2026-08-28T08:59:13.113494+00:00"
+  },
+  "243d1f8348ebbc472d0b8f6778ede2f0": {
+    "source": "Reddit r/NorthCarolina",
+    "title": "Are there any blue springs in the low country/ coastal part of NC ?",
+    "summary": "Hey y\u2019all, i\u2019m sorry if this is a foolish question but after visiting a friend in the neighboring state of SC and then making my way to the mountainous part of NC in the western part of the state, i was wondering if there happen to be any cold springs/ blue hole type swim holes in the low country / ",
+    "url": "https://www.reddit.com/r/NorthCarolina/comments/1w0jmil/are_there_any_blue_springs_in_the_low_country/",
+    "published": "2026-08-28T07:21:31+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "243d1f8348ebbc472d0b8f6778ede2f0",
+    "first_seen": "2026-08-28T08:59:13.113494+00:00"
+  },
+  "29623e633bf64743b609802dc9a9bc13": {
+    "source": "Reddit r/NorthCarolina",
+    "title": "Sunset Beach, end of September, for two nights \u2026 what do you think?",
+    "summary": "Hello, and thanks in advance for your perspective. An out of state friend is coming to visit me / my roommate in Moore County for a few days at the end of September, and then we will drive her to a family reunion in Sunset Beach. We are dropping her off on a Sunday evening, then considering staying ",
+    "url": "https://www.reddit.com/r/NorthCarolina/comments/1w0h8js/sunset_beach_end_of_september_for_two_nights_what/",
+    "published": "2026-08-28T05:05:06+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "29623e633bf64743b609802dc9a9bc13",
+    "first_seen": "2026-08-28T08:59:13.113494+00:00"
   }
 }
