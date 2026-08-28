@@ -5889,5 +5889,29 @@
     "priority_reason": "",
     "hash": "29623e633bf64743b609802dc9a9bc13",
     "first_seen": "2026-08-28T08:59:13.113494+00:00"
+  },
+  "d533fdd0b73bc3738607a3167d86b847": {
+    "source": "Holly Springs Update",
+    "title": "Out and About This Weekend in Holly Springs (NC), Apex & Fuquay-Varina (8/28 through 8/30)",
+    "summary": "Blues Traveler, Gin Blossoms, WAR, and Chance the Rapper headline nearby, while Holly Springs closes out its 150th anniversary with a themed farmers market, live music, and local flavor.",
+    "url": "https://www.hollyspringsupdate.com/p/out-and-about-this-weekend-in-holly-029",
+    "published": "Fri, 28 Aug 2026 14:02:59 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "d533fdd0b73bc3738607a3167d86b847",
+    "first_seen": "2026-08-28T21:44:47.834555+00:00"
+  },
+  "01198d7ea061ddd16462669da70c26c3": {
+    "source": "Google News",
+    "title": "Teen on bike injured after crash with box truck in Holly Springs, police say - CBS 17",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiywFBVV95cUxQUVRNekxyVGdGT1lldmlMVll2S3licDR3cFdBNl9OcUJybmtNT2NZcHhmdVZEQmJlVUNFNXliaU5jT0c4SEVPNHhFY3dEc1oySXo3dEEzVThwRHhPb3VMSFdfRTZQOUJGY2pHUGJzdEJiSVhKMmUtWU5aRUloQTB2eWpMTl9VTmVNalBPS09mMVJkbDBjcmtLVE5GT1NUSU9lTFpwTXZKeEc4QkdJVVpvQURyaDFzU0pxb3",
+    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQUVRNekxyVGdGT1lldmlMVll2S3licDR3cFdBNl9OcUJybmtNT2NZcHhmdVZEQmJlVUNFNXliaU5jT0c4SEVPNHhFY3dEc1oySXo3dEEzVThwRHhPb3VMSFdfRTZQOUJGY2pHUGJzdEJiSVhKMmUtWU5aRUloQTB2eWpMTl9VTmVNalBPS09mMVJkbDBjcmtLVE5GT1NUSU9lTFpwTXZKeEc4QkdJVVpvQURyaDFzU0pxb3c0RHp0NkdwZFJVanl6LTZiSQ?oc=5",
+    "published": "Wed, 10 Jun 2026 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "01198d7ea061ddd16462669da70c26c3",
+    "first_seen": "2026-08-28T21:44:47.834555+00:00"
   }
 }
