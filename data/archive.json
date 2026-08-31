@@ -5997,5 +5997,17 @@
     "priority_reason": "",
     "hash": "48e1c89df2fa8d16eda842a09697da98",
     "first_seen": "2026-08-30T03:32:06.178939+00:00"
+  },
+  "1f03ce935d38a9a4bde84e9179bc20d5": {
+    "source": "Reddit r/raleigh",
+    "title": "Audits raise questions about who has access to Raleigh Police Department's survelliance system",
+    "summary": "      A surveillance camera cannot keep you safe. Surveillance systems will not be used to help you find your stolen car. The data will always be leaked and misused no matter how many promises the vendor makes. The only thing surveillance cameras are for is putting people in jail and we know how wel",
+    "url": "https://www.reddit.com/r/raleigh/comments/1vzh9n9/audits_raise_questions_about_who_has_access_to/",
+    "published": "2026-08-27T02:20:32+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "1f03ce935d38a9a4bde84e9179bc20d5",
+    "first_seen": "2026-08-31T03:30:22.259037+00:00"
   }
 }
