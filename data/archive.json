@@ -6068,5 +6068,40 @@
     "priority_reason": "",
     "hash": "2e59f5b028cdb42fcba6143c936d2117",
     "first_seen": "2026-08-31T22:27:37.387533+00:00"
+  },
+  "efae7f09d91bed119667e0fa04b39152": {
+    "source": "Google News",
+    "title": "Man arrested in Holly Springs drive-by shooting that left 1 critically injured - WJTV",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMi3gFBVV95cUxNNmtQdTVvdzh5NTFUZ1BqeTVtZXlrS29DdmN4ZER6OThRR25ac2dsa05XLUxFOEp3VkxZWm5zc2p2VWY1SG1BdFU3ZHBqSklIWUVnQTE0QmZIamVySFlKNjg4WmFrSERzU2dwci1PejM5amZpWEJJdHhneXFmeVd2WHBISUQxWUlaSXlBbXc0MlJWN1JjVmlRdDhSVzkwZnhWSnd1T1JTRUc3bmgxT0lzdjU1X2F4d1J2Uj",
+    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNNmtQdTVvdzh5NTFUZ1BqeTVtZXlrS29DdmN4ZER6OThRR25ac2dsa05XLUxFOEp3VkxZWm5zc2p2VWY1SG1BdFU3ZHBqSklIWUVnQTE0QmZIamVySFlKNjg4WmFrSERzU2dwci1PejM5amZpWEJJdHhneXFmeVd2WHBISUQxWUlaSXlBbXc0MlJWN1JjVmlRdDhSVzkwZnhWSnd1T1JTRUc3bmgxT0lzdjU1X2F4d1J2UjFrWTJJbnFkMHBFbGJPT0NHek1BVlZVMVJkb0c2WHkxTHdRWkHSAbYBQVVfeXFMTk9ldDhXM1VscDlfdktFb3FqWFZ3S2NWMG40b1JoME5kLWdqZkpZbEw4RVJwbVdMWlkyeDlzM3JWSkJOQTZOdktmd2ZmM1M5dng1dnNUaFZ5WVlmUExLSHNjZ3JtVDZRTF9mdTdORDVSWmFYc1JrQ3BENDFvMVp3NFBmd0hJRHBJOFFuTmpvLTJaaFBMdzFvaTA5a0I0eHg3eTJuQWxOQWMxTEhBalloSlpoUFVZVkE?oc=5",
+    "published": "Mon, 31 Aug 2026 14:58:16 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "efae7f09d91bed119667e0fa04b39152",
+    "first_seen": "2026-09-01T03:29:53.964254+00:00"
+  },
+  "f474e9acc3ac05ddd44d891749034fc5": {
+    "source": "Court / Legal (Google)",
+    "title": "Mount Holly Springs man charged with years of alleged sexual assaults against four girls - tristatealert.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxPTHJZTzZ1RWtwb1F5WV9qM1cxLTF0REtpQnAzN0lZV2EtdlBYVVFFY084bTJBV19ESVJKZjdtMkFmVDBDV0oyc0FkVzlrcC12WnJpNW8zN291LU9ab2pmbzd6eXBXeXV1UmI1V3AyeEdZRUw4RVlBZElLczc4bGRJbk9MNzgySElMbjBKQkxUcnZCejhZdzBmMXV5dExESEJrUjk0VWpnUWI0NG02N2JoNndlVUE0SjB0aV",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPTHJZTzZ1RWtwb1F5WV9qM1cxLTF0REtpQnAzN0lZV2EtdlBYVVFFY084bTJBV19ESVJKZjdtMkFmVDBDV0oyc0FkVzlrcC12WnJpNW8zN291LU9ab2pmbzd6eXBXeXV1UmI1V3AyeEdZRUw4RVlBZElLczc4bGRJbk9MNzgySElMbjBKQkxUcnZCejhZdzBmMXV5dExESEJrUjk0VWpnUWI0NG02N2JoNndlVUE0SjB0aVE?oc=5",
+    "published": "Fri, 21 Aug 2026 07:00:00 GMT",
+    "category": "Court Records",
+    "priority": true,
+    "hash": "f474e9acc3ac05ddd44d891749034fc5",
+    "first_seen": "2026-09-01T03:29:53.964254+00:00"
+  },
+  "5b3f497fc8abeddfbd8ddab1aa797864": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Play it Again Sports is hiring",
+    "summary": "The Play it Again Sports store in Holly Springs is hiring. The store is owned by Erin and Wayne Pare. They would love for you to apply for the job. \ud83d\ude09. Leave them a nice application. https://playitagainsports.com/locations/holly-springs-nc/jobs?utm_source=ig&utm_medium=social&utm_content=link_in_bio&",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1w3wax9/play_it_again_sports_is_hiring/",
+    "published": "2026-09-01T00:28:13+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "5b3f497fc8abeddfbd8ddab1aa797864",
+    "first_seen": "2026-09-01T03:29:53.964254+00:00"
   }
 }
