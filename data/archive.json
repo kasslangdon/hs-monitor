@@ -6139,5 +6139,29 @@
     "priority_reason": "",
     "hash": "8dedf6420d398f205c0d201626f3593a",
     "first_seen": "2026-09-01T16:04:53.282426+00:00"
+  },
+  "5a509daa5e7ff18d4c22602c7ef62f1d": {
+    "source": "Google News",
+    "title": "Man arrested in Holly Springs drive-by shooting that left 1 critically injured - Yahoo",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxPOTY3UTBWZFZkWVF0MG9EOTZOQzRZNFEtMVNUaE5DVi12Y2FMU0txMEF5Tnk1TXFObV9ubFVBei1tMGRTT0JOa3g1cTk5cnlmMEgzOXVBRC1kYnFkQVFybUR5OUVCOWlmNUhSdlRPbjUxM0F2UllUTGZ5LVBScTk5NEpGU3kyaVdLU0xn?oc=5\" target=\"_blank\">Man arrested in Holly Springs drive-by ",
+    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPOTY3UTBWZFZkWVF0MG9EOTZOQzRZNFEtMVNUaE5DVi12Y2FMU0txMEF5Tnk1TXFObV9ubFVBei1tMGRTT0JOa3g1cTk5cnlmMEgzOXVBRC1kYnFkQVFybUR5OUVCOWlmNUhSdlRPbjUxM0F2UllUTGZ5LVBScTk5NEpGU3kyaVdLU0xn?oc=5",
+    "published": "Sat, 29 Aug 2026 19:27:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "5a509daa5e7ff18d4c22602c7ef62f1d",
+    "first_seen": "2026-09-01T20:33:22.152278+00:00"
+  },
+  "ea6ac6c78c061978b5db819bc0d94ee1": {
+    "source": "Reddit r/raleigh",
+    "title": "Where are we getting delicious, safe, cheap, sushi FOR LUNCH these days?",
+    "summary": "IMO, the gold standard is Oiso--and I would go there, but they're not open for lunch anymore. Sushi 9 seems like Russian Roulette. Never was a fan of Sushi Thai. I'm in SW Raleigh so Cary and Holly Springs are closer to me than like, Strickland and Six Forks. My son has been asking to go out for a s",
+    "url": "https://www.reddit.com/r/raleigh/comments/1w3h5wy/where_are_we_getting_delicious_safe_cheap_sushi/",
+    "published": "2026-08-31T15:30:07+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "ea6ac6c78c061978b5db819bc0d94ee1",
+    "first_seen": "2026-09-01T20:33:22.152278+00:00"
   }
 }
