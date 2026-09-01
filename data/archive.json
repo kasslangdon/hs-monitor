@@ -6115,5 +6115,29 @@
     "priority_reason": "",
     "hash": "e85415eb094d5cc6e1f29bde20c2ae91",
     "first_seen": "2026-09-01T11:06:36.298002+00:00"
+  },
+  "27459286f5a6204471157110eb57aa7d": {
+    "source": "Google News",
+    "title": "Honoring fallen Wake County deputy, K-9 Byrd joins Holly Springs police - CBS17.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxOSG03T3A0MUFtUXI4Vk1XT2pDdVpISXJMWUptNE45Ui1FRGdPMm5jdi1vSER1enM1UDdWTjhBUzZIaDhTWDJnWllxVEpINXB4MlFRVDd3N1RXTU1NclpMSS1qTnJrWUZIM3QzWXFhZ0ZIeGFjUlpRQ0d4Y2szM1U4NmdndEd4b25NdVFUNEpfV185QUlEUDNNZ2VXdUpSZ0d5R3pla1REVmx0UzI3R0MycnFlYw?oc=5\" t",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOSG03T3A0MUFtUXI4Vk1XT2pDdVpISXJMWUptNE45Ui1FRGdPMm5jdi1vSER1enM1UDdWTjhBUzZIaDhTWDJnWllxVEpINXB4MlFRVDd3N1RXTU1NclpMSS1qTnJrWUZIM3QzWXFhZ0ZIeGFjUlpRQ0d4Y2szM1U4NmdndEd4b25NdVFUNEpfV185QUlEUDNNZ2VXdUpSZ0d5R3pla1REVmx0UzI3R0MycnFlYw?oc=5",
+    "published": "Sun, 07 Sep 2025 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "27459286f5a6204471157110eb57aa7d",
+    "first_seen": "2026-09-01T16:04:53.282426+00:00"
+  },
+  "8dedf6420d398f205c0d201626f3593a": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Holly Springs water bills",
+    "summary": "Anyone else get their outrageous bills? I knew about the rate hike, but three people in my house & mine jumped to $155! Before you ask, no leaks anywhere.    submitted by    /u/Electrical-Editor-73   [link] [comments]",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1w4dz0l/holly_springs_water_bills/",
+    "published": "2026-09-01T14:42:27+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "8dedf6420d398f205c0d201626f3593a",
+    "first_seen": "2026-09-01T16:04:53.282426+00:00"
   }
 }
