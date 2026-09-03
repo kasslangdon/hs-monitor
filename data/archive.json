@@ -6330,5 +6330,29 @@
     "priority_reason": "",
     "hash": "3a503de23e0b887882266ba2f36c8f3b",
     "first_seen": "2026-09-02T20:31:32.711059+00:00"
+  },
+  "9bee0d3f5838c69fdb3097a6906d4687": {
+    "source": "Holly Springs Update",
+    "title": "Holly Springs (NC) Recognizes Community Causes, Looks Ahead to September Events",
+    "summary": "Council recognized clothing insecurity and Hispanic heritage at its September 1st meeting, while town officials shared details on the 25th anniversary 9/11 ceremony and other upcoming events.",
+    "url": "https://www.hollyspringsupdate.com/p/holly-springs-nc-recognizes-community",
+    "published": "Wed, 02 Sep 2026 23:01:12 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "9bee0d3f5838c69fdb3097a6906d4687",
+    "first_seen": "2026-09-03T02:52:40.653421+00:00"
+  },
+  "5606f611c922dae62c6d7cf9630754ad": {
+    "source": "Google News",
+    "title": "Holly Springs police chase stolen car - Northeast Mississippi Daily Journal",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMi1gFBVV95cUxPdnZMcHFRNWN3SjJBVWJQNVFiM1FKSUI0dEpFcl9JMlhlVmJUODdhV1labzE4XzhPdUtKSV93M2k2QTNSSldPeTlvV3ZIR25lanYwN3k3bnpmOGlQSi1LZ1JMODI3c1VrZm5KNmJJUHlYLUFzQmx0RmthajliRTBmYXVYQS1SQTJlakRSYlZIWXpKUktWS2J1dWpQSFNoMTZ4dW5RdXh6RGNCNFVfNDhoNGVTS1ItVWF6aU",
+    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPdnZMcHFRNWN3SjJBVWJQNVFiM1FKSUI0dEpFcl9JMlhlVmJUODdhV1labzE4XzhPdUtKSV93M2k2QTNSSldPeTlvV3ZIR25lanYwN3k3bnpmOGlQSi1LZ1JMODI3c1VrZm5KNmJJUHlYLUFzQmx0RmthajliRTBmYXVYQS1SQTJlakRSYlZIWXpKUktWS2J1dWpQSFNoMTZ4dW5RdXh6RGNCNFVfNDhoNGVTS1ItVWF6aUdJWlNGaWJSb1hfSy1TU040T1cxcy1sQk5NWjJ3?oc=5",
+    "published": "Mon, 15 Jun 2026 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "5606f611c922dae62c6d7cf9630754ad",
+    "first_seen": "2026-09-03T02:52:40.653421+00:00"
   }
 }
