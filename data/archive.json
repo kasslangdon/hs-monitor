@@ -6354,5 +6354,29 @@
     "priority_reason": "",
     "hash": "5606f611c922dae62c6d7cf9630754ad",
     "first_seen": "2026-09-03T02:52:40.653421+00:00"
+  },
+  "ece97b07e50422435c39521b2658e663": {
+    "source": "Google News",
+    "title": "Mount Holly Springs police may soon have authority to detain undocumented immigrants for ICE agents - cumberlink.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxNRU5DbjM4TnF1STVYWVRKMEVtbEgzVThydW5TZE8wamFveGVfaGZZV29CVWFwanhPNDdkZEktWmdYX1p5VXpQNjZmLXV5U2Y2VEQtSkNVOFFXVHd2UXNqOGJxcVNaakdyam4yeWVlbVByVmluVDExZ1RuZWh3SXJqb0tUejVyZmJFZ1J2TXFzbkttSGltUHAxUE9HMVhSQ0p6WG45VUt3?oc=5\" target=\"_blank\">Mou",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRU5DbjM4TnF1STVYWVRKMEVtbEgzVThydW5TZE8wamFveGVfaGZZV29CVWFwanhPNDdkZEktWmdYX1p5VXpQNjZmLXV5U2Y2VEQtSkNVOFFXVHd2UXNqOGJxcVNaakdyam4yeWVlbVByVmluVDExZ1RuZWh3SXJqb0tUejVyZmJFZ1J2TXFzbkttSGltUHAxUE9HMVhSQ0p6WG45VUt3?oc=5",
+    "published": "Fri, 31 Jul 2026 17:55:18 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "ece97b07e50422435c39521b2658e663",
+    "first_seen": "2026-09-03T10:41:17.824360+00:00"
+  },
+  "24dde66c24055bd797749f1f8e109bea": {
+    "source": "Google News",
+    "title": "Woman arrested on statutory rape charge in Holly Springs - WJTV",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiogFBVV95cUxQV01BMDAwMTVZZFRnQVFuVEhhQ3RVRFFjTnJYd1lYMEJSMmJjWXlCdERubXJCTm5vU3RsbDZTdDVkUTJia2dwTTNmSy1UWm92UERnZHMxNzJaaVM5a2VkeC14LUs5a3cybm90bDFSdDVTRHVoZUFCRmtYal8xcGo0RFlxcVVPTkdURURZWWpGOUpub0laWlgtWW1pMlc3WDllT2fSAZgBQVVfeXFMTVE1aXE1TGR4bVpqMG",
+    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQV01BMDAwMTVZZFRnQVFuVEhhQ3RVRFFjTnJYd1lYMEJSMmJjWXlCdERubXJCTm5vU3RsbDZTdDVkUTJia2dwTTNmSy1UWm92UERnZHMxNzJaaVM5a2VkeC14LUs5a3cybm90bDFSdDVTRHVoZUFCRmtYal8xcGo0RFlxcVVPTkdURURZWWpGOUpub0laWlgtWW1pMlc3WDllT2fSAZgBQVVfeXFMTVE1aXE1TGR4bVpqMGFIRWllelFaRFdwRjZYdHlMRkdhQjJ2X2oxZ0pTb25KNlFTZWgtNDRBejVZdDJLYkRTWXI2eFVXQXE3OVFaLTZpSF9sd3ZnNkJ0WnZFQVRjYU1VMWo0RWZqbXNTMkR5QzQtYWh4VDhVT0Z6WE9KSVJZd2EwMjFoSERKU1F2R205RFM4Tl8?oc=5",
+    "published": "Mon, 20 Jul 2026 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "24dde66c24055bd797749f1f8e109bea",
+    "first_seen": "2026-09-03T10:41:17.824360+00:00"
   }
 }
