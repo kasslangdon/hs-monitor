@@ -6506,5 +6506,17 @@
     "priority": true,
     "hash": "5f885118d482d76e47ddef6b55deebac",
     "first_seen": "2026-09-04T10:35:08.864412+00:00"
+  },
+  "44b23a767a9e33cd847ebf5d1c6b2707": {
+    "source": "Google News",
+    "title": "Teen driver charged with murder, DWI in crash with bike, car in Holly Springs - WRAL",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiT0FVX3lxTFA5aElyVmVURUlvN1VKaWh1cERyZlF5Ymk4bHlWNEpWZnAyZWswQUJSTUlpNVUzQk9USGFYWnlySXhYRlNWUmxZY19VOWhjN2c?oc=5\" target=\"_blank\">Teen driver charged with murder, DWI in crash with bike, car in Holly Springs</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">WRAL<",
+    "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFA5aElyVmVURUlvN1VKaWh1cERyZlF5Ymk4bHlWNEpWZnAyZWswQUJSTUlpNVUzQk9USGFYWnlySXhYRlNWUmxZY19VOWhjN2c?oc=5",
+    "published": "Thu, 20 Nov 2025 08:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "44b23a767a9e33cd847ebf5d1c6b2707",
+    "first_seen": "2026-09-04T15:46:24.739964+00:00"
   }
 }
