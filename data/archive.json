@@ -6518,5 +6518,29 @@
     "priority_reason": "",
     "hash": "44b23a767a9e33cd847ebf5d1c6b2707",
     "first_seen": "2026-09-04T15:46:24.739964+00:00"
+  },
+  "26228a1b291f30296b7c1fba8096c8f2": {
+    "source": "Holly Springs Update",
+    "title": "Out and About This Weekend in Holly Springs (NC), Apex & Fuquay-Varina (9/4 through 9/6)",
+    "summary": "Fuquay-Varina's Downtown Block Party kicks off the long weekend, while high school football, live music, and a farm concert on Jones Johnson Farm round out a packed Labor Day.",
+    "url": "https://www.hollyspringsupdate.com/p/out-and-about-this-weekend-in-holly-ff6",
+    "published": "Fri, 04 Sep 2026 16:01:14 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "26228a1b291f30296b7c1fba8096c8f2",
+    "first_seen": "2026-09-04T20:17:56.296704+00:00"
+  },
+  "05794dde36a5a9d75285ac455c7e7089": {
+    "source": "Google News",
+    "title": "Warrant issued for suspect in Holly Springs drive-by shooting - yahoo.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxQbGp4SVdSa1NyYjgyVnJ1bUJpZFJLS0d4aE5OS2hDUHBFVWp3a0hMZG0zbnY4bnpEeUt3RFFWTzB5SDNYV2xhUmtveGVxQ0NNVGhMWXhjVTVsYktHZk9nbE54SmgtSWFZLTJzNmlDSXYwLU9Nd1VVQnZvaGxMT0I3YzMzMENsMENxUmtfMjZB?oc=5\" target=\"_blank\">Warrant issued for suspect in Holly",
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbGp4SVdSa1NyYjgyVnJ1bUJpZFJLS0d4aE5OS2hDUHBFVWp3a0hMZG0zbnY4bnpEeUt3RFFWTzB5SDNYV2xhUmtveGVxQ0NNVGhMWXhjVTVsYktHZk9nbE54SmgtSWFZLTJzNmlDSXYwLU9Nd1VVQnZvaGxMT0I3YzMzMENsMENxUmtfMjZB?oc=5",
+    "published": "Fri, 21 Aug 2026 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "05794dde36a5a9d75285ac455c7e7089",
+    "first_seen": "2026-09-04T20:17:56.296704+00:00"
   }
 }
