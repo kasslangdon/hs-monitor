@@ -6578,5 +6578,17 @@
     "priority_reason": "",
     "hash": "a7dd4df7d9a831e9859d185555072d28",
     "first_seen": "2026-09-05T02:53:17.243505+00:00"
+  },
+  "cfd7b88e8b2760b0424ed5374194a98b": {
+    "source": "Google News",
+    "title": "Mother identifies teen son injured in deadly Holly Springs crash, police issue statement - CBS 17",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxNOHo5Z01WbGZ5VkRVV2tiVDRpS3RZTE9VZE9SLUtBRUtaYVFPWFdzekJpNFBha3FwSUszbE1XaHVBN0FPTzZPUWJxYWhleHhiR0JuSnVWQWhtamhrTFJGTFlsTy1EdERzbGZGTkJheGYtNlFZc05DWmE2dy1mcHN1WmZWWklvSjF3R3diWFJhT2ZqSHhlOThjeXVuX3UxU2JPNGxmX0ZES05SbVRWdXgzbVl4MjdVV3VzaU",
+    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNOHo5Z01WbGZ5VkRVV2tiVDRpS3RZTE9VZE9SLUtBRUtaYVFPWFdzekJpNFBha3FwSUszbE1XaHVBN0FPTzZPUWJxYWhleHhiR0JuSnVWQWhtamhrTFJGTFlsTy1EdERzbGZGTkJheGYtNlFZc05DWmE2dy1mcHN1WmZWWklvSjF3R3diWFJhT2ZqSHhlOThjeXVuX3UxU2JPNGxmX0ZES05SbVRWdXgzbVl4MjdVV3VzaUwyRg?oc=5",
+    "published": "Thu, 30 Oct 2025 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "cfd7b88e8b2760b0424ed5374194a98b",
+    "first_seen": "2026-09-05T09:58:20.118276+00:00"
   }
 }
