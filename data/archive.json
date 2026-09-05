@@ -6542,5 +6542,41 @@
     "priority_reason": "",
     "hash": "05794dde36a5a9d75285ac455c7e7089",
     "first_seen": "2026-09-04T20:17:56.296704+00:00"
+  },
+  "05dece5bacde19629a6c593384bf7850": {
+    "source": "Holly Springs Update",
+    "title": "Holly Springs (NC) Restaurant Health Inspections: August 2026",
+    "summary": "All 18 Holly Springs restaurants inspected in August earned A grades with scores from 97.5 to 99.5, as inspectors cited mostly cleaning, maintenance and food-storage issues during inspections.",
+    "url": "https://www.hollyspringsupdate.com/p/holly-springs-nc-restaurant-health-551",
+    "published": "Fri, 04 Sep 2026 20:15:33 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "05dece5bacde19629a6c593384bf7850",
+    "first_seen": "2026-09-05T02:53:17.243505+00:00"
+  },
+  "b7dd646e8a54a52d6a8d4f1a44a686bb": {
+    "source": "Google News",
+    "title": "Man wanted in Holly Springs drive-by shooting - wreg.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxNdHZpN1kyLUZnSHY3SmVLWDBqZTExdTdaRDNteUVlcHFFMjFWbzNBdnpaRTVZY2w0TzVid01NbVdjbU9sSGh6eEFFMWJaU0lOeFNXRkEzTzY2UnQyMWppaTNlQ28zTEx1bWRKc2dIaWNNUU9vcnIxT0ltR0s1eFJ4MW8zOXZWTHRka1VrSE5JdDZpZmtx0gGaAUFVX3lxTE5HVXZSdXlib0Q3M04xS3dIR1JkcGFLYmNBOU",
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNdHZpN1kyLUZnSHY3SmVLWDBqZTExdTdaRDNteUVlcHFFMjFWbzNBdnpaRTVZY2w0TzVid01NbVdjbU9sSGh6eEFFMWJaU0lOeFNXRkEzTzY2UnQyMWppaTNlQ28zTEx1bWRKc2dIaWNNUU9vcnIxT0ltR0s1eFJ4MW8zOXZWTHRka1VrSE5JdDZpZmtx0gGaAUFVX3lxTE5HVXZSdXlib0Q3M04xS3dIR1JkcGFLYmNBOUx6LUdBNjRDbi1LbzczeVdvOUt1TjJTdVB1aWZyNFl0SGNsR29WRFFDY0FYLUotNUh3a1JveGhrX1lpb3lLNzlZb0U0OWdyRTZUSF9QRm1YWmtibHZ5WGxyeWFFSS1MS1lQRE9sUUduTldEa2k3OF9pbTcycnYxc2c?oc=5",
+    "published": "Fri, 21 Aug 2026 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "b7dd646e8a54a52d6a8d4f1a44a686bb",
+    "first_seen": "2026-09-05T02:53:17.243505+00:00"
+  },
+  "a7dd4df7d9a831e9859d185555072d28": {
+    "source": "Reddit r/raleigh",
+    "title": "MAA Vale falsely advertises ADA apartments",
+    "summary": "This is info for all my wheelchair users! My partner and I toured MAA Vales 2 bed 2 bath apartment. They only have one ADA layout for 2 beds.  IT ISN'T WHEELCHAIR ACCESSIBLE. I couldn't turn around in the kitchen due to the island not meeting NC ADA clearance compliance standards, So I couldn't acce",
+    "url": "https://www.reddit.com/r/raleigh/comments/1w4ll3h/maa_vale_falsely_advertises_ada_apartments/",
+    "published": "2026-09-01T19:04:27+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "a7dd4df7d9a831e9859d185555072d28",
+    "first_seen": "2026-09-05T02:53:17.243505+00:00"
   }
 }
