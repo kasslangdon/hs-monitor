@@ -6650,5 +6650,17 @@
     "priority_reason": "",
     "hash": "9db1e992bf1197d952a32e6ddec482a8",
     "first_seen": "2026-09-06T20:00:50.929262+00:00"
+  },
+  "3688006ce3cbbc11196bb78b480b53b5": {
+    "source": "Google News",
+    "title": "Police investigate Holly Springs crash involving school van with 13 students - newsobserver.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE5tcjBURERjU2Q1ak1HRGVoVnh4Qm9nUURyeDFKUFkyeldSWWI3S094RWd5eHVzTXp3Rm14NVJRdl9yNXZqTklCQjRCbTNqbHdmNUc5b0o1dUJBZVFheUpTMjZ2dS1NRGdtQXplZ3JR0gFuQVVfeXFMUDczcmRkSmFjT1hXS3lfbGg1ejM0R0pRanZ4NVhFOU10ZTZNLTJnNmJMNHJwdnlVTmpTR2RidEJtSVQ3ckVqdVd3Tz",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5tcjBURERjU2Q1ak1HRGVoVnh4Qm9nUURyeDFKUFkyeldSWWI3S094RWd5eHVzTXp3Rm14NVJRdl9yNXZqTklCQjRCbTNqbHdmNUc5b0o1dUJBZVFheUpTMjZ2dS1NRGdtQXplZ3JR0gFuQVVfeXFMUDczcmRkSmFjT1hXS3lfbGg1ejM0R0pRanZ4NVhFOU10ZTZNLTJnNmJMNHJwdnlVTmpTR2RidEJtSVQ3ckVqdVd3TzRlcUdxcWdGWmdqUXlmLVU2VXpUZjlfd205SkNodTdJX1pnUkE?oc=5",
+    "published": "Sat, 27 Sep 2025 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "3688006ce3cbbc11196bb78b480b53b5",
+    "first_seen": "2026-09-07T02:49:13.648058+00:00"
   }
 }
