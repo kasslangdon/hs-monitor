@@ -6698,5 +6698,17 @@
     "priority_reason": "",
     "hash": "1dee881b4b4aee10d9af15bd01b0aebc",
     "first_seen": "2026-09-07T21:07:27.110623+00:00"
+  },
+  "5c83baebe8977c7c06f51352021f4ded": {
+    "source": "Google News",
+    "title": "Police search for people connected to assault at Holly Springs movie theater - wral.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxNQlBaQnZTVGN5WjQ2dXBFbWFIREpsWVJMN3lGTnhVQ2RUbjctY2dNY3h6NnNIRl8tcTlGTlFVLTluVkJTdUkyZTlQb0ZGbzZGSTk3V1FWYVRDWDd6WjhSR2tMWm5Sa2pndXFYSFNZY1pSajVzQXJtUjRfazR0ODVKZUFDLVUwblhkMnpSOQ?oc=5\" target=\"_blank\">Police search for people connected to",
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNQlBaQnZTVGN5WjQ2dXBFbWFIREpsWVJMN3lGTnhVQ2RUbjctY2dNY3h6NnNIRl8tcTlGTlFVLTluVkJTdUkyZTlQb0ZGbzZGSTk3V1FWYVRDWDd6WjhSR2tMWm5Sa2pndXFYSFNZY1pSajVzQXJtUjRfazR0ODVKZUFDLVUwblhkMnpSOQ?oc=5",
+    "published": "Sun, 02 Aug 2026 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "5c83baebe8977c7c06f51352021f4ded",
+    "first_seen": "2026-09-08T10:35:32.711389+00:00"
   }
 }
