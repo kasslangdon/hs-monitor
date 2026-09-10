@@ -6710,5 +6710,29 @@
     "priority_reason": "",
     "hash": "5c83baebe8977c7c06f51352021f4ded",
     "first_seen": "2026-09-08T10:35:32.711389+00:00"
+  },
+  "c6155fc969787ef67893b908b2a60bd1": {
+    "source": "Reddit r/raleigh",
+    "title": "I'm being harassed by city code enforcement",
+    "summary": "I am not inside the city limits. I am not in an HOA. Despite this since last November, the city has been responding to complaints by a neighbor about my property being a nuisance. I had no way to know there was a fringe of the city called the extra tutorial jurisdiction in which city regulations wer",
+    "url": "https://www.reddit.com/r/raleigh/comments/1w9ry9m/im_being_harassed_by_city_code_enforcement/",
+    "published": "2026-09-07T13:18:10+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "c6155fc969787ef67893b908b2a60bd1",
+    "first_seen": "2026-09-10T03:01:19.537144+00:00"
+  },
+  "ccc23284b5c3e9b01c96c8a0bacb5167": {
+    "source": "Reddit r/raleigh",
+    "title": "Looking for info/leads on vehicle from hit and run involving a tow truck towing a Maserati last Tuesday August 25th at 2pm",
+    "summary": "      My car was totaled in a hit-and-run at the intersection of new Bern ave and n raleigh boulevard last Tuesday August 25th at 1:50pm. The vehicle that hit me was a tow truck towing a white Maserati, as pictured. Police said there are no cameras at that intersection so if you have dashcam footage",
+    "url": "https://www.reddit.com/r/raleigh/comments/1w87ou5/looking_for_infoleads_on_vehicle_from_hit_and_run/",
+    "published": "2026-09-05T17:59:29+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "ccc23284b5c3e9b01c96c8a0bacb5167",
+    "first_seen": "2026-09-10T03:01:19.537144+00:00"
   }
 }
