@@ -6806,5 +6806,29 @@
     "priority_reason": "",
     "hash": "9dbab1dcd277e2b94040c7184ecc4dbe",
     "first_seen": "2026-09-11T15:52:17.392015+00:00"
+  },
+  "9d68158e5f24fa1689a650acf55e7494": {
+    "source": "Holly Springs Update",
+    "title": "Out and About This Weekend in Holly Springs (NC), Apex & Fuquay-Varina (9/11 through 9/13)",
+    "summary": "Jazz at Ashe Music Hall, a free International Cultural Festival in Fuquay-Varina, monster trucks in Raleigh, and live music from Holly Springs to Apex pack the weekend.",
+    "url": "https://www.hollyspringsupdate.com/p/out-and-about-this-weekend-in-holly-16c",
+    "published": "Fri, 11 Sep 2026 20:05:49 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "9d68158e5f24fa1689a650acf55e7494",
+    "first_seen": "2026-09-11T20:27:20.160955+00:00"
+  },
+  "b8de38d0c1d8f9c5d28c708358bceef1": {
+    "source": "Google News",
+    "title": "Out and About This Weekend in Holly Springs (NC), Apex & Fuquay-Varina (9/11 through 9/13) - hollyspringsupdate.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxNWmFaX0FZNFVudVFzMWpfd25YRUJLQi1WR2ZCYkNhZTRKeFpwZnZfNnRDSXlVUDVLWGtwTDNDcjA4UWRRenF6aWRONVlBQkg5bWh5VjdtX0lQeEozS3l3TlVZZm1lUHQ2SU5lTVZnNGZ5MjhIcE44ckQ3UlZZaGR4VURB?oc=5\" target=\"_blank\">Out and About This Weekend in Holly Springs (NC), A",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNWmFaX0FZNFVudVFzMWpfd25YRUJLQi1WR2ZCYkNhZTRKeFpwZnZfNnRDSXlVUDVLWGtwTDNDcjA4UWRRenF6aWRONVlBQkg5bWh5VjdtX0lQeEozS3l3TlVZZm1lUHQ2SU5lTVZnNGZ5MjhIcE44ckQ3UlZZaGR4VURB?oc=5",
+    "published": "Fri, 11 Sep 2026 20:05:49 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "b8de38d0c1d8f9c5d28c708358bceef1",
+    "first_seen": "2026-09-11T20:27:20.160955+00:00"
   }
 }
