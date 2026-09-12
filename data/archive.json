@@ -6830,5 +6830,29 @@
     "priority_reason": "",
     "hash": "b8de38d0c1d8f9c5d28c708358bceef1",
     "first_seen": "2026-09-11T20:27:20.160955+00:00"
+  },
+  "edb7409812e8cc5a1a1fa1cad2dc68c3": {
+    "source": "Holly Springs Update",
+    "title": "Holly Springs (NC) Unveils 22-Step Plan to Address Housing Affordability",
+    "summary": "Home prices are up 59% since 2019 as Holly Springs considers incentives, faster approvals and other steps aimed at expanding access to affordable housing.",
+    "url": "https://www.hollyspringsupdate.com/p/holly-springs-nc-unveils-22-step",
+    "published": "Fri, 11 Sep 2026 23:31:40 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "edb7409812e8cc5a1a1fa1cad2dc68c3",
+    "first_seen": "2026-09-12T03:03:09.499707+00:00"
+  },
+  "c8c0a38dcf195b6fabb7488eec739d58": {
+    "source": "Reddit r/NorthCarolina",
+    "title": "Flock Executives are coming to Charlotte - LET'S PROTEST!",
+    "summary": "\u203c\ufe0fWhat\u2019s happening:  Flock executives have decided to come after Charlotte because we are one major city whose police hasn\u2019t bought into Flock cameras*. Those executives are coming to Charlotte and holding a closed-door meeting with your elected officials (city council, county commissioners, state r",
+    "url": "https://www.reddit.com/r/NorthCarolina/comments/1wdxjcv/flock_executives_are_coming_to_charlotte_lets/",
+    "published": "2026-09-12T00:24:16+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "c8c0a38dcf195b6fabb7488eec739d58",
+    "first_seen": "2026-09-12T03:03:09.499707+00:00"
   }
 }
