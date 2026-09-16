@@ -6986,5 +6986,29 @@
     "priority_reason": "",
     "hash": "0d44713cd6bfa86f7f180fd86517da75",
     "first_seen": "2026-09-15T20:53:18.550245+00:00"
+  },
+  "b37efc46de8430e2881f1b068c7f6478": {
+    "source": "WRAL News",
+    "title": "Man rescued from underground tank in Holly Springs",
+    "summary": "A subcontractor was hit by equipment that fell into a tank he was working in on Wednesday morning in Holly Springs.",
+    "url": "https://www.wral.com/news/local/man-tank-holly-springs-injury-september-2026/",
+    "published": "Wed, 16 Sep 2026 12:02:37 -0400",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "b37efc46de8430e2881f1b068c7f6478",
+    "first_seen": "2026-09-16T16:07:19.385842+00:00"
+  },
+  "16371a6aa45c2423ce5e81b4d9b1e48a": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Bakery Suggestion",
+    "summary": "What\u2019s a good bakery for cakes, pies and similar goodies? Thanks!    submitted by    /u/math_rod   [link] [comments]",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1whx1c5/bakery_suggestion/",
+    "published": "2026-09-16T13:19:22+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "16371a6aa45c2423ce5e81b4d9b1e48a",
+    "first_seen": "2026-09-16T16:07:19.385842+00:00"
   }
 }
