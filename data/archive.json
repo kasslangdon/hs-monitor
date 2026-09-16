@@ -7010,5 +7010,29 @@
     "priority_reason": "",
     "hash": "16371a6aa45c2423ce5e81b4d9b1e48a",
     "first_seen": "2026-09-16T16:07:19.385842+00:00"
+  },
+  "99d41860d4f4fa0cbd289739486ae868": {
+    "source": "WRAL News",
+    "title": "Man rescued from underground tank at Holly Springs construction site",
+    "summary": "A subcontractor was hit by a piece of equipment that fell into a tank he was working in on Wednesday morning in Holly Springs.",
+    "url": "https://www.wral.com/news/local/man-tank-holly-springs-injury-september-2026/",
+    "published": "Wed, 16 Sep 2026 12:02:37 -0400",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "99d41860d4f4fa0cbd289739486ae868",
+    "first_seen": "2026-09-16T20:53:31.094954+00:00"
+  },
+  "e296a282287a0a94fbe2bbedea88b211": {
+    "source": "CBS17",
+    "title": "Holly Springs worker rescued after injury in well 60-feet below surface",
+    "summary": "Crews responded after a worker was injured while in a 60-foot-deep space at a Holly Springs construction site late Wednesday morning, officials said.",
+    "url": "https://www.cbs17.com/news/local-news/wake-county-news/holly-springs-worker-rescued-after-injury-in-well-60-feet-below-surface/",
+    "published": "Wed, 16 Sep 2026 16:00:40 +0000",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "e296a282287a0a94fbe2bbedea88b211",
+    "first_seen": "2026-09-16T20:53:31.094954+00:00"
   }
 }
