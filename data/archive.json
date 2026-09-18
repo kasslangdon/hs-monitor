@@ -7070,5 +7070,29 @@
     "priority_reason": "",
     "hash": "ed7b511e0d36f1594139529482d3f11e",
     "first_seen": "2026-09-18T10:34:02.703423+00:00"
+  },
+  "d1709a6b6a99753de096e9f2a1d2e67c": {
+    "source": "Reddit r/raleigh",
+    "title": "Things to do this weekend!",
+    "summary": "Friday  Rachmaninoff Piano Concerto No. 3, Meymandi Concert Hall, Raleigh Third Friday, Downtown, Durham Gary Owen: No Hard Feelings Tour, DPAC, Durham Cary Night Market, Downtown Cary Park, Cary '90s Skate Party, John Chavis Memorial Park and Community Center, Raleigh The Rocky Horror Picture Show,",
+    "url": "https://www.reddit.com/r/raleigh/comments/1wjqwbv/things_to_do_this_weekend/",
+    "published": "2026-09-18T13:55:10+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "d1709a6b6a99753de096e9f2a1d2e67c",
+    "first_seen": "2026-09-18T15:49:17.864423+00:00"
+  },
+  "33a7cb69189669bd6c31dc3fd60f191c": {
+    "source": "Reddit r/raleigh",
+    "title": "Cedar Hills Condos/Townhomes- HOA is Bonkers",
+    "summary": "I am making this post because I live here and occasionally chime in on posts about other HOA woes and get trickling DMs about this property after. The folks who live here need to find some strength in numbers but it is really hard to find each other. I want newer residents to see this and reach out.",
+    "url": "https://www.reddit.com/r/raleigh/comments/1wjagtp/cedar_hills_condostownhomes_hoa_is_bonkers/",
+    "published": "2026-09-17T23:56:52+00:00",
+    "category": "Reddit",
+    "priority": true,
+    "priority_reason": "hostage",
+    "hash": "33a7cb69189669bd6c31dc3fd60f191c",
+    "first_seen": "2026-09-18T15:49:17.864423+00:00"
   }
 }
