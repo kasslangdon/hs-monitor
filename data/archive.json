@@ -7238,5 +7238,28 @@
     "priority_reason": "",
     "hash": "ea85b3b7b5b64d628f278cd94ef7c4ac",
     "first_seen": "2026-09-23T10:52:15.063221+00:00"
+  },
+  "79a0c089bfe6c743ed4de2620b8adde5": {
+    "source": "Google News",
+    "title": "70-year-old woman believed to have suffered medical emergency before deadly Holly Springs crash with tree: Police - CBS17.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMi_AFBVV95cUxNTEpVVjJjMHFmeF9TbzFxLU92amZlRFJKZi03ZW1aNG1CX0hJYkhrXzZ1NzNYSnltNzM4VGFSU2Fua3Mzc3l4Y0tHeWpFMW8wTjk1Y1JfVDhvbVRkVndjd3V3QmhyR1RtM3FLay01alFfdHZ1OWlacmZlWGhZd2k4c0plbkpUV0c2eXl1S3d6bjRYbDZ6eEVkU052ZE5KeWdKMngxeWRKWUZvWmpUcTdwNkVDUHBPSmd5Mz",
+    "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNTEpVVjJjMHFmeF9TbzFxLU92amZlRFJKZi03ZW1aNG1CX0hJYkhrXzZ1NzNYSnltNzM4VGFSU2Fua3Mzc3l4Y0tHeWpFMW8wTjk1Y1JfVDhvbVRkVndjd3V3QmhyR1RtM3FLay01alFfdHZ1OWlacmZlWGhZd2k4c0plbkpUV0c2eXl1S3d6bjRYbDZ6eEVkU052ZE5KeWdKMngxeWRKWUZvWmpUcTdwNkVDUHBPSmd5MzF3TUlIemdKWnVqWi13Qmx6ck1rZ2sycGhwSENmVnJrbEV4Y2FNeE9BcWJNNUxDTGJmbjA4T2RvaVZwRXhTRUswTjc?oc=5",
+    "published": "Wed, 22 Apr 2026 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "79a0c089bfe6c743ed4de2620b8adde5",
+    "first_seen": "2026-09-23T16:05:38.322482+00:00"
+  },
+  "aff5f5f40a538440107cfe90a965f533": {
+    "source": "Court / Legal (Google)",
+    "title": "4 minors charged with attempted murder in Holly Springs investigation - Action News 5",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxPdDdTbjZHbzg0N3ZLWUdhdWNnR0RTbTNKNENJYnpNT0hwQXFKNGgtTWpfQk1rTVBfeFFpbnVrNTYybEwwanU5aHZQVDRFckg1TEhVWVVtVldDSVFPaFFYMlE5QzFKVTFTN2lqd0VvbDhMXzctVmdZY3EyNDhEVVpFbF9LdnRxaUdLZXVjbktHaWFZVTgwR01OVEZTMGpvZGFGY0kzWV9hdF9CUQ?oc=5\" target=\"_blan",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPdDdTbjZHbzg0N3ZLWUdhdWNnR0RTbTNKNENJYnpNT0hwQXFKNGgtTWpfQk1rTVBfeFFpbnVrNTYybEwwanU5aHZQVDRFckg1TEhVWVVtVldDSVFPaFFYMlE5QzFKVTFTN2lqd0VvbDhMXzctVmdZY3EyNDhEVVpFbF9LdnRxaUdLZXVjbktHaWFZVTgwR01OVEZTMGpvZGFGY0kzWV9hdF9CUQ?oc=5",
+    "published": "Wed, 23 Sep 2026 14:18:00 GMT",
+    "category": "Court Records",
+    "priority": true,
+    "hash": "aff5f5f40a538440107cfe90a965f533",
+    "first_seen": "2026-09-23T16:05:38.322482+00:00"
   }
 }
