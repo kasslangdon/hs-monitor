@@ -7214,5 +7214,29 @@
     "priority_reason": "",
     "hash": "a0f386c845d820885746080716336c92",
     "first_seen": "2026-09-23T03:14:54.265887+00:00"
+  },
+  "ce81b5d28bbc6b79643f6f2145ed7ba8": {
+    "source": "WRAL News",
+    "title": "Fire crews battle overnight house fire near Holly Springs in Wake County",
+    "summary": "Wake County firefighters battled an overnight house fire on Twin Lake Drive near Holly Springs.",
+    "url": "https://www.wral.com/news/local/twin-lakes-drive-house-fire-september-2026/",
+    "published": "Wed, 23 Sep 2026 04:51:02 -0400",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "ce81b5d28bbc6b79643f6f2145ed7ba8",
+    "first_seen": "2026-09-23T10:52:15.063221+00:00"
+  },
+  "ea85b3b7b5b64d628f278cd94ef7c4ac": {
+    "source": "Reddit (all)",
+    "title": "New WRAL Upload: Crews battle overnight house fire near Holly Springs",
+    "summary": "        submitted by    /u/yt-app    to    r/southeasthub   [link] [comments] ",
+    "url": "https://www.reddit.com/r/southeasthub/comments/1wo1fe5/new_wral_upload_crews_battle_overnight_house_fire/",
+    "published": "2026-09-23T09:45:00+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "ea85b3b7b5b64d628f278cd94ef7c4ac",
+    "first_seen": "2026-09-23T10:52:15.063221+00:00"
   }
 }
