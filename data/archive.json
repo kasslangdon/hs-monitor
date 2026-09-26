@@ -7391,5 +7391,29 @@
     "priority_reason": "",
     "hash": "e8ac5065314dc4c05f6d56a1fe515be8",
     "first_seen": "2026-09-26T15:46:14.446476+00:00"
+  },
+  "c3d6e834d1a00117edfdabcabae04dda": {
+    "source": "Google News",
+    "title": "Holly Springs police investigate Wake County School bus incident - WRAL",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiogFBVV95cUxPZHF5dnJuRXZlZnJNeHNrSzZNNUlJVkFzeTdMa2liNTNTc2twc3VCMGZ1OFRtTFRIU0xDSUl1YUQtMXpzMDJvRUh3TFBoVW9NaURFeDJzOF9GMVRuM3VsQVNFbjJBbjNIZkNaanZlNmhPSkRTMHJhVWZQaDA3SHI5S284cE42cURBQWNqUElNV3ZlRnE3M05jemMwU0lNUUo0b2c?oc=5\" target=\"_blank\">Holly Sp",
+    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPZHF5dnJuRXZlZnJNeHNrSzZNNUlJVkFzeTdMa2liNTNTc2twc3VCMGZ1OFRtTFRIU0xDSUl1YUQtMXpzMDJvRUh3TFBoVW9NaURFeDJzOF9GMVRuM3VsQVNFbjJBbjNIZkNaanZlNmhPSkRTMHJhVWZQaDA3SHI5S284cE42cURBQWNqUElNV3ZlRnE3M05jemMwU0lNUUo0b2c?oc=5",
+    "published": "Fri, 07 Aug 2026 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "c3d6e834d1a00117edfdabcabae04dda",
+    "first_seen": "2026-09-26T20:40:17.253913+00:00"
+  },
+  "3cb89b040b54b8939ddbb9943c8a5690": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Bartender and arborist looking for job suggestions in/around HS",
+    "summary": "My boyfriend and I are moving to Holly Springs to be closer to family. I'm looking to supplement with part time bartending, and he's looking for full time arborist work. Both of us have years of experience in each field. TYIA!     submitted by    /u/_elftaught   [link] [comments]",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1wqyja7/bartender_and_arborist_looking_for_job/",
+    "published": "2026-09-26T18:58:26+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "3cb89b040b54b8939ddbb9943c8a5690",
+    "first_seen": "2026-09-26T20:40:17.253913+00:00"
   }
 }
