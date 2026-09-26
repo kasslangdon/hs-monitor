@@ -7379,5 +7379,17 @@
     "priority_reason": "",
     "hash": "1bf1e0204d75308e2727cfbdb1ddbfc0",
     "first_seen": "2026-09-26T03:26:44.730129+00:00"
+  },
+  "e8ac5065314dc4c05f6d56a1fe515be8": {
+    "source": "Google News",
+    "title": "Holly Springs police investigate Wake County School bus incident - wral.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiogFBVV95cUxPZHF5dnJuRXZlZnJNeHNrSzZNNUlJVkFzeTdMa2liNTNTc2twc3VCMGZ1OFRtTFRIU0xDSUl1YUQtMXpzMDJvRUh3TFBoVW9NaURFeDJzOF9GMVRuM3VsQVNFbjJBbjNIZkNaanZlNmhPSkRTMHJhVWZQaDA3SHI5S284cE42cURBQWNqUElNV3ZlRnE3M05jemMwU0lNUUo0b2c?oc=5\" target=\"_blank\">Holly Sp",
+    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPZHF5dnJuRXZlZnJNeHNrSzZNNUlJVkFzeTdMa2liNTNTc2twc3VCMGZ1OFRtTFRIU0xDSUl1YUQtMXpzMDJvRUh3TFBoVW9NaURFeDJzOF9GMVRuM3VsQVNFbjJBbjNIZkNaanZlNmhPSkRTMHJhVWZQaDA3SHI5S284cE42cURBQWNqUElNV3ZlRnE3M05jemMwU0lNUUo0b2c?oc=5",
+    "published": "Fri, 07 Aug 2026 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "e8ac5065314dc4c05f6d56a1fe515be8",
+    "first_seen": "2026-09-26T15:46:14.446476+00:00"
   }
 }
