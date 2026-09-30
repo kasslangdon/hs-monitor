@@ -7475,5 +7475,17 @@
     "priority_reason": "",
     "hash": "aac64d02a2a3d6d9bd61db67dd0faf40",
     "first_seen": "2026-09-29T21:52:27.031560+00:00"
+  },
+  "3e1e32dcbba0e5c549a9917a4371400e": {
+    "source": "Google News",
+    "title": "Holly Springs 14-year-old bicyclist dies after being hit, teen driver charged with DWI (Video) - Raleigh News & Observer",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMidkFVX3lxTE5xXzBzWHM5Yzl2bVZjUlRHTnZNTWM0NmJFMUJ2c096d05HTVFhN3ZaTWJkSFVjQzhwRGtDRFQtYjhMNDI3T2d6aUxKQXFmU2g2V05BeWN2cVZ1aUYxYjlpOV9sRW1adjVRMUYxeG1lb3JHeWVwR0E?oc=5\" target=\"_blank\">Holly Springs 14-year-old bicyclist dies after being hit, teen drive",
+    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5xXzBzWHM5Yzl2bVZjUlRHTnZNTWM0NmJFMUJ2c096d05HTVFhN3ZaTWJkSFVjQzhwRGtDRFQtYjhMNDI3T2d6aUxKQXFmU2g2V05BeWN2cVZ1aUYxYjlpOV9sRW1adjVRMUYxeG1lb3JHeWVwR0E?oc=5",
+    "published": "Mon, 27 Oct 2025 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "3e1e32dcbba0e5c549a9917a4371400e",
+    "first_seen": "2026-09-30T21:54:32.132628+00:00"
   }
 }
