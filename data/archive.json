@@ -7523,5 +7523,29 @@
     "priority_reason": "",
     "hash": "0290ad353eb3f14d1344cfba59d643cc",
     "first_seen": "2026-10-01T12:26:15.031939+00:00"
+  },
+  "24edf1ef5ff8f51c0833374ec6fc6a14": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "HOWL AT THE HILL 4K",
+    "summary": "        submitted by    /u/Shot_Necessary_506   [link] [comments] ",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1wv5euy/howl_at_the_hill_4k/",
+    "published": "2026-10-01T17:20:07+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "24edf1ef5ff8f51c0833374ec6fc6a14",
+    "first_seen": "2026-10-01T22:22:01.907917+00:00"
+  },
+  "c622d4bdcaf08d627e291e3d38fbf2cc": {
+    "source": "Reddit r/NorthCarolina",
+    "title": "Fun Fact regarding speed cameras on NC highways",
+    "summary": "TIL that North Carolina speed cameras legally cannot be used for profit, so cities just gave up on them! Under NC Constitution, 90% of all redlight and speed camera ticket funds must go straight to public schools...So local police n cities aren't allowed to keep the cash to pad their fat budgets. Be",
+    "url": "https://www.reddit.com/r/NorthCarolina/comments/1wuu292/fun_fact_regarding_speed_cameras_on_nc_highways/",
+    "published": "2026-10-01T08:31:39+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "c622d4bdcaf08d627e291e3d38fbf2cc",
+    "first_seen": "2026-10-01T22:22:01.907917+00:00"
   }
 }
