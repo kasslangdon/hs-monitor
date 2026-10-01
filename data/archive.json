@@ -7511,5 +7511,17 @@
     "priority_reason": "",
     "hash": "3c2a3b7d9ee464970298020c9f3a0694",
     "first_seen": "2026-10-01T04:03:50.763090+00:00"
+  },
+  "0290ad353eb3f14d1344cfba59d643cc": {
+    "source": "Google News",
+    "title": "Info sought about pair after Holly Springs assault at AMC movie theater, police say - CBS17.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMi1AFBVV95cUxOd1FlcGtQajRVRDhCQ2M5bUVrUGk1RE9RQ0Rvc0JEUTVlOEd3YXdqV1I3Qm1vNmdTVkZkbjF3OVdoMmdyNUtJU1ExMTNDOUxpQ2pqaE9VRzZVc0hGaUZXc1FOMWY0N0tDZm9PanhWTmkwNExxTFNXb3VabXJhNmUxOWxMVUNSS25tNUhUUTF0R2xWQ0hMYUZJUEl5TnVaTi1hbTc0S3JQS05MU0ZNRkVTWnppZlE1SV9faV",
+    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOd1FlcGtQajRVRDhCQ2M5bUVrUGk1RE9RQ0Rvc0JEUTVlOEd3YXdqV1I3Qm1vNmdTVkZkbjF3OVdoMmdyNUtJU1ExMTNDOUxpQ2pqaE9VRzZVc0hGaUZXc1FOMWY0N0tDZm9PanhWTmkwNExxTFNXb3VabXJhNmUxOWxMVUNSS25tNUhUUTF0R2xWQ0hMYUZJUEl5TnVaTi1hbTc0S3JQS05MU0ZNRkVTWnppZlE1SV9faVFPWG5KNmVrNTRxeXN2N3VDN1N5bldFdVRqNw?oc=5",
+    "published": "Sat, 01 Aug 2026 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "0290ad353eb3f14d1344cfba59d643cc",
+    "first_seen": "2026-10-01T12:26:15.031939+00:00"
   }
 }
