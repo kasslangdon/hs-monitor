@@ -7559,5 +7559,39 @@
     "priority_reason": "",
     "hash": "b0d4a19515a8e571d03b8f1d9decfc7d",
     "first_seen": "2026-10-02T03:59:52.673671+00:00"
+  },
+  "56c1e046ff283a0bed90bfb700d58ac8": {
+    "source": "Google News",
+    "title": "Car crash on Old Holly Springs Apex Road sends one to hospital, Holly Springs police say - CBS17.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMi2wFBVV95cUxQbEtoYk9QajFjdjJBS2RPeThTcHNhWVdpUi1CR1I0MHIyaEdtdTg4M1ZMbTBkWGtLWW5iRWN5YnFtdXlybV92SmJBTG45WnpUN1hqeE1kX3YyRHc1c3N3Wk1QUWMtWUZSaDIyYTV4T2NabmZORkdlRC10eXRPQmtLR3pycHNwdFVkQ1lCbTdpS250NE1hMktqUG5IdlZOdDhsTXZ0cFhyelY5S3dBbjJqYjlFZWQxeG5qNW",
+    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQbEtoYk9QajFjdjJBS2RPeThTcHNhWVdpUi1CR1I0MHIyaEdtdTg4M1ZMbTBkWGtLWW5iRWN5YnFtdXlybV92SmJBTG45WnpUN1hqeE1kX3YyRHc1c3N3Wk1QUWMtWUZSaDIyYTV4T2NabmZORkdlRC10eXRPQmtLR3pycHNwdFVkQ1lCbTdpS250NE1hMktqUG5IdlZOdDhsTXZ0cFhyelY5S3dBbjJqYjlFZWQxeG5qNWlSdkxyeDcxa2FpUWtYNnpGNUkycU53V1U1bExvejd4UkE?oc=5",
+    "published": "Sat, 21 Mar 2026 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "56c1e046ff283a0bed90bfb700d58ac8",
+    "first_seen": "2026-10-02T11:53:09.985809+00:00"
+  },
+  "cd0668d872373d18d44bbe3f497be121": {
+    "source": "Court / Legal (Google)",
+    "title": "3 suspects flee after police pursuit ends in Holly Springs - WREG.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUllZWlRuYzI0bDlpUmtVMDlEU0xPeW5KcV95aFJISmF6V3EtLW5LSFo5bXBpNHhYS3ZFRzN2akc0ZHdSVTRzd3ltWGsyNTlUVDdDZmpNZVVvOE9uQ1FORHZIdTRjUV9HSmFZaGdkYTdpWGNRQkh6QllYVTZ2SzZ4eWR1aVZ5ellz0gGOAUFVX3lxTE51aGs1b2Y3RFdmMDdXdDZ2ZGQwMHVnRnlkTUJ1NjV6SGhHY1VycE",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUllZWlRuYzI0bDlpUmtVMDlEU0xPeW5KcV95aFJISmF6V3EtLW5LSFo5bXBpNHhYS3ZFRzN2akc0ZHdSVTRzd3ltWGsyNTlUVDdDZmpNZVVvOE9uQ1FORHZIdTRjUV9HSmFZaGdkYTdpWGNRQkh6QllYVTZ2SzZ4eWR1aVZ5ellz0gGOAUFVX3lxTE51aGs1b2Y3RFdmMDdXdDZ2ZGQwMHVnRnlkTUJ1NjV6SGhHY1VycElGX3pCMy05R281cWJjUzRfaEIxT3ZxbnZxMWhtMWdVbVZoQ0h4RklPbWRxbkdMWUJjRTk2T3FHcWNyNUZNazRHRTNLMjFFeEZsaU5XaktDVUNUZnZYREo1cGRXUl9pRkE?oc=5",
+    "published": "Sun, 14 Jun 2026 07:00:00 GMT",
+    "category": "Court Records",
+    "priority": true,
+    "hash": "cd0668d872373d18d44bbe3f497be121",
+    "first_seen": "2026-10-02T11:53:09.985809+00:00"
+  },
+  "c09986fa65da5d61afc0e538eaf14962": {
+    "source": "Court / Legal (Google)",
+    "title": "Police capture attempted murder suspect wanted after Holly Springs shooting - Action News 5",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMitgFBVV95cUxNV0IyMnBhRHVneXVFZ2dTbzBFNnVCSVdTZ0E4aDdTWmwzWHJKSGU4bUJIdGFHc2loVnZDWUtiVjJDdHpKbG5ybHFrVEQzdjFsc1RST2pxYzA3ZGZjaWZQSW9LaUYxNXlXRmoyeHhHeHNvQ04yLXJmRTFsMHFtQUhCdGRuMnVzZjlnV3ltTEYxVDVZcUtNaWlNV3E5d1M1cng5TmJHTDRXWEFYcDJqZ0JjU2k1WVhnUQ?oc=",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNV0IyMnBhRHVneXVFZ2dTbzBFNnVCSVdTZ0E4aDdTWmwzWHJKSGU4bUJIdGFHc2loVnZDWUtiVjJDdHpKbG5ybHFrVEQzdjFsc1RST2pxYzA3ZGZjaWZQSW9LaUYxNXlXRmoyeHhHeHNvQ04yLXJmRTFsMHFtQUhCdGRuMnVzZjlnV3ltTEYxVDVZcUtNaWlNV3E5d1M1cng5TmJHTDRXWEFYcDJqZ0JjU2k1WVhnUQ?oc=5",
+    "published": "Fri, 02 Oct 2026 02:19:00 GMT",
+    "category": "Court Records",
+    "priority": true,
+    "hash": "c09986fa65da5d61afc0e538eaf14962",
+    "first_seen": "2026-10-02T11:53:09.985809+00:00"
   }
 }
