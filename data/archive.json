@@ -7639,5 +7639,29 @@
     "priority": true,
     "hash": "59a433ed559ab7355c1fd8858c9771bf",
     "first_seen": "2026-10-03T15:43:44.988333+00:00"
+  },
+  "7b078cafa14190411df0ac47ada56917": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Play Board Games & Drink Coffee at The Perch",
+    "summary": "Found a new place that just opened up in Holly Springs it\u2019s called The Perch (1125 McChesney Hl Lp, Holly Springs, NC 27540) it\u2019s a board game/cafe. It\u2019s $5 a person to come sit and play but you can pull as many games as you\u2019d like and there\u2019s no time limit. Plus the coffee and food is exceptional s",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1wwqqiy/play_board_games_drink_coffee_at_the_perch/",
+    "published": "2026-10-03T15:59:26+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "7b078cafa14190411df0ac47ada56917",
+    "first_seen": "2026-10-03T20:37:09.912381+00:00"
+  },
+  "deddd0a1f1ee6bba5f82db70bc61525a": {
+    "source": "Reddit r/NorthCarolina",
+    "title": "Atkinson is the first North Carolina town to ban automated license plate reader (Flock) cameras",
+    "summary": "On October 1, the Town of Atkinson (Pender County) adopted an ordinance prohibiting automated license plate reader (ALPR) cameras \u2014 including Flock \u2014 anywhere within its town limits. As far as I can tell, it's the first outright ban of its kind in North Carolina. The operative language is one senten",
+    "url": "https://www.reddit.com/r/NorthCarolina/comments/1wvrvhg/atkinson_is_the_first_north_carolina_town_to_ban/",
+    "published": "2026-10-02T11:56:45+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "deddd0a1f1ee6bba5f82db70bc61525a",
+    "first_seen": "2026-10-03T20:37:09.912381+00:00"
   }
 }
