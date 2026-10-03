@@ -7605,5 +7605,28 @@
     "priority_reason": "",
     "hash": "2473c9b311b501622203c811e61452f8",
     "first_seen": "2026-10-02T17:27:37.790041+00:00"
+  },
+  "68d63ddcbbadf054a439f9dc1c612a69": {
+    "source": "Google News",
+    "title": "Holly Springs man charged with attempted murders - Northeast Mississippi Daily Journal",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMi5AFBVV95cUxPZ0hhaDc3TTBtRGk3cDRlRXotNVA1dVlLSHJtcGREaW53Y2VnNk1ianhtaU14Vlc3WGlLN0NkVFFfalJHVWE4cEVCNnhBMlpoRjdCaVpvanBiOTV0N2p0djA0b3FNNV9SUkNMNnA5RERGdGFiUjN4X1ZrdHF1YUdvTEE1MWUxX05tTmxYX3JhZkVzVzVjZFFqbDdFSEtGck5MMVhsQjVFWWZMVGVDczh0R0VUU0VqRHRGeV",
+    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPZ0hhaDc3TTBtRGk3cDRlRXotNVA1dVlLSHJtcGREaW53Y2VnNk1ianhtaU14Vlc3WGlLN0NkVFFfalJHVWE4cEVCNnhBMlpoRjdCaVpvanBiOTV0N2p0djA0b3FNNV9SUkNMNnA5RERGdGFiUjN4X1ZrdHF1YUdvTEE1MWUxX05tTmxYX3JhZkVzVzVjZFFqbDdFSEtGck5MMVhsQjVFWWZMVGVDczh0R0VUU0VqRHRGeVFyXzhxa05KNkJSaHZaSzFMd3A0ZjEwa2NBTDlrU29nS0JNbHRnM2tGN2s?oc=5",
+    "published": "Fri, 02 Oct 2026 14:30:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "68d63ddcbbadf054a439f9dc1c612a69",
+    "first_seen": "2026-10-03T11:06:32.900969+00:00"
+  },
+  "943cf031f64c55b631bff3d32c88089a": {
+    "source": "Court / Legal (Google)",
+    "title": "Memphis man, Michael Woods, charged by Holly Springs Police Department for 2 counts of aggravated assault - tvmocommunitynews.substack.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1sZGlFZG5PS21NWXB6ZFIzUE1oTjhfdmNidEVEMlN4QlgxZ1dWZTg0a1RXU1ZrTGFiLXN3SnJuV0ZhbGpwekFoNWtZREp0dG10dUhmMW5zTGpLbHlSTFlwRnhCZDk1UGthZjN5YUNtVFpSNzkxNnRjU0ZXMWhDUXM?oc=5\" target=\"_blank\">Memphis man, Michael Woods, charged by Holly Springs Pol",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1sZGlFZG5PS21NWXB6ZFIzUE1oTjhfdmNidEVEMlN4QlgxZ1dWZTg0a1RXU1ZrTGFiLXN3SnJuV0ZhbGpwekFoNWtZREp0dG10dUhmMW5zTGpLbHlSTFlwRnhCZDk1UGthZjN5YUNtVFpSNzkxNnRjU0ZXMWhDUXM?oc=5",
+    "published": "Fri, 02 Oct 2026 20:02:05 GMT",
+    "category": "Court Records",
+    "priority": true,
+    "hash": "943cf031f64c55b631bff3d32c88089a",
+    "first_seen": "2026-10-03T11:06:32.900969+00:00"
   }
 }
