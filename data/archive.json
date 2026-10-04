@@ -7675,5 +7675,28 @@
     "priority_reason": "",
     "hash": "bc0800657196cefdda2cf30d888a26f8",
     "first_seen": "2026-10-04T16:26:51.493788+00:00"
+  },
+  "8fdc8c95de43fdc84d3a201945be3176": {
+    "source": "Court / Legal (Google)",
+    "title": "Memphis man, Michael Woods, charged by Holly Springs Police Department for 2 counts of aggravated assault - Substack",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE1sZGlFZG5PS21NWXB6ZFIzUE1oTjhfdmNidEVEMlN4QlgxZ1dWZTg0a1RXU1ZrTGFiLXN3SnJuV0ZhbGpwekFoNWtZREp0dG10dUhmMW5zTGpLbHlSTFlwRnhCZDk1UGthZjN5YUNtVFpSNzkxNnRjU0ZXMWhDUXM?oc=5\" target=\"_blank\">Memphis man, Michael Woods, charged by Holly Springs Pol",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1sZGlFZG5PS21NWXB6ZFIzUE1oTjhfdmNidEVEMlN4QlgxZ1dWZTg0a1RXU1ZrTGFiLXN3SnJuV0ZhbGpwekFoNWtZREp0dG10dUhmMW5zTGpLbHlSTFlwRnhCZDk1UGthZjN5YUNtVFpSNzkxNnRjU0ZXMWhDUXM?oc=5",
+    "published": "Fri, 02 Oct 2026 20:02:05 GMT",
+    "category": "Court Records",
+    "priority": true,
+    "hash": "8fdc8c95de43fdc84d3a201945be3176",
+    "first_seen": "2026-10-04T20:54:17.030650+00:00"
+  },
+  "1f94b015d71ed4b79939ae7f3fc522f8": {
+    "source": "Reddit r/raleigh",
+    "title": "Things to do this weekend!",
+    "summary": "Friday  Raleigh Wide Open Music Festival, Various Locations, Raleigh  Washington Capitals vs. Carolina Hurricanes, Lenovo Center, Raleigh First Friday, Downtown, Raleigh Triangle Oktoberfest, Koka Booth Amphitheatre, Cary Wine Gala at the Governor's Mansion - The Dolphins, Governor's Mansion, Raleig",
+    "url": "https://www.reddit.com/r/raleigh/comments/1wvsahg/things_to_do_this_weekend/",
+    "published": "2026-10-02T12:17:28+00:00",
+    "category": "Reddit",
+    "priority": true,
+    "priority_reason": "1983",
+    "hash": "1f94b015d71ed4b79939ae7f3fc522f8",
+    "first_seen": "2026-10-04T20:54:17.030650+00:00"
   }
 }
