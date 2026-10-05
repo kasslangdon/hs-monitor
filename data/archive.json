@@ -7698,5 +7698,41 @@
     "priority_reason": "1983",
     "hash": "1f94b015d71ed4b79939ae7f3fc522f8",
     "first_seen": "2026-10-04T20:54:17.030650+00:00"
+  },
+  "78c635bdf40ed61847cce8ff461ddd20": {
+    "source": "Holly Springs Update",
+    "title": "Wake County Voter Registration Deadline is October 9th for the Upcoming Election",
+    "summary": "Wake County residents have until October 9th to register for the November 3rd election. Find out how to check registration, locate polling places and meet voting requirements.",
+    "url": "https://www.hollyspringsupdate.com/p/wake-county-voter-registration-deadline",
+    "published": "Mon, 05 Oct 2026 14:01:39 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "78c635bdf40ed61847cce8ff461ddd20",
+    "first_seen": "2026-10-05T23:44:49.085017+00:00"
+  },
+  "d5036bfcb409452144461e2e2f4e2092": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Apartment Recommendations?",
+    "summary": "Hi! My partner and I are moving from the west coast to NC around Raleigh area. We were wondering on some apartment recommendations?! We\u2019re interested in a 1 bed with a den or a 2 bedroom. We prefer a modernized apartment building/unit, accepts small dogs, and has a gym. We don\u2019t have a set budget ye",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1wyiwdp/apartment_recommendations/",
+    "published": "2026-10-05T20:10:24+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "d5036bfcb409452144461e2e2f4e2092",
+    "first_seen": "2026-10-05T23:44:49.085017+00:00"
+  },
+  "1779ca84c93c957dd30f5e7a81f26ec6": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Holly Springs puts grass clippings in carts. Apex may stop collecting them altogether",
+    "summary": "Apex is considering ending curbside grass-clipping collection because officials say they have not been able to secure a long-term processor for the town\u2019s volume. I\u2019m the News & Observer reporter who wrote this story. I compared Apex with Cary, Holly Springs, Fuquay-Varina and Morrisville. Holly Spr",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1wyild3/holly_springs_puts_grass_clippings_in_carts_apex/",
+    "published": "2026-10-05T19:59:00+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "1779ca84c93c957dd30f5e7a81f26ec6",
+    "first_seen": "2026-10-05T23:44:49.085017+00:00"
   }
 }
