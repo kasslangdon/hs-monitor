@@ -8202,5 +8202,29 @@
     "priority_reason": "",
     "hash": "0623a31349990362fc4188d7e9d8dada",
     "first_seen": "2026-10-07T22:42:09.948766+00:00"
+  },
+  "5fc794d207364683a0260c676ac74a79": {
+    "source": "Google News",
+    "title": "Fuquay-Varina (NC) Neighbors Press for Relief as Willow Springs High School Parking Spills Into Residential Streets - Holly Springs Update",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMieEFVX3lxTE0tLUxZR2NjUHlkclgxZ3BHWFR3SW1STVc0anczQW04bkVxbFFfekdkNTZ1T2U4UTZYYWtUUEo3SFB0NFF5bHpTMVp5akVmaTNkU2UxaEpDVUlfVDhKalFDMERXeDg0YnNvM2NGT2gzcElWWVYzZERCTg?oc=5\" target=\"_blank\">Fuquay-Varina (NC) Neighbors Press for Relief as Willow Springs H",
+    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE0tLUxZR2NjUHlkclgxZ3BHWFR3SW1STVc0anczQW04bkVxbFFfekdkNTZ1T2U4UTZYYWtUUEo3SFB0NFF5bHpTMVp5akVmaTNkU2UxaEpDVUlfVDhKalFDMERXeDg0YnNvM2NGT2gzcElWWVYzZERCTg?oc=5",
+    "published": "Thu, 09 Apr 2026 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "5fc794d207364683a0260c676ac74a79",
+    "first_seen": "2026-10-08T04:25:46.465932+00:00"
+  },
+  "6f5d0d9ee1131709b09236b4d3d11c9c": {
+    "source": "Reddit r/triangle",
+    "title": "Recommendations for party venues that allow weddings?",
+    "summary": "We\u2019re wanting to avoid any Bradfords, Manors, etc. Hard liquor, bring our own food, DJ, & so on. We\u2019re looking at Raleigh, Durham, Pittsboro, Apex, Cary, Fuquay, Holly Springs, New Hill, Sanford, Lillington, Angier, Garner. We tried looking at various Elks Lodge locations but they require a current ",
+    "url": "https://www.reddit.com/r/triangle/comments/1wzdd6r/recommendations_for_party_venues_that_allow/",
+    "published": "2026-10-06T20:29:00+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "6f5d0d9ee1131709b09236b4d3d11c9c",
+    "first_seen": "2026-10-08T04:25:46.465932+00:00"
   }
 }
