@@ -8262,5 +8262,41 @@
     "priority_reason": "",
     "hash": "23ca3d49cad316fffcb6ce6575e40f9e",
     "first_seen": "2026-10-09T22:15:37.929402+00:00"
+  },
+  "543ae6355bbaf8ed4be96580728088ad": {
+    "source": "Google News",
+    "title": "Holly Springs Couple Accused Of Torturing Child - The North Carolina Beat",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxNbUVIRVF1NVNwbmJCQzFoWGh3NmhqNHN4dERCTEQ5eDNIS19iS1hmRFlKZ1Y3VnJ2ZkNOS3lnbFBYQkxZZjhIbURScVhvSmZ4WDBOQ2ZwOTFKZThEQjlYRFpyTmdlMWh6Z1pfMGtFVzZvNFhUWmhrUkxRSU9YSThVbA?oc=5\" target=\"_blank\">Holly Springs Couple Accused Of Torturing Child</a>&n",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNbUVIRVF1NVNwbmJCQzFoWGh3NmhqNHN4dERCTEQ5eDNIS19iS1hmRFlKZ1Y3VnJ2ZkNOS3lnbFBYQkxZZjhIbURScVhvSmZ4WDBOQ2ZwOTFKZThEQjlYRFpyTmdlMWh6Z1pfMGtFVzZvNFhUWmhrUkxRSU9YSThVbA?oc=5",
+    "published": "Mon, 30 Mar 2026 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "543ae6355bbaf8ed4be96580728088ad",
+    "first_seen": "2026-10-10T04:16:08.411334+00:00"
+  },
+  "ed14d2dc62fcf39acfce26e76ad4ee34": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Recruitment for UNC Greensboro Tweens on Screens Research for North Carolina Families",
+    "summary": "      Do you know any parents of 10-12 year olds who live in NC (especially Holly Springs)? The Tweens on Screens project, led by researchers at UNC Greensboro, is studying how kids ages 10\u201312 use technology in daily life, and how parents guide them. By looking closely at these patterns, we hope to ",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1x245x2/recruitment_for_unc_greensboro_tweens_on_screens/",
+    "published": "2026-10-10T02:45:31+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "ed14d2dc62fcf39acfce26e76ad4ee34",
+    "first_seen": "2026-10-10T04:16:08.411334+00:00"
+  },
+  "66bbb2b179307296208418536af90b0d": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Daycare cook needed who loves kids",
+    "summary": "Hello, I am departing a job that I always knew would be temporary as I have a heath care background. I took the job to help a friend. The director who is a family friend and I was recovering from a back injury. At the end of the month I am moving back into healthcare and I am looking someone who can",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1x214po/daycare_cook_needed_who_loves_kids/",
+    "published": "2026-10-10T00:10:42+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "66bbb2b179307296208418536af90b0d",
+    "first_seen": "2026-10-10T04:16:08.411334+00:00"
   }
 }
