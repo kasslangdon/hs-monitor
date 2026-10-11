@@ -8334,5 +8334,17 @@
     "priority_reason": "",
     "hash": "d7a3b8629cb12d25bcc4aea4b33f882f",
     "first_seen": "2026-10-10T21:10:04.402804+00:00"
+  },
+  "7a05435fb300e9de47f37b0fee889b98": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Gamified Holly Springs",
+    "summary": "      I've been really interested in seeing how complex running our town actually is - where does the money go, how are we handling growth, etc. So I created a gamified version of the town's 2026-2027 budget, along with other key facts. It's just a prototype, and no warranties of the data accuracy, ",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1x2sget/gamified_holly_springs/",
+    "published": "2026-10-10T22:54:56+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "7a05435fb300e9de47f37b0fee889b98",
+    "first_seen": "2026-10-11T03:53:43.707950+00:00"
   }
 }
