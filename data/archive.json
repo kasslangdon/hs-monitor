@@ -8442,5 +8442,41 @@
     "priority_reason": "",
     "hash": "71af9b9ae0ee124cadc3f75eb7da1b05",
     "first_seen": "2026-10-11T21:29:19.872740+00:00"
+  },
+  "cbac949eb36c882631b301439d67e9f5": {
+    "source": "Holly Springs Update",
+    "title": "Holly Springs\u2019 (NC) Local Time Brewing Wins Silver at Great American Beer Festival",
+    "summary": "Vinland Honey Lager, brewed with orange blossom honey, earned silver in the Honey Beer category at the national competition.",
+    "url": "https://www.hollyspringsupdate.com/p/holly-springs-nc-local-time-brewing",
+    "published": "Sun, 11 Oct 2026 23:40:46 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "cbac949eb36c882631b301439d67e9f5",
+    "first_seen": "2026-10-12T04:15:16.126439+00:00"
+  },
+  "f621e7a3f6fb899db6ef4c0d8279336f": {
+    "source": "Reddit r/raleigh",
+    "title": "Hey Raleigh - My previous post about the Trump $90 and $500 bribe checks being used to support democratic campaigns, food banks, and independent media outlets was taken down for not being Raleigh specific, so I figured I would provide some NC and Raleigh specific information and background here",
+    "summary": "My previous post simply stated that the $90 and $500 Trump bribe checks were being used by people to support democratic campaigns, donate to food banks, and support local or independent media. I incorrectly assumed that many people would already be aware of these checks, which ended up being wrong. ",
+    "url": "https://www.reddit.com/r/raleigh/comments/1x1wae5/hey_raleigh_my_previous_post_about_the_trump_90/",
+    "published": "2026-10-09T20:35:58+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "f621e7a3f6fb899db6ef4c0d8279336f",
+    "first_seen": "2026-10-12T04:15:16.126439+00:00"
+  },
+  "39d50e42f3cd402fe5fb2eef7333e3d9": {
+    "source": "Reddit r/raleigh",
+    "title": "2026 Voter Guide (Midterm Elections)",
+    "summary": "Hi all, hope everyone is well. Here is the voter guide for this year! General Reminders and Updates:  This election will be for Federal, State, County, and City of Raleigh seats! The election will be held on November 3rd. You MUST be in line by 7:30 p.m. to vote on election day. The deadline to regi",
+    "url": "https://www.reddit.com/r/raleigh/comments/1wx2oz0/2026_voter_guide_midterm_elections/",
+    "published": "2026-10-04T00:54:05+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "39d50e42f3cd402fe5fb2eef7333e3d9",
+    "first_seen": "2026-10-12T04:15:16.126439+00:00"
   }
 }
