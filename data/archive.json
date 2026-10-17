@@ -8598,5 +8598,29 @@
     "priority_reason": "",
     "hash": "0377a3330becac90bba811388288b41e",
     "first_seen": "2026-10-17T02:56:57.457626+00:00"
+  },
+  "2e9535e725b00faa034019e44e1e6cec": {
+    "source": "Google News",
+    "title": "Holly Springs cop who rescued kid from icy pond becomes National Law Enforcement Officer of the Month - CBS17.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMi7gFBVV95cUxNdGpTU2JSczRyWGpPVmVYcVhDSTBCU3JScC1BemFaeFAzQXY4TjFyMV9CREhLb1hJaFBfQW5XQUU0R3Z5VjRYSVBXUmlIRTNOaGtseXkyWTd1WjNnME55Wk81OHVlR2NyU0ZRUU1MU3E5S3dRZUxxWUU4bTlPZVctcC1kdE1SOTBOX1NWdTQ0QzVBLVUxZFpVQ0wtaDlpWkxfV1l2UEUxY2h4OXlMUmYzdHRGQVVkY0txMD",
+    "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNdGpTU2JSczRyWGpPVmVYcVhDSTBCU3JScC1BemFaeFAzQXY4TjFyMV9CREhLb1hJaFBfQW5XQUU0R3Z5VjRYSVBXUmlIRTNOaGtseXkyWTd1WjNnME55Wk81OHVlR2NyU0ZRUU1MU3E5S3dRZUxxWUU4bTlPZVctcC1kdE1SOTBOX1NWdTQ0QzVBLVUxZFpVQ0wtaDlpWkxfV1l2UEUxY2h4OXlMUmYzdHRGQVVkY0txMDM2ZVZEd0xtXzBWOUFLUGQ5MDZqYVZVUkdxdnJXN3B6dVVGQmJfNElLaEd5VWpjTlhYbGhB?oc=5",
+    "published": "Wed, 25 Feb 2026 08:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "2e9535e725b00faa034019e44e1e6cec",
+    "first_seen": "2026-10-17T20:06:49.312923+00:00"
+  },
+  "8f0b1f44b4e3a962c223b895bbec3c21": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Holly Springs Library",
+    "summary": "Does anyone know when the Holly Springs Library will reopen? It has been closed for about 6 months for renovation. The website states that it will reopen by the end of 2026. Thanks!    submitted by    /u/Liberated3   [link] [comments]",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1x8f09v/holly_springs_library/",
+    "published": "2026-10-17T16:47:55+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "8f0b1f44b4e3a962c223b895bbec3c21",
+    "first_seen": "2026-10-17T20:06:49.312923+00:00"
   }
 }
