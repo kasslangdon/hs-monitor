@@ -8622,5 +8622,53 @@
     "priority_reason": "",
     "hash": "8f0b1f44b4e3a962c223b895bbec3c21",
     "first_seen": "2026-10-17T20:06:49.312923+00:00"
+  },
+  "7f075c721b6dbd111fc4d6bebcaedb19": {
+    "source": "Google News",
+    "title": "Out and About This Weekend in Holly Springs (NC), Apex & Fuquay-Varina (10/16 through 10/18) - Holly Springs Update",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxPTUkxVGo4SGwtOV9zME1wSmdUWW5CS1pRU2JmZml1VUlBQlVUZ1lFMTZrWUV0VU1ObFpBZE5sYXFUZXJGQUtMSXlXUDRGRXZCdjY5bmdKVlJ4UjVGV1pGRlZxcXBSRjRXSEwxOWc4UVp6ZU9DS05ldmJteGhPUzg1LU9R?oc=5\" target=\"_blank\">Out and About This Weekend in Holly Springs (NC), A",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPTUkxVGo4SGwtOV9zME1wSmdUWW5CS1pRU2JmZml1VUlBQlVUZ1lFMTZrWUV0VU1ObFpBZE5sYXFUZXJGQUtMSXlXUDRGRXZCdjY5bmdKVlJ4UjVGV1pGRlZxcXBSRjRXSEwxOWc4UVp6ZU9DS05ldmJteGhPUzg1LU9R?oc=5",
+    "published": "Fri, 16 Oct 2026 20:57:48 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "7f075c721b6dbd111fc4d6bebcaedb19",
+    "first_seen": "2026-10-18T02:58:18.462461+00:00"
+  },
+  "d3948443211d60426ca8c4583926aba1": {
+    "source": "Reddit r/raleigh",
+    "title": "where could the next Publix go in the Triangle? i followed the new houses and mapped it",
+    "summary": "      it kinda feels like publix is taking over triangle (rip to harris teeter's lol). the Triangle currently has 14 Publix now and 4 of them opened since May 2025. so where could the next one go? i work at a mapping place and in my free time i made this visualization. my guess was follow the new ho",
+    "url": "https://www.reddit.com/r/raleigh/comments/1x7nqrz/where_could_the_next_publix_go_in_the_triangle_i/",
+    "published": "2026-10-16T18:18:06+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "d3948443211d60426ca8c4583926aba1",
+    "first_seen": "2026-10-18T02:58:18.462461+00:00"
+  },
+  "6dfa83b8b353f2eefe35c0aeaef9c253": {
+    "source": "Reddit r/raleigh",
+    "title": "Things to do this weekend!",
+    "summary": "Friday  2026 N.C. State Fair, North Carolina State Fairgrounds, Raleigh Maybe Happy Ending, DPAC, Durham Carolina Ballet presents Dracula, A.J. Fletcher Opera Theater at Martin Marietta Center for the Performing Arts, Raleigh Rhapsody in Blue with the North Carolina Symphony, Meymandi Concert Hall a",
+    "url": "https://www.reddit.com/r/raleigh/comments/1x7fotn/things_to_do_this_weekend/",
+    "published": "2026-10-16T13:04:24+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "6dfa83b8b353f2eefe35c0aeaef9c253",
+    "first_seen": "2026-10-18T02:58:18.462461+00:00"
+  },
+  "962337985b2b252274ab5d07ac75e7ed": {
+    "source": "Reddit r/raleigh",
+    "title": "Wake's animal center took in 8,388 animals last year. Here are the low-cost spay/neuter options in Wake most people don't know about.",
+    "summary": "      I volunteer at the Wake County Animal Center, and last week I posted the statewide shelter numbers over on r/NorthCarolina. A few people asked what it looks like here in Wake, so here's the local version. Wake's shelter numbers. Wake County doesn't file the state's annual shelter report (it do",
+    "url": "https://www.reddit.com/r/raleigh/comments/1x6l2ah/wakes_animal_center_took_in_8388_animals_last/",
+    "published": "2026-10-15T13:03:23+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "962337985b2b252274ab5d07ac75e7ed",
+    "first_seen": "2026-10-18T02:58:18.462461+00:00"
   }
 }
