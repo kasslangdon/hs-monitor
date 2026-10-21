@@ -8694,5 +8694,28 @@
     "priority_reason": "",
     "hash": "44bae8287f6b59d6a9b8a65231827148",
     "first_seen": "2026-10-20T10:57:17.578099+00:00"
+  },
+  "99d57f25939fbcc2a08535857f9f2337": {
+    "source": "Court / Legal (Google)",
+    "title": "Juvenile suspects charged as adults with attempted first-degree murder in Holly Springs - localmemphis.com",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMigwJBVV95cUxQdXVtV25tRnlLWGltNjE5aUloLXBTZ3F0eXZJZDRQYWhTNXpaX2tZZlk0allNRG1iU1pPSU9tTUlzT3VpU0d6ZFhYbWMwbElHRTd6MVRwMGhhcEpCVlE3Unl4Q0trejVHZklFU2dwb3lReS1hbmgzblFEYkRjaGd4bGpkYk9oOVFUcGFMUlhIWGp1SDVQMVJ2MWs3ekpDcTJfQnhXVzE0MUNMWUVFd016dWlrQndVanBqbW",
+    "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQdXVtV25tRnlLWGltNjE5aUloLXBTZ3F0eXZJZDRQYWhTNXpaX2tZZlk0allNRG1iU1pPSU9tTUlzT3VpU0d6ZFhYbWMwbElHRTd6MVRwMGhhcEpCVlE3Unl4Q0trejVHZklFU2dwb3lReS1hbmgzblFEYkRjaGd4bGpkYk9oOVFUcGFMUlhIWGp1SDVQMVJ2MWs3ekpDcTJfQnhXVzE0MUNMWUVFd016dWlrQndVanBqbWM2cDBqS1JtODRWQm9qQzVTTk5zSU5xSFJWWWtpbWM1eUxHUmRVTW1JeFBJSThLVDIzaFRfZFBiSl9CX1ZaQy1Udm1JNlkxTUxj?oc=5",
+    "published": "Wed, 23 Sep 2026 07:00:00 GMT",
+    "category": "Court Records",
+    "priority": true,
+    "hash": "99d57f25939fbcc2a08535857f9f2337",
+    "first_seen": "2026-10-21T11:09:51.909425+00:00"
+  },
+  "bf96003756dc2300140ca8116edbc5cd": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Priced out of Holly Springs?",
+    "summary": "A friend is relocating for a job in lovely Holly Springs. 30-something, single, hardworking but can\u2019t afford a home in Holly Springs. Any nearby communities y\u2019all would recommend? Here\u2019s the wish list: Safety, affordability, good food and 25 minutes to Holly Springs TIA    submitted by    /u/mmconno",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1xbdn51/priced_out_of_holly_springs/",
+    "published": "2026-10-21T04:30:41+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "bf96003756dc2300140ca8116edbc5cd",
+    "first_seen": "2026-10-21T11:09:51.909425+00:00"
   }
 }
