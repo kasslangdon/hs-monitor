@@ -8753,5 +8753,41 @@
     "priority_reason": "",
     "hash": "686a783dc5a508c5201d537c57c22040",
     "first_seen": "2026-10-21T16:37:05.296567+00:00"
+  },
+  "400e516709152105348fd7c3f4cd416e": {
+    "source": "Google News",
+    "title": "Shooting in Holly Springs leaves 1 person in critical condition and another with non-life threatening injuries with suspect still at large, MCSO say - Substack",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMifkFVX3lxTFBsZEZYMF9CQ2NvT19MeTNFRHR6ak5LTUg0Mk5qcjZJSHJBcHNHSmRsaTZoTHlzS2o5YTdkcmpBaDVwMnNYaFo0LTZLWjdhd2k0Y0ZabUVqY0hQdWVlXzVEV2JKWDFNZUtaZHNweFU4T1d0WGMtV1NjUFpjWEQ0UQ?oc=5\" target=\"_blank\">Shooting in Holly Springs leaves 1 person in critical con",
+    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBsZEZYMF9CQ2NvT19MeTNFRHR6ak5LTUg0Mk5qcjZJSHJBcHNHSmRsaTZoTHlzS2o5YTdkcmpBaDVwMnNYaFo0LTZLWjdhd2k0Y0ZabUVqY0hQdWVlXzVEV2JKWDFNZUtaZHNweFU4T1d0WGMtV1NjUFpjWEQ0UQ?oc=5",
+    "published": "Thu, 01 Oct 2026 19:27:20 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "400e516709152105348fd7c3f4cd416e",
+    "first_seen": "2026-10-21T21:16:27.616510+00:00"
+  },
+  "f9555369cdd911e09d917bb2dfc4f96e": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Wake County sheriff candidates answer 5 questions on ICE, Flock, jail overcrowding, transparency and crisis response",
+    "summary": "        submitted by    /u/AndreaJournalist   [link] [comments] ",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1xbuy3j/wake_county_sheriff_candidates_answer_5_questions/",
+    "published": "2026-10-21T18:18:11+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "f9555369cdd911e09d917bb2dfc4f96e",
+    "first_seen": "2026-10-21T21:16:27.616510+00:00"
+  },
+  "0d2581a1f01027703ab6d428061926da": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "NC Midterm Elections Resources",
+    "summary": "General Election Information  Find Your Sample Ballot: https://www.ncsbe.gov/voting/sample-ballot Wake.gov General Election Information: https://www.wake.gov/departments-government/board-elections/election-information/upcoming-election-information Finding your polling place: https://vt.ncsbe.gov/Reg",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1xbu9ax/nc_midterm_elections_resources/",
+    "published": "2026-10-21T17:53:31+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "0d2581a1f01027703ab6d428061926da",
+    "first_seen": "2026-10-21T21:16:27.616510+00:00"
   }
 }
