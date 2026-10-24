@@ -8885,5 +8885,41 @@
     "priority_reason": "",
     "hash": "407b84883e02c5ed83712798a7b4e986",
     "first_seen": "2026-10-24T03:13:17.018225+00:00"
+  },
+  "7e09276a1279bc18857b0208938404e9": {
+    "source": "Google News",
+    "title": "Holly Springs (NC) Town Council honors firefighters as first annual report details 2,873 calls, 20,000 training hours - Holly Springs Update",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMifkFVX3lxTE05dTZHejNIYUFJU2k5TTdQNlBmTkJuVnljYy00SWxqVkZMWEloMTcxUmtiRWlLcVd6dWcxSzltR1BfX2Jqel9mVDRwUTZWYjNzT3FuQTlzdkotZWV5aXI1SDNSbkZtOWFIaDJ4UERxQVFIcEVXWGlEcVV2OUFXdw?oc=5\" target=\"_blank\">Holly Springs (NC) Town Council honors firefighters as fi",
+    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE05dTZHejNIYUFJU2k5TTdQNlBmTkJuVnljYy00SWxqVkZMWEloMTcxUmtiRWlLcVd6dWcxSzltR1BfX2Jqel9mVDRwUTZWYjNzT3FuQTlzdkotZWV5aXI1SDNSbkZtOWFIaDJ4UERxQVFIcEVXWGlEcVV2OUFXdw?oc=5",
+    "published": "Fri, 21 Aug 2026 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "7e09276a1279bc18857b0208938404e9",
+    "first_seen": "2026-10-24T15:23:34.766476+00:00"
+  },
+  "7d247727134ad9cd3e860e7472b4122e": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Wegmans 2028/2029",
+    "summary": "For those hoping for a Wegmans in 2027... you're going to have to keep waiting. Wegmans broke ground on their Pennsylvania store in August: https://www.cbsnews.com/pittsburgh/news/wegmans-groundbreaking-today-pittsburgh-area-cranberry-township/ If it even happens.     submitted by    /u/cantjuststay",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1xe71bc/wegmans_20282029/",
+    "published": "2026-10-24T12:10:46+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "7d247727134ad9cd3e860e7472b4122e",
+    "first_seen": "2026-10-24T15:23:34.766476+00:00"
+  },
+  "d3189f25b2a5d62613f228b4670f1f59": {
+    "source": "Reddit (all)",
+    "title": "Amgen holly springs",
+    "summary": "I have about 15 years of pharmaceutical experience in manufacturing and QA. I have some supervisory experience but more senior specialist-level experience. I have moved around (geographically) and have bounced around companies a bit and have no manager-level experience. I am interested in employment",
+    "url": "https://www.reddit.com/r/biotech/comments/1xe9fw6/amgen_holly_springs/",
+    "published": "2026-10-24T14:01:08+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "d3189f25b2a5d62613f228b4670f1f59",
+    "first_seen": "2026-10-24T15:23:34.766476+00:00"
   }
 }
