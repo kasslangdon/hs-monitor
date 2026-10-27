@@ -8981,5 +8981,17 @@
     "priority_reason": "",
     "hash": "29f3e4786a0297c6f2e883ef1e37649a",
     "first_seen": "2026-10-26T22:18:55.064159+00:00"
+  },
+  "de1c476685aece427525804e40a1c985": {
+    "source": "Google News",
+    "title": "Holly Springs Teen Indicted For Murder After Deadly DUI Crash That Killed 14-Year-Old Classmate - The North Carolina Beat",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMifEFVX3lxTE5nczNvLUhuUDlWMEZKbVFhdl9xcU5ONEIzVEpHOUZOT0Mwa1FNQmZsX2VUU0p5c1AyWGI2YzBsU1FVS1JxRHUtZUFLNWtUaloxNWdlNjVFMUdCWXMxLWN6ZXBJSzZOY1RfanVGcTJQZ01BVXVuTTNzcW5OZlE?oc=5\" target=\"_blank\">Holly Springs Teen Indicted For Murder After Deadly DUI Cras",
+    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5nczNvLUhuUDlWMEZKbVFhdl9xcU5ONEIzVEpHOUZOT0Mwa1FNQmZsX2VUU0p5c1AyWGI2YzBsU1FVS1JxRHUtZUFLNWtUaloxNWdlNjVFMUdCWXMxLWN6ZXBJSzZOY1RfanVGcTJQZ01BVXVuTTNzcW5OZlE?oc=5",
+    "published": "Mon, 24 Nov 2025 08:00:00 GMT",
+    "category": "News",
+    "priority": true,
+    "priority_reason": "indicted",
+    "hash": "de1c476685aece427525804e40a1c985",
+    "first_seen": "2026-10-27T11:36:48.085235+00:00"
   }
 }
