@@ -8993,5 +8993,17 @@
     "priority_reason": "indicted",
     "hash": "de1c476685aece427525804e40a1c985",
     "first_seen": "2026-10-27T11:36:48.085235+00:00"
+  },
+  "0ea03449b7cd22e49a51f95576e27028": {
+    "source": "Google News",
+    "title": "Holly Springs worker rescued after injury in well 60-feet below surface - CBS 17",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxQdG9JczhqX21Ua2kySHBPVWlwbnFhbnBwUHk4STJPRmpxYkFlWDlpZ1p5ZkVTR2Noakg4alBPbkVHT0dDVE9XN1EycmdpV2drQkRadFp0bHZfWXZwejBTUTlBVWRiUzk2TC03emVNZHhHLWZyMFpfTExBSmtSZmw5aW5nbG9qZHI4Rm90YlQySTNhTlBScFRjTk1BcjFTZkdES21xRnc5X0tLaWN2NXNrVmo1czVKWmNFRH",
+    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQdG9JczhqX21Ua2kySHBPVWlwbnFhbnBwUHk4STJPRmpxYkFlWDlpZ1p5ZkVTR2Noakg4alBPbkVHT0dDVE9XN1EycmdpV2drQkRadFp0bHZfWXZwejBTUTlBVWRiUzk2TC03emVNZHhHLWZyMFpfTExBSmtSZmw5aW5nbG9qZHI4Rm90YlQySTNhTlBScFRjTk1BcjFTZkdES21xRnc5X0tLaWN2NXNrVmo1czVKWmNFRHNUdk1HTmFLS3NLUXfSAcsBQVVfeXFMTVAwcnppQ0RFYlNKb2tuaTQ5XzQ0MVhKdF84M3RRWjR3SU0xSTdSblQzS2VjT01XMktQS2lnd204T0ZSOENQX2txNmJZNDdFb2RCcHNncE0zVGRFVHJZdkZEbHh1ZE94NGNBZ0hYcWlZXzRteVVZUGw4TzNEVU1DaEdPRU5UTjNyUVRlSmtheUthMlE0UnVkM3owbWtYOElhU0JmXzl6a1NuNFROOFdCaWxsUHJwTDcteVlYeERNeTFQcDRfVUlabE82eHM?oc=5",
+    "published": "Wed, 16 Sep 2026 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "0ea03449b7cd22e49a51f95576e27028",
+    "first_seen": "2026-10-28T03:55:55.910421+00:00"
   }
 }
