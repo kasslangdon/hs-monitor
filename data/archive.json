@@ -9173,5 +9173,29 @@
     "priority_reason": "",
     "hash": "14c0319a932eb273b4e7c81c9f085e01",
     "first_seen": "2026-11-01T04:17:28.467459+00:00"
+  },
+  "8e2519898b3298a9ae847764612db583": {
+    "source": "Holly Springs Update",
+    "title": "North Carolina\u2019s Lithium-Ion Battery Disposal Ban Takes Effect Dec. 1st",
+    "summary": "Wake County residents should keep rechargeable batteries out of trash and recycling bins and use designated drop-off sites.",
+    "url": "https://www.hollyspringsupdate.com/p/north-carolinas-lithium-ion-battery",
+    "published": "Mon, 02 Nov 2026 00:05:33 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "8e2519898b3298a9ae847764612db583",
+    "first_seen": "2026-11-02T04:19:42.008807+00:00"
+  },
+  "19b79c9129bdb0bedbd7f06dca1728bc": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Erin Pare tried to dox me and it fell flat",
+    "summary": "      I visited the Hunt Center on Thursday wearing a costume inspired by the presidents latest words to call a reporter a pig. When I left the Hunt Center, some dude that was volunteering for the Wake GOP followed me back to my car and yelled at me while filming me and recording my license plate. E",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1xlftoz/erin_pare_tried_to_dox_me_and_it_fell_flat/",
+    "published": "2026-11-01T22:03:40+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "19b79c9129bdb0bedbd7f06dca1728bc",
+    "first_seen": "2026-11-02T04:19:42.008807+00:00"
   }
 }
