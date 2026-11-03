@@ -9197,5 +9197,29 @@
     "priority_reason": "",
     "hash": "19b79c9129bdb0bedbd7f06dca1728bc",
     "first_seen": "2026-11-02T04:19:42.008807+00:00"
+  },
+  "92b1d2017c3a58f0a5b188951d61e3da": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "I built a site where Triangle homeowners anonymously share what they paid for home services",
+    "summary": "Launched last week. 84 prices so far, 42 verified against invoices or paperwork, ranging from $62 to $23,830. I built it because the same job can draw quotes thousands of dollars apart, and the big cost guides are national averages that don't reflect what things actually cost around here. If you've ",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1xm4djw/i_built_a_site_where_triangle_homeowners/",
+    "published": "2026-11-02T17:59:20+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "92b1d2017c3a58f0a5b188951d61e3da",
+    "first_seen": "2026-11-03T00:31:07.155073+00:00"
+  },
+  "5b1e2e5233c349c642c811720851863a": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Yo Holly Springs! Do your cameras have these signs too?",
+    "summary": "  submitted by    /u/MattTheAncap   [link] [comments]",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1xm169x/yo_holly_springs_do_your_cameras_have_these_signs/",
+    "published": "2026-11-02T16:03:45+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "5b1e2e5233c349c642c811720851863a",
+    "first_seen": "2026-11-03T00:31:07.155073+00:00"
   }
 }
