@@ -9257,5 +9257,29 @@
     "priority_reason": "",
     "hash": "cadea23e11c4b85bef37a4b00de4f22b",
     "first_seen": "2026-11-03T13:38:05.915101+00:00"
+  },
+  "7772f691bd92c89900e91973f312e349": {
+    "source": "Google News",
+    "title": "North Carolina\u2019s Lithium-Ion Battery Disposal Ban Takes Effect Dec. 1st - Holly Springs Update",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMifEFVX3lxTE1KcGhaMUt2VU1XME5YbVpkVUYzSXgxbEhQSk1hS0VTMy1Td2QxQlNycExPc3dHSWVxMVNqWnlXV3d5dkFoSTd1R3dSWEVvOXd2TlFGUWFEUE1xMkM3bGN2M01ZNk5NbXpmeEJSX1hnSVZocFMyOWFrb2tQS0Q?oc=5\" target=\"_blank\">North Carolina\u2019s Lithium-Ion Battery Disposal Ban Takes Effe",
+    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1KcGhaMUt2VU1XME5YbVpkVUYzSXgxbEhQSk1hS0VTMy1Td2QxQlNycExPc3dHSWVxMVNqWnlXV3d5dkFoSTd1R3dSWEVvOXd2TlFGUWFEUE1xMkM3bGN2M01ZNk5NbXpmeEJSX1hnSVZocFMyOWFrb2tQS0Q?oc=5",
+    "published": "Mon, 02 Nov 2026 00:05:33 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "7772f691bd92c89900e91973f312e349",
+    "first_seen": "2026-11-03T22:56:19.700091+00:00"
+  },
+  "cbc648b2545d73ce849e0196f7cdfe47": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Primary care recommendations",
+    "summary": "I asked you all for daycare recommendations a while back and you had great suggestions (thanks again!). I wanted to see if anyone had recommendations for a primary care physician or practice. It doesn\u2019t have to be in Holly Springs, but within 20 mins or so. I\u2019m looking for a female practitioner poss",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1xn0nhe/primary_care_recommendations/",
+    "published": "2026-11-03T18:19:14+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "cbc648b2545d73ce849e0196f7cdfe47",
+    "first_seen": "2026-11-03T22:56:19.700091+00:00"
   }
 }
