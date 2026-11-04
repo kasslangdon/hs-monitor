@@ -9293,5 +9293,29 @@
     "priority_reason": "",
     "hash": "180decc35a5319f7baade6d8007a2e1f",
     "first_seen": "2026-11-04T13:47:32.060677+00:00"
+  },
+  "72730914ae6bd06db5ed7ce86855c464": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Haircut/stylist recommendation",
+    "summary": "My son has had longish hair for years. Started experimenting with shorter styles, but we're not having a lot of luck with barbers we know. He wants to try a \"modern mod\" cut, and that suggests using a salon instead of a barber, maybe someone used to doing shag style cuts with sissor work? Not sure .",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1xo0o5u/haircutstylist_recommendation/",
+    "published": "2026-11-04T21:35:57+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "72730914ae6bd06db5ed7ce86855c464",
+    "first_seen": "2026-11-04T23:13:56.449518+00:00"
+  },
+  "dea78d4a89c05b67c97d38b933dc5060": {
+    "source": "Reddit r/triangle",
+    "title": "Looking for Dashcam Footage: Hit & Run Motorcycle Crash at NC-54 & Fayetteville Rd (Oct 1st, ~8:00 AM)",
+    "summary": "Hi everyone, I am looking for anyone who might have been commuting through south Durham on the morning of Thursday, October 1st, around 8:00 AM, and has a dashcam running in their vehicle. I was involved in a hit-and-run collision while riding my motorcycle\u2014a distinctive green and white Kawasaki Nin",
+    "url": "https://www.reddit.com/r/triangle/comments/1xlnvan/looking_for_dashcam_footage_hit_run_motorcycle/",
+    "published": "2026-11-02T04:32:01+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "dea78d4a89c05b67c97d38b933dc5060",
+    "first_seen": "2026-11-04T23:13:56.449518+00:00"
   }
 }
