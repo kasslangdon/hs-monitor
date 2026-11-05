@@ -9341,5 +9341,29 @@
     "priority_reason": "",
     "hash": "1ac53aa9ae7527a03f04de80813cbaf1",
     "first_seen": "2026-11-05T14:00:34.393564+00:00"
+  },
+  "0bf44d2b743a189077b22693635b67b4": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Credit card fraud after restaurant purchase",
+    "summary": "Not trying to throw the restaurant under the bus, but i dined at the oakview house last night and today I got notified that my card was tried twice on srubhub for $1169 and $561. Just putting it out there in case it's happened to anyone else. I did not use it anywhere else in the past week. Obviousl",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1xoolqc/credit_card_fraud_after_restaurant_purchase/",
+    "published": "2026-11-05T17:26:05+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "0bf44d2b743a189077b22693635b67b4",
+    "first_seen": "2026-11-05T23:17:32.987013+00:00"
+  },
+  "6dfac53a84b8b5d532da80c518b5f436": {
+    "source": "Reddit (all)",
+    "title": "Lion\u2019s Mane mushroom",
+    "summary": "      Anyone in the Apex/Holly Springs area want a pretty healthy sized Lion\u2019s Mane mushroom?     submitted by    /u/pencilpusher003    to    r/raleigh   [link] [comments] ",
+    "url": "https://www.reddit.com/r/raleigh/comments/1xox85x/lions_mane_mushroom/",
+    "published": "2026-11-05T23:09:02+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "6dfac53a84b8b5d532da80c518b5f436",
+    "first_seen": "2026-11-05T23:17:32.987013+00:00"
   }
 }
