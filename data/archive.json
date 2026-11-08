@@ -9485,5 +9485,65 @@
     "priority_reason": "",
     "hash": "1e9d6c1c60d2d5792d3d1e9f71dd91a7",
     "first_seen": "2026-11-07T21:28:11.843885+00:00"
+  },
+  "2ddb3fb78b2ae27378930489220004a6": {
+    "source": "Holly Springs Update",
+    "title": "Top Home Sales: South Wake Home Sales Reach Median of $545,000 in September",
+    "summary": "Holly Springs posted the highest median price, while Apex accounted for more than half of the 283 sales across Holly Springs, Apex and Fuquay-Varina.",
+    "url": "https://www.hollyspringsupdate.com/p/top-home-sales-south-wake-home-sales",
+    "published": "Sat, 07 Nov 2026 21:30:35 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "2ddb3fb78b2ae27378930489220004a6",
+    "first_seen": "2026-11-08T04:26:50.885618+00:00"
+  },
+  "dcbd8c4487e63261b378c3d35588fb8a": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Bagel place next to Valero is open. Anyone been?",
+    "summary": "Not looking for a NY perspective but if you\u2019ve been, what\u2019s your take?    submitted by    /u/kjweitz   [link] [comments]",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1xqir3q/bagel_place_next_to_valero_is_open_anyone_been/",
+    "published": "2026-11-07T22:29:08+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "dcbd8c4487e63261b378c3d35588fb8a",
+    "first_seen": "2026-11-08T04:26:50.885618+00:00"
+  },
+  "9a09e780e153b71d1d7c2b0d4a0d494a": {
+    "source": "Reddit r/NorthCarolina",
+    "title": "1 dead, 20 other Wake County bicyclists injured in vehicle crash near Holly Springs: Fire officials",
+    "summary": "        submitted by    /u/One-Emu-1103   [link] [comments] ",
+    "url": "https://www.reddit.com/r/NorthCarolina/comments/1xqogqq/1_dead_20_other_wake_county_bicyclists_injured_in/",
+    "published": "2026-11-08T03:16:38+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "9a09e780e153b71d1d7c2b0d4a0d494a",
+    "first_seen": "2026-11-08T04:26:50.885618+00:00"
+  },
+  "6a69b3737131aaca1f2a6d7087c2e9c0": {
+    "source": "Reddit r/NorthCarolina",
+    "title": "State Employees and NC Pension",
+    "summary": "Here\u2019s the short version (sort of): If you log into ORBIT do you see your October payroll posted and the updated total salary as well as your contributions?! It was due on Friday, November 6th by 5pm.  My employer has a habit of late payments to vendors, including sending employee contributions to t",
+    "url": "https://www.reddit.com/r/NorthCarolina/comments/1xq8ibl/state_employees_and_nc_pension/",
+    "published": "2026-11-07T15:06:34+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "6a69b3737131aaca1f2a6d7087c2e9c0",
+    "first_seen": "2026-11-08T04:26:50.885618+00:00"
+  },
+  "9997bbc5d6bd854c048cc7ac4e8c2b8c": {
+    "source": "Reddit r/NorthCarolina",
+    "title": "Missing Person- Vance county NC",
+    "summary": "      \ud83d\udea8 MISSING PERSON: LESLIE JO GRISSOM \ud83d\udea8 Reported Missing: July 8, 2007 Last Seen: Kittrell, North Carolina Age at Disappearance: 19 years old Leslie Jo Grissom has been missing for 19 years. She was last seen on July 7, 2007 around 1:30 PM, reported missing by her boyfriend, Jake Gilliam, the la",
+    "url": "https://www.reddit.com/r/NorthCarolina/comments/1xmzob1/missing_person_vance_county_nc/",
+    "published": "2026-11-03T17:44:55+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "9997bbc5d6bd854c048cc7ac4e8c2b8c",
+    "first_seen": "2026-11-08T04:26:50.885618+00:00"
   }
 }
