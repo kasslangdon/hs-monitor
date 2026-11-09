@@ -9592,5 +9592,53 @@
     "priority": true,
     "hash": "85cbb033ecef2568492e2da190f17047",
     "first_seen": "2026-11-08T21:42:32.631476+00:00"
+  },
+  "3a2b02f7386c5516aee5e7f9a344277a": {
+    "source": "WRAL News",
+    "title": "'It's just tragic': Cycle NC, friend of cyclist killed in Apex reacts to deadly crash",
+    "summary": "Members of the Triangle's cycling community are reacting to Saturday's deadly crash that killed a man and injured 20 other bicyclists near Holly Springs.",
+    "url": "https://www.wral.com/news/local/deadly-dwi-bicycle-crash-triangle-community-reacts-november-2026/",
+    "published": "Sat, 07 Nov 2026 17:12:30 -0500",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "3a2b02f7386c5516aee5e7f9a344277a",
+    "first_seen": "2026-11-09T04:35:44.567299+00:00"
+  },
+  "46864a12e4465555f96b9df06b272569": {
+    "source": "Google News",
+    "title": "Genentech Announces Plans to Double Investment in Holly Springs Manufacturing Facility - Wake County Government (.gov)",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNTNScnJ3dEV6T010RUdJTFp2ak5Db3VJN0NLZjQ2N3h1OHMtN2gyRnBLckl2VHN3WUFqNnpXWS15ek5oYlp0dDdNNjhPTXRuOURWLVRRa3FiV05ET3BtZHdsdlNPYnFYV2lxcDBiNUlubUVUbHY1Vk9KZGYzR3ZzdmhrajhBQVpUUFVRQ2dQQno5ZW9wOTQ5RXA0dGhGMkdSMDhmOG5UeU9RZw?oc=5\" target=\"_blan",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNTNScnJ3dEV6T010RUdJTFp2ak5Db3VJN0NLZjQ2N3h1OHMtN2gyRnBLckl2VHN3WUFqNnpXWS15ek5oYlp0dDdNNjhPTXRuOURWLVRRa3FiV05ET3BtZHdsdlNPYnFYV2lxcDBiNUlubUVUbHY1Vk9KZGYzR3ZzdmhrajhBQVpUUFVRQ2dQQno5ZW9wOTQ5RXA0dGhGMkdSMDhmOG5UeU9RZw?oc=5",
+    "published": "Tue, 20 Jan 2026 08:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "46864a12e4465555f96b9df06b272569",
+    "first_seen": "2026-11-09T04:35:44.567299+00:00"
+  },
+  "e15c910acd35d46b1a1f294485892203": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "The Highlight of My Weekend: By\u00e9, Par\u00e9",
+    "summary": "  submitted by    /u/contour-runner   [link] [comments]",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1xrbw74/the_highlight_of_my_weekend_by\u00e9_par\u00e9/",
+    "published": "2026-11-08T23:07:58+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "e15c910acd35d46b1a1f294485892203",
+    "first_seen": "2026-11-09T04:35:44.567299+00:00"
+  },
+  "9449a4b95963e49db7edece736fa91c9": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Nice try, James Woods...",
+    "summary": "      ...nice try. NIMBY.    submitted by    /u/OldCreezy   [link] [comments] ",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1xrazg1/nice_try_james_woods/",
+    "published": "2026-11-08T22:26:37+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "9449a4b95963e49db7edece736fa91c9",
+    "first_seen": "2026-11-09T04:35:44.567299+00:00"
   }
 }
