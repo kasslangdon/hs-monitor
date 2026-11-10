@@ -9640,5 +9640,41 @@
     "priority_reason": "",
     "hash": "9449a4b95963e49db7edece736fa91c9",
     "first_seen": "2026-11-09T04:35:44.567299+00:00"
+  },
+  "39b4294fa3573161e49e18c974be1f52": {
+    "source": "Google News",
+    "title": "Two people charged with first degree murder by Collierville Police Department in the targeted murder of a Holly Springs teenager in October in Collierville - Substack",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMigwFBVV95cUxPMlBYemxOd2VxVExoTWtHY1NGcERzbU94dzMtX01hX3VKVXRXUVppWlJEaGtQWThwUG5iVElXcWJpNlBmMlYydHlyRW0yUTE2R3FhZnJDaHBFVVRCRlIwQnIyZXBrQWpZX3hTTUlNeXBGWU5TeEFZMlNQdTV5ck55MlIyaw?oc=5\" target=\"_blank\">Two people charged with first degree murder by Co",
+    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPMlBYemxOd2VxVExoTWtHY1NGcERzbU94dzMtX01hX3VKVXRXUVppWlJEaGtQWThwUG5iVElXcWJpNlBmMlYydHlyRW0yUTE2R3FhZnJDaHBFVVRCRlIwQnIyZXBrQWpZX3hTTUlNeXBGWU5TeEFZMlNQdTV5ck55MlIyaw?oc=5",
+    "published": "Mon, 09 Nov 2026 20:41:06 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "39b4294fa3573161e49e18c974be1f52",
+    "first_seen": "2026-11-10T01:12:21.683082+00:00"
+  },
+  "6fe4b5d336c49b4e50f8a6d1fcaf2b01": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Pest control",
+    "summary": "Is there a good local termite company that I can have take a look at my house? I would prefer to go local rather than a national brand.    submitted by    /u/dilwap   [link] [comments]",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1xs25c4/pest_control/",
+    "published": "2026-11-09T20:04:46+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "6fe4b5d336c49b4e50f8a6d1fcaf2b01",
+    "first_seen": "2026-11-10T01:12:21.683082+00:00"
+  },
+  "b24bdaac7e228c8a51488f5b620cf7da": {
+    "source": "Reddit r/raleigh",
+    "title": "1 dead, 20 other Wake County bicyclists injured in vehicle crash near Holly Springs",
+    "summary": "      A heartbreaking tragedy occurred this morning while the Capital Cycling Club were out on their routine weekend ride.     submitted by    /u/boughtaspaceshipnowi   [link] [comments] ",
+    "url": "https://www.reddit.com/r/raleigh/comments/1xqbug9/1_dead_20_other_wake_county_bicyclists_injured_in/",
+    "published": "2026-11-07T17:27:46+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "b24bdaac7e228c8a51488f5b620cf7da",
+    "first_seen": "2026-11-10T01:12:21.683082+00:00"
   }
 }
