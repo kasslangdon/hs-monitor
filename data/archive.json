@@ -9676,5 +9676,17 @@
     "priority_reason": "",
     "hash": "b24bdaac7e228c8a51488f5b620cf7da",
     "first_seen": "2026-11-10T01:12:21.683082+00:00"
+  },
+  "785ff51c2cf83d6db3f0011a61cc52b3": {
+    "source": "Google News",
+    "title": "Holly Springs cyclist: Accused DWI driver, 76, could face nearly 99 years, judge says - The North Carolina Beat",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxQNmF2dENzRWY0VVhiSnRjUm90SklGQUxfMzA3Y2lLcXZBZjVwei1zak1TWXNYZjFNMms1QVdzcnBhalFua29XaDZPWHo4R09SSTJyNzBiQzBZZFBTM2ZIWVZTTnBrQUN2cUhqZGdtb2kzNnFYQTFJdVBSbTlwb0sxeGZB?oc=5\" target=\"_blank\">Holly Springs cyclist: Accused DWI driver, 76, coul",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQNmF2dENzRWY0VVhiSnRjUm90SklGQUxfMzA3Y2lLcXZBZjVwei1zak1TWXNYZjFNMms1QVdzcnBhalFua29XaDZPWHo4R09SSTJyNzBiQzBZZFBTM2ZIWVZTTnBrQUN2cUhqZGdtb2kzNnFYQTFJdVBSbTlwb0sxeGZB?oc=5",
+    "published": "Mon, 09 Nov 2026 20:00:05 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "785ff51c2cf83d6db3f0011a61cc52b3",
+    "first_seen": "2026-11-10T14:20:03.269140+00:00"
   }
 }
