@@ -9712,5 +9712,29 @@
     "priority_reason": "",
     "hash": "53d8fa3b9917275c928ab5d86627bb30",
     "first_seen": "2026-11-10T22:51:31.464352+00:00"
+  },
+  "278fbc26ff77f36b1778299c344d35ad": {
+    "source": "Google News",
+    "title": "Police: Holly Springs man killed mother, later called 911 - Fulton Neighbor",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMi4AFBVV95cUxONjFHVlB5RVNWZE1jdUVuZFVhdkxoUWpzaDdlN3ZaQ1JJN2JlbjA0c2EyMHR0UHROWVJfNHRlcEM5ZjJ2MkdfVEpCc0pEY1FMRkp0MVRkM3Y2SS1kMGROU01ZYTFXaFJSTEl2OVU3X21rRmhZT3M5TTU1MTd5Slo1VnFRcEVKcll4dDRkWWZvVm9NdUxjd3lJODhfRzdGMmRHX016UzNjaDRxREZWYkZFMFI3YmNabGxraF",
+    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxONjFHVlB5RVNWZE1jdUVuZFVhdkxoUWpzaDdlN3ZaQ1JJN2JlbjA0c2EyMHR0UHROWVJfNHRlcEM5ZjJ2MkdfVEpCc0pEY1FMRkp0MVRkM3Y2SS1kMGROU01ZYTFXaFJSTEl2OVU3X21rRmhZT3M5TTU1MTd5Slo1VnFRcEVKcll4dDRkWWZvVm9NdUxjd3lJODhfRzdGMmRHX016UzNjaDRxREZWYkZFMFI3YmNabGxraFJxcGswMmh3TWdLa1lMSFdqS3ZRa0tGUFJmQldreTRjVFNPQnFIdQ?oc=5",
+    "published": "Tue, 10 Nov 2026 18:35:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "278fbc26ff77f36b1778299c344d35ad",
+    "first_seen": "2026-11-11T04:39:15.491512+00:00"
+  },
+  "a2aed457530a64de5363b09595c60320": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Looking for a Lawyer",
+    "summary": "  submitted by    /u/Heartofgoldband77   [link] [comments]",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1xt4gka/looking_for_a_lawyer/",
+    "published": "2026-11-11T01:12:25+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "a2aed457530a64de5363b09595c60320",
+    "first_seen": "2026-11-11T04:39:15.491512+00:00"
   }
 }
