@@ -9736,5 +9736,17 @@
     "priority_reason": "",
     "hash": "a2aed457530a64de5363b09595c60320",
     "first_seen": "2026-11-11T04:39:15.491512+00:00"
+  },
+  "f0dcab6dda1e7011d99fa464cc5e29fe": {
+    "source": "Google News",
+    "title": "Third suspect from Holly Springs arrested in murder of Holly Springs teenager in Collierville in October - Substack",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMifkFVX3lxTE5nVVJvN3VWTENRdW5XYmZ2YmRreUxRMDMwQXcwaThzLWNtRXZEQkxPcktjUVY1c25HUDFFZlpzY0lzWUptNkJGeldCRGFscGp5NmR0by05MnFoVTdYWTNWNlNMS0VrVzJ0QVhxc2ZVdFc3X2NWUUlRZTRJcFdkdw?oc=5\" target=\"_blank\">Third suspect from Holly Springs arrested in murder of Ho",
+    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5nVVJvN3VWTENRdW5XYmZ2YmRreUxRMDMwQXcwaThzLWNtRXZEQkxPcktjUVY1c25HUDFFZlpzY0lzWUptNkJGeldCRGFscGp5NmR0by05MnFoVTdYWTNWNlNMS0VrVzJ0QVhxc2ZVdFc3X2NWUUlRZTRJcFdkdw?oc=5",
+    "published": "Wed, 11 Nov 2026 01:29:03 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "f0dcab6dda1e7011d99fa464cc5e29fe",
+    "first_seen": "2026-11-11T13:33:37.665415+00:00"
   }
 }
