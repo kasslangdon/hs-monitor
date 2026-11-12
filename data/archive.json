@@ -9772,5 +9772,17 @@
     "priority_reason": "",
     "hash": "92d62021bcd3a9d0fd46758285033a3d",
     "first_seen": "2026-11-12T00:03:34.577438+00:00"
+  },
+  "ab817e1685f3fe443e5446a553ef5ff0": {
+    "source": "Google News",
+    "title": "Judge appoints co-receiver to get Holly Springs Utility Department back on track - FOX13 Memphis",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMi9wFBVV95cUxOemo2QWdnNjQyRzhPbGIzQW85TVNRdGkwajdKdnQ2dFU4WFVBWDBIZUw3MUJXeXZHakZYWTRxVFVfYXBIdzBXUUpMT1BGMGEtdzFzUnlQcS00QTg1U1gxWXpKckhCenFUSjBGLWNVUUR0Ui1XdlBpdnJsaFhIaFY1aTBJbmZwUk1oSnFONmhuR0ZvV0l0Z2FLVk0wdW1QdS1RQlI1ajBpOFBXY0JWWkk0eEFsSl9HMkk4VE",
+    "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOemo2QWdnNjQyRzhPbGIzQW85TVNRdGkwajdKdnQ2dFU4WFVBWDBIZUw3MUJXeXZHakZYWTRxVFVfYXBIdzBXUUpMT1BGMGEtdzFzUnlQcS00QTg1U1gxWXpKckhCenFUSjBGLWNVUUR0Ui1XdlBpdnJsaFhIaFY1aTBJbmZwUk1oSnFONmhuR0ZvV0l0Z2FLVk0wdW1QdS1RQlI1ajBpOFBXY0JWWkk0eEFsSl9HMkk4VEpyWkFSQlZCaFVJTk5POGlsMmxJX3Z5dWRKZUsyaC1pZzBjVjR4ZGl3RjB2Ry14Rk9OdE9CcW52ZFVVZ1FJ?oc=5",
+    "published": "Tue, 10 Nov 2026 23:12:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "ab817e1685f3fe443e5446a553ef5ff0",
+    "first_seen": "2026-11-12T07:01:37.840154+00:00"
   }
 }
