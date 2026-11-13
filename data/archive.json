@@ -9844,5 +9844,28 @@
     "priority_reason": "",
     "hash": "1e638bd0a3d8cf82eed52ef6dbc72047",
     "first_seen": "2026-11-13T05:00:20.165900+00:00"
+  },
+  "69c78253d0e94ac9d8db4352c0c23d8c": {
+    "source": "Court / Legal (Google)",
+    "title": "Mother of 3 killed in dog attack in Holly Springs; suspect in custody, police say - WDAM-TV",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiogFBVV95cUxQNUF0cENmTnpCdy1YUDVaVzZpVndxU28yN0dINHUzdmFLNXhOc2RJQ19RaDg4UkU5UlhZcXZGZHU3c0dRV24zU08ybmt1WHRuTnVLUF9RZ2NFeXlBS2tzb0dScXZIV2U3aVM2UVFIdndYRktxTW80SzRUaHE3NHRUUk5qVDhTdUZpOUYyREN2Q1JSNnJWalF6RkR0Qk1LWTYteVHSAbYBQVVfeXFMUERWcnRjdVdjMGdLcl",
+    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQNUF0cENmTnpCdy1YUDVaVzZpVndxU28yN0dINHUzdmFLNXhOc2RJQ19RaDg4UkU5UlhZcXZGZHU3c0dRV24zU08ybmt1WHRuTnVLUF9RZ2NFeXlBS2tzb0dScXZIV2U3aVM2UVFIdndYRktxTW80SzRUaHE3NHRUUk5qVDhTdUZpOUYyREN2Q1JSNnJWalF6RkR0Qk1LWTYteVHSAbYBQVVfeXFMUERWcnRjdVdjMGdLcldweGI5TmN2RFhINmNHRWttc25mR1NSSFdKMGV3bUFjeEx2YnFORDFNTmFUWUFIbnA5WlNkRE1kQVlPMFl6RzNlQTJQREV5dnZrSFVaUmJYZ3hOTVliQ1EtRDhGT1A0bHNaY0NHUkl6YUVqWmJyZVpocHpHRVJWbGRGRmJYY1JzOEtqdmMyTGFzaDZVY29DSHpSWFM1UVAzYkNiOUlqdEFiRmc?oc=5",
+    "published": "Fri, 27 Mar 2026 07:00:00 GMT",
+    "category": "Court Records",
+    "priority": true,
+    "hash": "69c78253d0e94ac9d8db4352c0c23d8c",
+    "first_seen": "2026-11-13T23:16:24.351890+00:00"
+  },
+  "c0cc03b0ac65cf74aed3434f31a58e4b": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Psychological research study at UNC-Chapel Hill on breathing and emotions now enrolling!",
+    "summary": "      If you are interested in participating, please complete this 3-minute screening survey. https://redcap.link/fnaazgs    submitted by    /u/uncbreathingstudy   [link] [comments] ",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1xvaqt9/psychological_research_study_at_uncchapel_hill_on/",
+    "published": "2026-11-13T15:26:12+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "c0cc03b0ac65cf74aed3434f31a58e4b",
+    "first_seen": "2026-11-13T23:16:24.351890+00:00"
   }
 }
