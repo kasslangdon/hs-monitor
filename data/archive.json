@@ -9796,5 +9796,53 @@
     "priority_reason": "",
     "hash": "475f5d2dfd105d709b924207c85fea1d",
     "first_seen": "2026-11-12T19:34:07.049464+00:00"
+  },
+  "ff7880b854f0deb3de4cb121d74fef67": {
+    "source": "Holly Springs Update",
+    "title": "Out and About This Weekend in Holly Springs (NC), Apex & Fuquay-Varina (11/13 through 11/15)",
+    "summary": "A police-vs-fire chili cook-off, The Nutcracker, Death Becomes Her, a film festival, a tree planting, farmers markets, and live music in Holly Springs, Apex and Fuquay-Varina, NC this weekend.",
+    "url": "https://www.hollyspringsupdate.com/p/out-and-about-this-weekend-in-holly-0c8",
+    "published": "Fri, 13 Nov 2026 00:30:30 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "ff7880b854f0deb3de4cb121d74fef67",
+    "first_seen": "2026-11-13T05:00:20.165900+00:00"
+  },
+  "b3f1273cc3704d96f4f1ca4cc6a39c40": {
+    "source": "Google News",
+    "title": "Out and About This Weekend in Holly Springs (NC), Apex & Fuquay-Varina (11/13 through 11/15) - Holly Springs Update",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxQdTdRN2RTSUNZaEMyWmhFR0ZpdnJSOFczQUpIMXlmM1d5ZnBqUmtjU01jd21fUVlPUjhEOEhmQjh1bFY3R1Z1UGhLcS00a0NORXp3VXBlTjVzenBVQnRhNmphUUc3Y25tTW80QnBEWVdfcm1tZGJvVDdJemhxTXFjM1Rn?oc=5\" target=\"_blank\">Out and About This Weekend in Holly Springs (NC), A",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQdTdRN2RTSUNZaEMyWmhFR0ZpdnJSOFczQUpIMXlmM1d5ZnBqUmtjU01jd21fUVlPUjhEOEhmQjh1bFY3R1Z1UGhLcS00a0NORXp3VXBlTjVzenBVQnRhNmphUUc3Y25tTW80QnBEWVdfcm1tZGJvVDdJemhxTXFjM1Rn?oc=5",
+    "published": "Fri, 13 Nov 2026 00:30:30 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "b3f1273cc3704d96f4f1ca4cc6a39c40",
+    "first_seen": "2026-11-13T05:00:20.165900+00:00"
+  },
+  "bfd586a2eec28c5349e8ca8323d6577b": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "Which small gyms do you visit and why?",
+    "summary": "I am wondering why people prefer to go on small capped gyms what is the main driver. Disclaimer: I am looking to open a small boutique gym (like 100-150 people) running on my own software for everything - payments, personalized programs, AI coach, diets etc. The main goal is to make people independe",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1xutxeu/which_small_gyms_do_you_visit_and_why/",
+    "published": "2026-11-13T00:48:08+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "bfd586a2eec28c5349e8ca8323d6577b",
+    "first_seen": "2026-11-13T05:00:20.165900+00:00"
+  },
+  "1e638bd0a3d8cf82eed52ef6dbc72047": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "UNC Research Study",
+    "summary": "      Calling all parents of 4-5 year olds: consider participating in this paid research opportunity with a UNC research lab. More details can be found in the flyer!    submitted by    /u/Content-Star-548   [link] [comments] ",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1xur57t/unc_research_study/",
+    "published": "2026-11-12T22:44:13+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "1e638bd0a3d8cf82eed52ef6dbc72047",
+    "first_seen": "2026-11-13T05:00:20.165900+00:00"
   }
 }
