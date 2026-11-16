@@ -9902,5 +9902,29 @@
     "priority_reason": "",
     "hash": "010b1215c176185fd15131d3d0c1d1cf",
     "first_seen": "2026-11-14T22:00:15.732883+00:00"
+  },
+  "48d638315273b879d919b35e5d183f21": {
+    "source": "WRAL News",
+    "title": "Holly Springs man charged with child sex offenses, kidnapping",
+    "summary": "William Joseph Weber was charged with multiple felonious sexual offenses with a child for an alleged incident that police said started online.",
+    "url": "https://www.wral.com/news/local/holly-springs-man-charged-with-child-sex-offense-kidnapping-november-2026/",
+    "published": "Sun, 15 Nov 2026 22:26:10 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "48d638315273b879d919b35e5d183f21",
+    "first_seen": "2026-11-16T04:42:13.275961+00:00"
+  },
+  "7be8d1bafeb5ec238d253424110bf272": {
+    "source": "Google News",
+    "title": "Holly Springs man charged with child sex offenses, kidnapping - WRAL",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMk52QVBIMHN5RkpaN3EtYTVHRU1pZ1k0N0ptd3Q1RXRRZm5iWnBuUjlyVVZmM0MtN2RRTVhVMkQ2a2JYTmRiUDB5dllYbG9wbS1qVVdRZkhLekVqaVZ0WVFqeDBLV0EyRnhlTDlmQVRCMzFzN0Q0bHZlclVGbXZTLVo0MDJoOWRDQldwMl81NGZua2llZ0FsUC1mdnAtbDFYekJCcjZLUE52UQ?oc=5\" target=\"_blan",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMk52QVBIMHN5RkpaN3EtYTVHRU1pZ1k0N0ptd3Q1RXRRZm5iWnBuUjlyVVZmM0MtN2RRTVhVMkQ2a2JYTmRiUDB5dllYbG9wbS1qVVdRZkhLekVqaVZ0WVFqeDBLV0EyRnhlTDlmQVRCMzFzN0Q0bHZlclVGbXZTLVo0MDJoOWRDQldwMl81NGZua2llZ0FsUC1mdnAtbDFYekJCcjZLUE52UQ?oc=5",
+    "published": "Sun, 15 Nov 2026 23:35:24 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "7be8d1bafeb5ec238d253424110bf272",
+    "first_seen": "2026-11-16T04:42:13.275961+00:00"
   }
 }
