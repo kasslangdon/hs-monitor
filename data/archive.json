@@ -10022,5 +10022,29 @@
     "priority_reason": "",
     "hash": "803cc303cbd33ff1a6e242fd1983bcc3",
     "first_seen": "2026-11-17T01:36:55.769591+00:00"
+  },
+  "3c2916893af7b2f2bba5036f8d5808fb": {
+    "source": "Google News",
+    "title": "Holly Springs cyclist crash: Driver, 76, refused breath test, records say; judge keeps $1M bond - The North Carolina Beat",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxQNmF2dENzRWY0VVhiSnRjUm90SklGQUxfMzA3Y2lLcXZBZjVwei1zak1TWXNYZjFNMms1QVdzcnBhalFua29XaDZPWHo4R09SSTJyNzBiQzBZZFBTM2ZIWVZTTnBrQUN2cUhqZGdtb2kzNnFYQTFJdVBSbTlwb0sxeGZB?oc=5\" target=\"_blank\">Holly Springs cyclist crash: Driver, 76, refused br",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQNmF2dENzRWY0VVhiSnRjUm90SklGQUxfMzA3Y2lLcXZBZjVwei1zak1TWXNYZjFNMms1QVdzcnBhalFua29XaDZPWHo4R09SSTJyNzBiQzBZZFBTM2ZIWVZTTnBrQUN2cUhqZGdtb2kzNnFYQTFJdVBSbTlwb0sxeGZB?oc=5",
+    "published": "Mon, 09 Nov 2026 20:05:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "3c2916893af7b2f2bba5036f8d5808fb",
+    "first_seen": "2026-11-17T15:31:13.293563+00:00"
+  },
+  "4e3a64964665d5c1a8571489180d8aaa": {
+    "source": "Reddit r/HollySpringsNC",
+    "title": "What happened?",
+    "summary": "        submitted by    /u/Competitive_Dig_1804   [link] [comments] ",
+    "url": "https://www.reddit.com/r/HollySpringsNC/comments/1xyl00q/what_happened/",
+    "published": "2026-11-17T13:53:27+00:00",
+    "category": "Reddit",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "4e3a64964665d5c1a8571489180d8aaa",
+    "first_seen": "2026-11-17T15:31:13.293563+00:00"
   }
 }
