@@ -10082,5 +10082,17 @@
     "priority_reason": "",
     "hash": "f1b9c3d340000cd7ffe7944c864d601e",
     "first_seen": "2026-11-18T00:32:09.958470+00:00"
+  },
+  "ce559be0686e2ae84f3a3d7152e5392e": {
+    "source": "Google News",
+    "title": "Holly Springs police make arrest in online child sexual abuse investigation - Raleigh News & Observer",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTFA2UzJ4LWdYMVhqZERNeFBlYnduM3ZiOWtwVmxjbVVWVnN5TlNkOWdsTEZobVQtbHJBU1dBUVF1WkhFMlM3d1pPaHctcjRpa005ZElRcGYwaGhuRHB6ZS1VWEtvRHh6M0hKOVJPZVUzTdIBb0FVX3lxTFA2UzJ4LWdYMVhqZERNeFBlYnduM3ZiOWtwVmxjbVVWVnN5TlNkOWdsTEZobVQtbHJBU1dBUVF1WkhFMlM3d1pPaH",
+    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA2UzJ4LWdYMVhqZERNeFBlYnduM3ZiOWtwVmxjbVVWVnN5TlNkOWdsTEZobVQtbHJBU1dBUVF1WkhFMlM3d1pPaHctcjRpa005ZElRcGYwaGhuRHB6ZS1VWEtvRHh6M0hKOVJPZVUzTdIBb0FVX3lxTFA2UzJ4LWdYMVhqZERNeFBlYnduM3ZiOWtwVmxjbVVWVnN5TlNkOWdsTEZobVQtbHJBU1dBUVF1WkhFMlM3d1pPaHctcjRpa005ZElRcGYwaGhuRHB6ZS1VWEtvRHh6M0hKOVJPZVUzTQ?oc=5",
+    "published": "Mon, 16 Nov 2026 14:01:59 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "ce559be0686e2ae84f3a3d7152e5392e",
+    "first_seen": "2026-11-18T15:06:13.480372+00:00"
   }
 }
