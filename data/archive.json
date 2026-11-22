@@ -10226,5 +10226,17 @@
     "priority_reason": "",
     "hash": "301d7dcbd1b1e68965129040edf462bc",
     "first_seen": "2026-11-21T22:48:10.224025+00:00"
+  },
+  "92974a49ef65e34f6f2fde900a9953a7": {
+    "source": "Google News",
+    "title": "Man arrested after allegedly threatening to \u2018blow up\u2019 Holly Springs utility - SuperTalk Mississippi Media",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxOSnlOOXNSOFdBdnJUZFdaLTUzandPa05SVndFX1FUbTdpSDhtM3pXM0d0Smdib25uWGZoOUF1c0ljSlA5NUlwSkI5dDhrcWJQU01aZWhEYjdTT3F4cjRUX0JxYmNsYnl5T3llQUZZLXY2ZFN5V3Bma285TTFnSnZzamhWeUxaRzlwb0ladXVPd3c5eEVmejMxN1lxWjFZWTlO?oc=5\" target=\"_blank\">Man arreste",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOSnlOOXNSOFdBdnJUZFdaLTUzandPa05SVndFX1FUbTdpSDhtM3pXM0d0Smdib25uWGZoOUF1c0ljSlA5NUlwSkI5dDhrcWJQU01aZWhEYjdTT3F4cjRUX0JxYmNsYnl5T3llQUZZLXY2ZFN5V3Bma285TTFnSnZzamhWeUxaRzlwb0ladXVPd3c5eEVmejMxN1lxWjFZWTlO?oc=5",
+    "published": "Thu, 27 Aug 2026 07:00:00 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "92974a49ef65e34f6f2fde900a9953a7",
+    "first_seen": "2026-11-22T14:03:34.331229+00:00"
   }
 }
