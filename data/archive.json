@@ -10261,5 +10261,17 @@
     "priority": true,
     "hash": "e6077d62e8d69f3abd26c194a0af170a",
     "first_seen": "2026-11-26T01:34:18.972409+00:00"
+  },
+  "478a9e2776d5d361ef515613d1d9f9de": {
+    "source": "Google News",
+    "title": "Holly Springs man, John Sanders, charged with felony terroristic threats - Substack",
+    "summary": "<a href=\"https://news.google.com/rss/articles/CBMihgFBVV95cUxNY0VsM1NnQTVWbUtKNzMtc3lpaDlYcFRPNHNhQmp1VXowRGRsZ3NiaEdYTnBjRHNwT29MdldvckFvRXVWYm54bTJKclhQTlZoeTRyZ3YtQmJha28zTF9xbkJ4cGlMa0g0NkZYLVBpRGxyS3hZeVFNWGp0NGpNOU9mNW5HSFNnQQ?oc=5\" target=\"_blank\">Holly Springs man, John Sanders, charged with",
+    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNY0VsM1NnQTVWbUtKNzMtc3lpaDlYcFRPNHNhQmp1VXowRGRsZ3NiaEdYTnBjRHNwT29MdldvckFvRXVWYm54bTJKclhQTlZoeTRyZ3YtQmJha28zTF9xbkJ4cGlMa0g0NkZYLVBpRGxyS3hZeVFNWGp0NGpNOU9mNW5HSFNnQQ?oc=5",
+    "published": "Fri, 27 Nov 2026 02:59:53 GMT",
+    "category": "News",
+    "priority": false,
+    "priority_reason": "",
+    "hash": "478a9e2776d5d361ef515613d1d9f9de",
+    "first_seen": "2026-11-27T16:08:31.985683+00:00"
   }
 }
